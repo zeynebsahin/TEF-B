@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section B — Bénévolat &amp; Solidarité</title>
+<style>
+body { margin:0; padding:0; background:#ffffff; color:#22303c;
+  font-family:-apple-system,'Helvetica Neue',Arial,sans-serif; font-size:16px; }
+.wrap { max-width:720px; margin:0 auto; padding:16px; }
+a.back { text-decoration:none; color:#1565c0; font-size:15px; }
+h1 { font-size:24px; margin:12px 0 4px 0; }
+.sub { color:#6b7a88; font-size:14px; margin-bottom:14px; }
+.modebtn { display:inline-block; border:1px solid #1565c0; color:#1565c0;
+  background:#ffffff; border-radius:8px; padding:8px 14px; font-size:15px;
+  font-weight:600; cursor:pointer; margin-bottom:16px; }
+.modebtn.on { background:#1565c0; color:#ffffff; }
+.sujet { border:1px solid #d8dee4; border-radius:10px; margin-bottom:12px; overflow:hidden; }
+.shead { padding:13px 15px; background:#fbfcfd; cursor:pointer; }
+.shead .t { font-size:17px; font-weight:700; }
+.shead .st { font-size:13px; color:#6b7a88; margin-top:2px; }
+.sbody { padding:0 15px 14px 15px; display:none; border-top:1px solid #e9edf1; }
+.lbl { font-size:12px; font-weight:700; letter-spacing:0.8px; margin:16px 0 6px 0; }
+.lbl.consigne { color:#546e7a; }
+.lbl.annonce { color:#8d6e30; }
+.lbl.sunum { color:#1565c0; }
+.lbl.arg { color:#2e7d32; }
+.lbl.itiraz { color:#c62828; }
+.fr { margin:4px 0 0 0; line-height:1.45; }
+.tr { margin:3px 0 0 0; line-height:1.4; color:#7a6a52; font-size:14px; font-style:italic; }
+.annbox { border:1px dashed #c9b280; background:#fdfaf2; border-radius:8px;
+  padding:10px 12px; font-size:15px; line-height:1.5; }
+.argitem { border-left:4px solid #2e7d32; padding:4px 0 4px 10px; margin-bottom:8px; }
+.obj { border:1px solid #eed7d7; border-left:5px solid #c62828; border-radius:8px;
+  padding:9px 12px; margin-bottom:9px; background:#fdf9f9; }
+.obj .q { font-weight:600; color:#c62828; }
+.rep { border-left:4px solid #6a1b9a; padding:5px 0 2px 10px; margin-top:8px; }
+.rep .fr { color:#4a2a6a; }
+.revealbtn { display:inline-block; margin-top:7px; border:1px solid #6a1b9a; color:#6a1b9a;
+  background:#ffffff; border-radius:7px; padding:5px 11px; font-size:14px; cursor:pointer; }
+.hidden { display:none; }
+.kalipnote { font-size:13px; color:#9aa5af; margin-top:14px; border-top:1px solid #e9edf1; padding-top:8px; }
+.kalipnote a { color:#1565c0; }
+.foot { font-size:13px; color:#9aa5af; margin-top:24px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">‹ Ana menü</a>
+<h1>🤝 Bénévolat &amp; Solidarité</h1>
+<div class="sub">8 sujet · Açılış ve kapanış her zaman <b>Evrensel Kalıp</b>'tan gelir; burada sadece sujet'ye özel kısımlar var.</div>
+
+<span class="modebtn on" id="btnStudy" onclick="setMode('study')">Çalışma (FR+TR)</span>
+<span class="modebtn" id="btnTest" onclick="setMode('test')">Test (sadece FR)</span>
+
+<!-- ============ SUJET 1 ============ -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">1 · Refuge pour animaux</div><div class="st">Hayvan barınağında gönüllülük · arkadaş hayvanları seviyor · ÇIKMIŞ</div></div>
+<div class="sbody">
+
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce. Vous en parlez à un(e) ami(e) qui aime les animaux. Essayez de le (la) convaincre de devenir bénévole dans ce refuge.</div>
+<div class="tr">Bu ilanı okudun. Hayvanları seven bir arkadaşına anlatıyorsun. Onu bu barınakta gönüllü olmaya ikna etmeye çalış.</div>
+
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox">Les animaux ont besoin de vous : <b>DEVENEZ BÉNÉVOLE DANS NOTRE REFUGE</b><br>
+Vos missions : compagnie, soins, toilettage · nettoyage des boxes · accueil des visiteurs · tâches administratives (formalités d'adoption…)<br>
+2 000 bénévoles nous ont déjà rejoints ! · www.refugeanimaux.org</div>
+
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un refuge pour animaux qui cherche des bénévoles. Regarde : les missions sont variées — les soins, l'accueil des visiteurs, même des tâches administratives. Et en plus, 2 000 bénévoles les ont déjà rejoints !</div>
+<div class="tr">Gönüllü arayan bir hayvan barınağı. Bak: görevler çeşitli — bakım, ziyaretçi karşılama, hatta idari işler. Üstelik 2000 gönüllü çoktan katılmış!</div>
+
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu adores les animaux — là, tu pourrais passer du temps avec eux chaque semaine. C'est exactement ce que tu aimes.</div><div class="tr">Hayvanlara bayılıyorsun — burada her hafta onlarla vakit geçirebilirsin. Tam sevdiğin şey.</div></div>
+<div class="argitem"><div class="fr">Les missions sont variées, donc tu peux choisir ce qui te convient : les soins, l'accueil ou l'administratif.</div><div class="tr">Görevler çeşitli, yani sana uyanı seçebilirsin: bakım, karşılama veya idari işler.</div></div>
+<div class="argitem"><div class="fr">Ils ont déjà 2 000 bénévoles — ça veut dire que c'est bien organisé et que l'ambiance est sympa.</div><div class="tr">Zaten 2000 gönüllüleri var — bu demek ki iyi organize edilmiş ve ortam güzel.</div></div>
+
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je n'ai pas le temps, je travaille beaucoup. »</div><div class="tr">Vaktim yok, çok çalışıyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, moi aussi je suis très occupée. Mais ce n'est que quelques heures par semaine, et tu es quelqu'un d'organisé — tu peux choisir tes horaires. Et justement, ça te changera les idées après le travail.</div>
+<div class="tr">Anlıyorum, ben de çok meşgulüm. Ama haftada sadece birkaç saat, ve sen düzenli birisin — saatlerini seçebilirsin. Hem işten sonra kafa dağıtmana da yarar.</div></div></div>
+<div class="obj"><div class="q">« C'est trop triste de voir des animaux abandonnés. »</div><div class="tr">Terk edilmiş hayvanları görmek çok üzücü.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, c'est normal d'être sensible — c'est une belle qualité. Mais justement, grâce à toi, ces animaux seront plus heureux. Et tu verras, quand un animal trouve une famille, c'est une grande joie.</div>
+<div class="tr">Anlıyorum, duygusal olmak normal — güzel bir özellik. Ama işte tam da senin sayende bu hayvanlar daha mutlu olacak. Göreceksin, bir hayvan yuva bulunca büyük bir sevinç oluyor.</div></div></div>
+
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- ============ SUJET 2 ============ -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">2 · La Maison des Jouets</div><div class="st">Oyuncak evi derneğinde gönüllülük · ÇIKMIŞ</div></div>
+<div class="sbody">
+
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de faire du bénévolat pour cette association.</div>
+<div class="tr">Bu ilanı okudun. Bir arkadaşına anlatıyorsun. Onu bu dernek için gönüllü olmaya ikna etmeye çalış.</div>
+
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>Devenez bénévole à la MAISON DES JOUETS !</b><br>
+Notre association permet aux enfants de 6 à 12 ans d'emprunter des jouets.<br>
+Nous recherchons une personne pour : accueillir et conseiller les enfants · vérifier et classer les jouets · surveiller l'espace jeux<br>
+Emploi du temps adaptable selon vos disponibilités (mercredi, vendredi, samedi) · 514-555-5058</div>
+
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une association qui prête des jouets aux enfants de 6 à 12 ans. Ils cherchent un bénévole pour accueillir les enfants et s'occuper des jouets. Et en plus, l'emploi du temps est adaptable selon tes disponibilités.</div>
+<div class="tr">6-12 yaş çocuklara oyuncak ödünç veren bir dernek. Çocukları karşılamak ve oyuncaklarla ilgilenmek için gönüllü arıyorlar. Üstelik program senin müsaitliğine göre ayarlanabiliyor.</div>
+
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu es très patiente et tu adores les enfants — accueillir et conseiller les petits, c'est parfait pour toi.</div><div class="tr">Çok sabırlısın ve çocuklara bayılıyorsun — küçükleri karşılamak ve yönlendirmek tam sana göre.</div></div>
+<div class="argitem"><div class="fr">L'emploi du temps est adaptable : mercredi, vendredi ou samedi, c'est toi qui choisis.</div><div class="tr">Program esnek: çarşamba, cuma veya cumartesi — seçim senin.</div></div>
+<div class="argitem"><div class="fr">C'est un beau projet : grâce à cette association, tous les enfants peuvent jouer, même sans acheter de jouets. Tu te sentiras vraiment utile.</div><div class="tr">Güzel bir proje: bu dernek sayesinde tüm çocuklar oyuncak almadan oynayabiliyor. Kendini gerçekten faydalı hissedeceksin.</div></div>
+
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je n'ai jamais travaillé avec des enfants. »</div><div class="tr">Hiç çocuklarla çalışmadım.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, c'est l'occasion d'essayer quelque chose de nouveau ! Et il n'y a pas besoin d'expérience — tu vas apprendre sur place, et l'équipe t'aidera.</div>
+<div class="tr">İşte tam da yeni bir şey deneme fırsatı! Deneyim gerekmiyor — yerinde öğrenirsin, ekip de yardım eder.</div></div></div>
+<div class="obj"><div class="q">« Les enfants, ça me fatigue vite. »</div><div class="tr">Çocuklar beni çabuk yoruyor.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais ce n'est que quelques heures par jour, et l'ambiance est détendue. Et puis, franchement, jouer avec les enfants, ça donne aussi de l'énergie !</div>
+<div class="tr">Anlıyorum ama günde sadece birkaç saat ve ortam rahat. Hem açıkçası çocuklarla oynamak insana enerji de veriyor!</div></div></div>
+
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- ============ SUJET 3 ============ -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">3 · Ramassage des déchets en montagne</div><div class="st">Patika temizliği · arkadaş yeşil alanları seviyor · ÇIKMIŞ (tefcanada.ca)</div></div>
+<div class="sbody">
+
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette publicité pour une association. Vous en parlez à un(e) ami(e) qui aime les espaces verts. Essayez de le (la) convaincre de participer au ramassage des déchets.</div>
+<div class="tr">Bir dernek ilanı okudun. Yeşil alanları seven bir arkadaşına anlatıyorsun. Onu çöp toplama etkinliğine katılmaya ikna etmeye çalış.</div>
+
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>ASSOCIATION POUR LA SAUVEGARDE DE LA MONTAGNE</b><br>
+Nous recherchons des bénévoles pour le ramassage des déchets sur les sentiers de randonnée.<br>
+Tous les premiers dimanches du mois (à partir de 7h)<br>
+Vous planterez des panneaux pour sensibiliser les promeneurs · Vous installerez des poubelles pour le recyclage · Repas pique-nique à midi<br>
+www.pensonsenvert.com</div>
+
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une association qui protège la montagne. Ils cherchent des bénévoles pour ramasser les déchets sur les sentiers, tous les premiers dimanches du mois. Et en plus, le repas pique-nique de midi est offert.</div>
+<div class="tr">Dağı koruyan bir dernek. Her ayın ilk pazarı patikalarda çöp toplamak için gönüllü arıyorlar. Üstelik öğlen pikniği ikram ediliyor.</div>
+
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu adores la nature et la randonnée — là, tu marches en montagne ET tu protèges l'environnement en même temps.</div><div class="tr">Doğaya ve yürüyüşe bayılıyorsun — burada hem dağda yürüyorsun HEM aynı anda çevreyi koruyorsun.</div></div>
+<div class="argitem"><div class="fr">C'est seulement une fois par mois, le premier dimanche — ce n'est pas un gros engagement.</div><div class="tr">Ayda sadece bir kez, ilk pazar — büyük bir taahhüt değil.</div></div>
+<div class="argitem"><div class="fr">Le repas est offert et l'ambiance est conviviale — on peut y aller ensemble !</div><div class="tr">Yemek ikram ve ortam samimi — birlikte gidebiliriz!</div></div>
+
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« 7 heures du matin, c'est beaucoup trop tôt ! »</div><div class="tr">Sabah 7, çok erken!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est vrai, c'est tôt — moi aussi j'aime dormir le week-end ! Mais le matin, la montagne est magnifique et il n'y a personne. Au pire, on se couche tôt la veille.</div>
+<div class="tr">Doğru, erken — ben de hafta sonu uyumayı severim! Ama sabah dağ muhteşem ve kimse yok. En kötü ihtimalle bir gece önce erken yatarız.</div></div></div>
+<div class="obj"><div class="q">« Ramasser les déchets des autres, ce n'est pas mon travail. »</div><div class="tr">Başkalarının çöpünü toplamak benim işim değil.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends ton point de vue. Mais si personne ne le fait, les sentiers resteront sales. Et justement, quand les promeneurs voient des bénévoles, ils font plus attention — c'est pour ça qu'il y a aussi des panneaux de sensibilisation.</div>
+<div class="tr">Bakış açını anlıyorum. Ama kimse yapmazsa patikalar kirli kalır. Ve işte gönüllüleri gören yürüyüşçüler daha dikkatli oluyor — bilinçlendirme panoları da bu yüzden var.</div></div></div>
+
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- ============ SUJET 4 ============ -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">4 · Nettoyage des berges du fleuve</div><div class="st">Nehir kıyısı temizliği · arkadaş doğayı seviyor · ÇIKMIŞ</div></div>
+<div class="sbody">
+
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce dans le journal de votre ville. Vous en parlez à un(e) ami(e) qui aime la nature. Essayez de le (la) convaincre de participer au nettoyage des berges.</div>
+<div class="tr">Şehir gazetesinde bu ilanı okudun. Doğayı seven bir arkadaşına anlatıyorsun. Onu kıyı temizliğine katılmaya ikna etmeye çalış.</div>
+
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>Rendez votre fleuve plus propre !</b><br>
+La ville invite sa population à nettoyer les berges du fleuve. Aidez-nous à ramasser les déchets au bord de l'eau et redécouvrez la nature en ville.<br>
+Ambiance conviviale · Tous les premiers dimanches du mois · Travail en équipe · Repas du midi offert<br>
+Inscriptions sur nettoyagedesberges.com</div>
+
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une initiative de la ville pour nettoyer les berges du fleuve. C'est tous les premiers dimanches du mois, on travaille en équipe, et le repas du midi est offert.</div>
+<div class="tr">Şehrin nehir kıyılarını temizleme girişimi. Her ayın ilk pazarı, ekip halinde çalışılıyor ve öğle yemeği ikram.</div>
+
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Grâce à toi, le fleuve sera plus propre et notre environnement plus sain — c'est concret, tu vois le résultat le jour même.</div><div class="tr">Senin sayende nehir daha temiz, çevremiz daha sağlıklı olacak — somut bir şey, sonucu aynı gün görüyorsun.</div></div>
+<div class="argitem"><div class="fr">C'est un travail en équipe dans une ambiance conviviale — tu vas rencontrer plein de gens de ton quartier.</div><div class="tr">Samimi bir ortamda ekip işi — mahallenden bir sürü insanla tanışacaksın.</div></div>
+<div class="argitem"><div class="fr">C'est gratuit, le repas est offert, et tu redécouvres la nature en ville — que demander de plus ?</div><div class="tr">Ücretsiz, yemek ikram ve şehirde doğayı yeniden keşfediyorsun — daha ne olsun?</div></div>
+
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je ne connais personne là-bas. »</div><div class="tr">Orada kimseyi tanımıyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu verras, les gens sont très sympas et ouverts — c'est un travail en équipe, tu vas te faire des amis rapidement. Et puis, j'y vais avec toi : si on y va ensemble, ce sera plus rassurant.</div>
+<div class="tr">Göreceksin, insanlar çok sıcak ve açık — ekip işi, hızlıca arkadaş edinirsin. Hem ben de seninle geliyorum: birlikte gidersek daha rahat olur.</div></div></div>
+<div class="obj"><div class="q">« C'est sale, je n'ai pas envie de toucher les déchets. »</div><div class="tr">Pis, çöplere dokunmak istemiyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ne t'inquiète pas, tout le matériel est fourni : des gants, des pinces, des sacs. Tu ne touches rien directement. Et à la fin, tu te sens vraiment utile.</div>
+<div class="tr">Endişelenme, tüm malzeme veriliyor: eldiven, maşa, torba. Hiçbir şeye doğrudan dokunmuyorsun. Ve sonunda kendini gerçekten faydalı hissediyorsun.</div></div></div>
+
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- ============ SUJET 5 ============ -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">5 · Volontariat international</div><div class="st">Yurt dışında kültürel miras gönüllülüğü · ÇIKMIŞ</div></div>
+<div class="sbody">
+
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce sur le volontariat international. Vous en parlez à votre ami(e). Essayez de le (la) convaincre de partir en mission dans un pays étranger.</div>
+<div class="tr">Uluslararası gönüllülük ilanı okudun. Arkadaşına anlatıyorsun. Onu yabancı bir ülkede göreve gitmeye ikna etmeye çalış.</div>
+
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>ENVIE DE VOYAGER, DE VOUS SENTIR UTILE ?</b> Devenez volontaire de solidarité internationale !<br>
+Participez à la protection du patrimoine culturel mondial · Restauration de monuments et d'infrastructures · Projets de développement durable · Coopération avec les populations locales<br>
+Projets dans le monde entier · Transport et hébergement pris en charge</div>
+
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit du volontariat international : tu pars en mission dans un pays étranger pour protéger le patrimoine culturel, par exemple la restauration de monuments. Et le meilleur : le transport et l'hébergement sont pris en charge.</div>
+<div class="tr">Uluslararası gönüllülük: kültürel mirası korumak için yabancı bir ülkeye gidiyorsun, mesela anıt restorasyonu. En güzeli: ulaşım ve konaklama karşılanıyor.</div>
+
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu es aventureuse et tu adores voyager — là, tu voyages ET tu te sens utile en même temps.</div><div class="tr">Maceracısın ve seyahate bayılıyorsun — burada hem geziyorsun HEM kendini faydalı hissediyorsun.</div></div>
+<div class="argitem"><div class="fr">Le transport et l'hébergement sont pris en charge — un voyage à l'étranger qui ne coûte presque rien !</div><div class="tr">Ulaşım ve konaklama karşılanıyor — neredeyse hiç para harcamadan yurt dışı seyahati!</div></div>
+<div class="argitem"><div class="fr">Tu vas coopérer avec les populations locales — tu découvres une culture de l'intérieur, pas comme un touriste.</div><div class="tr">Yerel halkla iş birliği yapacaksın — bir kültürü turist gibi değil, içeriden keşfediyorsun.</div></div>
+
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Partir seul(e) à l'étranger, ça me fait peur. »</div><div class="tr">Yurt dışına tek başına gitmek beni korkutuyor.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est normal d'hésiter au début. Mais tout est bien organisé, et tu n'es jamais vraiment seule : les autres volontaires t'aideront. Et puis, tu es courageuse — tu as déjà changé de pays une fois !</div>
+<div class="tr">Başta tereddüt etmek normal. Ama her şey iyi organize ve aslında hiç yalnız değilsin: diğer gönüllüler yardım eder. Hem sen cesursun — bir kere ülke değiştirdin zaten!</div></div></div>
+<div class="obj"><div class="q">« Je ne parle pas bien les langues étrangères. »</div><div class="tr">Yabancı dilleri iyi konuşamıyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Pas de souci, l'important c'est la motivation, pas le niveau de langue. Et justement, c'est une occasion parfaite de pratiquer sans pression — sur le terrain, on apprend très vite.</div>
+<div class="tr">Sorun değil, önemli olan motivasyon, dil seviyesi değil. Ve işte baskısız pratik için mükemmel fırsat — sahada insan çok hızlı öğreniyor.</div></div></div>
+
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- ============ SUJET 6 ============ -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">6 · Restaurer un site historique</div><div class="st">Tatilde tarihi alan restorasyonu · arkadaşın tatili yaklaşıyor · ÇIKMIŞ</div></div>
+<div class="sbody">
+
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce. Vous en parlez à un(e) ami(e) qui a bientôt des vacances. Essayez de le (la) convaincre de restaurer un site historique pendant ses prochaines vacances.</div>
+<div class="tr">Bu ilanı okudun. Yakında tatile çıkacak bir arkadaşına anlatıyorsun. Onu gelecek tatilinde tarihi bir alanı restore etmeye ikna etmeye çalış.</div>
+
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>VENEZ PASSER DES VACANCES UTILES : RESTAUREZ UN SITE HISTORIQUE</b><br>
+Châteaux, monuments, édifices publics, grottes préhistoriques…<br>
+Au sein d'une équipe de bénévoles (10-15 personnes) · Ambiance conviviale, rencontres avec des personnes du monde entier · Plusieurs sites dans le monde · Logement en dortoir ou en tente · Préparation collective des repas<br>
+www.restauration-patrimoine.net</div>
+
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de vacances utiles : tu restaures un site historique — un château, un monument ou même une grotte préhistorique. Tu travailles dans une petite équipe de 10 à 15 bénévoles, et le logement est prévu.</div>
+<div class="tr">Faydalı bir tatil: tarihi bir alanı restore ediyorsun — şato, anıt, hatta tarih öncesi mağara. 10-15 kişilik küçük bir gönüllü ekibinde çalışıyorsun ve konaklama ayarlanmış.</div>
+
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu adores l'histoire — travailler sur un vrai château, c'est une expérience unique qu'on ne peut pas acheter.</div><div class="tr">Tarihe bayılıyorsun — gerçek bir şatoda çalışmak, parayla satın alınamayacak eşsiz bir deneyim.</div></div>
+<div class="argitem"><div class="fr">Dans une petite équipe de 10-15 personnes du monde entier, tu vas faire de vraies rencontres.</div><div class="tr">Dünyanın her yerinden 10-15 kişilik küçük bir ekipte gerçek dostluklar kuracaksın.</div></div>
+<div class="argitem"><div class="fr">Le logement est prévu et les repas sont préparés ensemble — ce sont des vacances très économiques.</div><div class="tr">Konaklama ayarlı ve yemekler birlikte hazırlanıyor — çok ekonomik bir tatil.</div></div>
+
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Dormir en dortoir ou en tente ? Non merci ! »</div><div class="tr">Koğuşta ya da çadırda uyumak mı? Hayır, teşekkürler!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je vois ce que tu veux dire, le confort c'est important. Mais c'est justement ça, l'aventure ! Et ce n'est que pour une ou deux semaines. Au pire, tu choisis un site avec dortoir — il y a plusieurs sites dans le monde.</div>
+<div class="tr">Ne demek istediğini anlıyorum, konfor önemli. Ama macera dediğin tam da bu! Hem sadece bir-iki hafta. En kötü ihtimalle koğuşlu bir yer seçersin — dünyada birçok alan var.</div></div></div>
+<div class="obj"><div class="q">« Pendant mes vacances, je veux me reposer, pas travailler. »</div><div class="tr">Tatilimde dinlenmek istiyorum, çalışmak değil.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais ce genre de vacances repose la tête : tu changes complètement d'air et tu oublies le quotidien. D'après un ami qui l'a fait, on revient plein d'énergie.</div>
+<div class="tr">Anlıyorum ama bu tür tatil kafayı dinlendiriyor: tamamen hava değiştiriyorsun ve günlük hayatı unutuyorsun. Bunu yapan bir arkadaşıma göre insan enerji dolu dönüyor.</div></div></div>
+
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- ============ SUJET 7 ============ -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">7 · Chantier international — Les Bâtisseurs du Monde</div><div class="st">Uluslararası şantiye gönüllülüğü · ÇIKMIŞ</div></div>
+<div class="sbody">
+
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce. Vous en parlez à votre ami(e). Essayez de le (la) convaincre de participer à un chantier international.</div>
+<div class="tr">Bu ilanı okudun. Arkadaşına anlatıyorsun. Onu uluslararası bir şantiyeye katılmaya ikna etmeye çalış.</div>
+
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>Les Bâtisseurs du Monde</b> — Vous voulez vous rendre utile ? Participer à des actions solidaires ?<br>
+Rejoignez Les Bâtisseurs du Monde et participez à un chantier international.<br>
+Logement, nourriture et transports assurés · 1 à 3 semaines sur place · Sur les 5 continents · Encadrement professionnel</div>
+
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une association qui organise des chantiers solidaires sur les cinq continents. Les missions durent de une à trois semaines, et tout est assuré : le logement, la nourriture et les transports.</div>
+<div class="tr">Beş kıtada dayanışma şantiyeleri düzenleyen bir dernek. Görevler bir-üç hafta sürüyor ve her şey karşılanıyor: konaklama, yemek ve ulaşım.</div>
+
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tout est assuré — le logement, la nourriture, les transports. Tu n'as presque rien à payer.</div><div class="tr">Her şey karşılanıyor — konaklama, yemek, ulaşım. Neredeyse hiçbir şey ödemiyorsun.</div></div>
+<div class="argitem"><div class="fr">C'est court : de une à trois semaines. Ça rentre facilement dans tes vacances.</div><div class="tr">Kısa: bir-üç hafta. Tatiline rahatça sığar.</div></div>
+<div class="argitem"><div class="fr">L'encadrement est professionnel — tu n'es jamais seule, tout est bien organisé et sécurisé.</div><div class="tr">Profesyonel rehberlik var — asla yalnız değilsin, her şey iyi organize ve güvenli.</div></div>
+
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je n'ai aucune expérience en construction. »</div><div class="tr">İnşaatta hiç deneyimim yok.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ce n'est pas grave — l'encadrement est professionnel, tu vas apprendre sur le terrain, et tout le monde t'aidera. Tous les volontaires commencent comme ça.</div>
+<div class="tr">Önemli değil — rehberlik profesyonel, sahada öğrenirsin ve herkes yardım eder. Bütün gönüllüler böyle başlıyor.</div></div></div>
+<div class="obj"><div class="q">« C'est du travail physique, je vais être épuisé(e). »</div><div class="tr">Fiziksel iş, bitkin düşerim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais tu n'es pas obligée de faire les tâches les plus dures — chacun participe selon ses capacités. Et l'énergie du groupe te portera, tu verras !</div>
+<div class="tr">Anlıyorum ama en ağır işleri yapmak zorunda değilsin — herkes gücüne göre katılıyor. Grubun enerjisi seni taşır, göreceksin!</div></div></div>
+
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- ============ SUJET 8 ============ -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">8 · Guide d'un jour</div><div class="st">Bir günlük rehberlik · arkadaş yeni insanlarla tanışmak istiyor · ÇIKMIŞ</div></div>
+<div class="sbody">
+
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce dans un journal local. Vous en parlez à un(e) ami(e) qui cherche à faire des rencontres. Essayez de le (la) convaincre de devenir guide d'un jour.</div>
+<div class="tr">Yerel gazetede bu ilanı okudun. Yeni insanlarla tanışmak isteyen bir arkadaşına anlatıyorsun. Onu "bir günlük rehber" olmaya ikna etmeye çalış.</div>
+
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>Devenez Guide d'un jour !</b> Faites découvrir votre région à des visiteurs de passage !<br>
+Le temps d'une balade, partagez les valeurs de rencontre, de convivialité et d'enthousiasme.<br>
+Pour participer : connectez-vous à www.guide-unjour.org · participez à une réunion de formation · activité bénévole<br>
+Cadeau de bienvenue : votre carte de réduction sur tous les sites touristiques !</div>
+
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de devenir « guide d'un jour » : le temps d'une balade, tu fais découvrir ta région à des visiteurs. Il y a une réunion de formation, et en cadeau de bienvenue, tu reçois une carte de réduction sur tous les sites touristiques.</div>
+<div class="tr">"Bir günlük rehber" olmak: bir gezinti boyunca bölgeyi ziyaretçilere tanıtıyorsun. Bir eğitim toplantısı var ve hoş geldin hediyesi olarak tüm turistik yerlerde indirim kartı alıyorsun.</div>
+
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu cherches à faire des rencontres — là, tu rencontres des visiteurs différents à chaque balade. C'est exactement ce que tu veux.</div><div class="tr">Yeni insanlarla tanışmak istiyorsun — burada her gezintide farklı ziyaretçilerle tanışıyorsun. Tam istediğin şey.</div></div>
+<div class="argitem"><div class="fr">Tu connais très bien la région et tu es sociable — franchement, c'est fait pour toi.</div><div class="tr">Bölgeyi çok iyi tanıyorsun ve sosyalsin — açıkçası bu iş senin için biçilmiş kaftan.</div></div>
+<div class="argitem"><div class="fr">En cadeau, tu reçois une carte de réduction sur tous les sites touristiques — un vrai avantage concret.</div><div class="tr">Hediye olarak tüm turistik yerlerde geçerli indirim kartı alıyorsun — somut bir avantaj.</div></div>
+
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je suis trop timide pour parler à des inconnus. »</div><div class="tr">Yabancılarla konuşamayacak kadar utangacım.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Oui, mais tu es aussi très gentille et à l'écoute. Et ce genre d'activité peut justement t'aider à être plus à l'aise avec les autres. En plus, il y a une réunion de formation avant de commencer.</div>
+<div class="tr">Evet ama aynı zamanda çok naziksin ve iyi bir dinleyicisin. Bu aktivite tam da insanlarla rahatlamana yardım eder. Üstelik başlamadan önce eğitim toplantısı var.</div></div></div>
+<div class="obj"><div class="q">« Je n'ai pas le temps pour ça. »</div><div class="tr">Buna vaktim yok.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, c'est toi qui choisis quand tu fais les balades — même une fois par mois, c'est possible. Ce n'est pas un engagement fixe.</div>
+<div class="tr">İşte tam da gezintileri ne zaman yapacağını sen seçiyorsun — ayda bir kez bile olur. Sabit bir taahhüt değil.</div></div></div>
+
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<div class="foot">Bénévolat &amp; Solidarité · 8 sujet · kaynak: çıkmış sorular (OCR) + konu listesi</div>
+</div>
+
+<script>
+var MODE = 'study';
+function setMode(m) {
+  MODE = m;
+  var trs = document.getElementsByClassName('tr');
+  var i;
+  for (i = 0; i < trs.length; i++) {
+    trs[i].style.display = (m === 'test') ? 'none' : 'block';
+  }
+  document.getElementById('btnStudy').className = 'modebtn' + (m === 'study' ? ' on' : '');
+  document.getElementById('btnTest').className = 'modebtn' + (m === 'test' ? ' on' : '');
+  if (m === 'test') {
+    var reps = document.getElementsByClassName('rep');
+    for (i = 0; i < reps.length; i++) {
+      if (reps[i].className.indexOf('hidden') === -1) { reps[i].className = 'rep hidden'; }
+      var btns = document.getElementsByClassName('revealbtn');
+      for (var j = 0; j < btns.length; j++) { btns[j].innerHTML = 'Cevabı göster'; }
+    }
+  }
+}
+function tog(head) {
+  var body = head.nextSibling;
+  while (body && body.nodeType !== 1) { body = body.nextSibling; }
+  if (!body) { return; }
+  body.style.display = (body.style.display === 'block') ? 'none' : 'block';
+}
+function rev(btn) {
+  var rep = btn.nextSibling;
+  while (rep && rep.nodeType !== 1) { rep = rep.nextSibling; }
+  if (!rep) { return; }
+  if (rep.className.indexOf('hidden') !== -1) {
+    rep.className = 'rep';
+    if (MODE === 'test') {
+      var trs = rep.getElementsByClassName('tr');
+      for (var i = 0; i < trs.length; i++) { trs[i].style.display = 'none'; }
+    }
+    btn.innerHTML = 'Cevabı gizle';
+  } else {
+    rep.className = 'rep hidden';
+    btn.innerHTML = 'Cevabı göster';
+  }
+}
+</script>
+</body>
+</html>
