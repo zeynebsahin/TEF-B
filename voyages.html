@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section B — Voyages &amp; Séjours</title>
+<style>
+body { margin:0; padding:0; background:#ffffff; color:#22303c;
+  font-family:-apple-system,'Helvetica Neue',Arial,sans-serif; font-size:16px; }
+.wrap { max-width:720px; margin:0 auto; padding:16px; }
+a.back { text-decoration:none; color:#1565c0; font-size:15px; }
+h1 { font-size:24px; margin:12px 0 4px 0; }
+.sub { color:#6b7a88; font-size:14px; margin-bottom:14px; }
+.modebtn { display:inline-block; border:1px solid #1565c0; color:#1565c0;
+  background:#ffffff; border-radius:8px; padding:8px 14px; font-size:15px;
+  font-weight:600; cursor:pointer; margin-bottom:16px; }
+.modebtn.on { background:#1565c0; color:#ffffff; }
+.sujet { border:1px solid #d8dee4; border-radius:10px; margin-bottom:12px; overflow:hidden; }
+.shead { padding:13px 15px; background:#fbfcfd; cursor:pointer; }
+.shead .t { font-size:17px; font-weight:700; }
+.shead .st { font-size:13px; color:#6b7a88; margin-top:2px; }
+.sbody { padding:0 15px 14px 15px; display:none; border-top:1px solid #e9edf1; }
+.lbl { font-size:12px; font-weight:700; letter-spacing:0.8px; margin:16px 0 6px 0; }
+.lbl.consigne { color:#546e7a; }
+.lbl.annonce { color:#8d6e30; }
+.lbl.sunum { color:#1565c0; }
+.lbl.arg { color:#2e7d32; }
+.lbl.itiraz { color:#c62828; }
+.fr { margin:4px 0 0 0; line-height:1.45; }
+.tr { margin:3px 0 0 0; line-height:1.4; color:#7a6a52; font-size:14px; font-style:italic; }
+.annbox { border:1px dashed #c9b280; background:#fdfaf2; border-radius:8px;
+  padding:10px 12px; font-size:15px; line-height:1.5; }
+.argitem { border-left:4px solid #2e7d32; padding:4px 0 4px 10px; margin-bottom:8px; }
+.obj { border:1px solid #eed7d7; border-left:5px solid #c62828; border-radius:8px;
+  padding:9px 12px; margin-bottom:9px; background:#fdf9f9; }
+.obj .q { font-weight:600; color:#c62828; }
+.rep { border-left:4px solid #6a1b9a; padding:5px 0 2px 10px; margin-top:8px; }
+.rep .fr { color:#4a2a6a; }
+.revealbtn { display:inline-block; margin-top:7px; border:1px solid #6a1b9a; color:#6a1b9a;
+  background:#ffffff; border-radius:7px; padding:5px 11px; font-size:14px; cursor:pointer; }
+.hidden { display:none; }
+.kalipnote { font-size:13px; color:#9aa5af; margin-top:14px; border-top:1px solid #e9edf1; padding-top:8px; }
+.kalipnote a { color:#1565c0; }
+.foot { font-size:13px; color:#9aa5af; margin-top:24px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">‹ Ana menü</a>
+<h1>✈️ Voyages &amp; Séjours</h1>
+<div class="sub">8 sujet · Açılış/kapanış → <b>Evrensel Kalıp</b></div>
+
+<span class="modebtn on" id="btnStudy" onclick="setMode('study')">Çalışma (FR+TR)</span>
+<span class="modebtn" id="btnTest" onclick="setMode('test')">Test (sadece FR)</span>
+
+<!-- 1 CROISIERE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">1 · Croisière d'une semaine</div><div class="st">Bir haftalık gemi turu</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour une croisière. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de partir en croisière d'une semaine avec vous.</div>
+<div class="tr">Bir gemi turu ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle bir haftalık gemi turuna çıkmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>CROISIÈRE DÉCOUVERTE — 7 jours, 4 escales</b><br>
+Tout inclus : cabine, repas, spectacles, piscines · 4 escales avec excursions guidées · Offre spéciale : 899 $ par personne en cabine double · Départ le mois prochain · Places limitées</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une croisière de sept jours avec quatre escales. Tout est inclus : la cabine, les repas, les spectacles, les piscines. Et il y a une offre spéciale : 899 dollars par personne en cabine double.</div>
+<div class="tr">Dört liman duraklı yedi günlük gemi turu. Her şey dahil: kabin, yemekler, gösteriler, havuzlar. Ve özel bir fırsat var: çift kişilik kabinde kişi başı 899 dolar.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tout est inclus — une fois à bord, tu ne sors plus ton portefeuille. Pas de mauvaises surprises de budget.</div><div class="tr">Her şey dahil — gemiye bindin mi cüzdanını bir daha çıkarmıyorsun. Bütçede kötü sürpriz yok.</div></div>
+<div class="argitem"><div class="fr">Quatre escales, quatre villes différentes — mais tu ne fais ta valise qu'une seule fois. C'est ça le génie de la croisière !</div><div class="tr">Dört durak, dört farklı şehir — ama valizini sadece bir kez topluyorsun. Gemi turunun dehası bu!</div></div>
+<div class="argitem"><div class="fr">En cabine double à deux, on profite du meilleur prix — 899 dollars pour une semaine tout compris, c'est imbattable.</div><div class="tr">İkimiz çift kişilik kabinde en iyi fiyattan yararlanıyoruz — her şey dahil bir hafta 899 dolar, rakipsiz.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Une semaine enfermé(e) sur un bateau ? Je vais m'ennuyer ! »</div><div class="tr">Bir hafta gemide kapalı mı? Sıkılırım!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Pas du tout — un bateau de croisière, c'est une petite ville flottante : piscines, spectacles chaque soir, sport, cinéma… Et on s'arrête dans quatre villes avec des excursions ! Franchement, le problème sera plutôt de choisir quoi faire.</div>
+<div class="tr">Hiç de değil — bir kruvaziyer gemisi yüzen küçük bir şehir: havuzlar, her akşam gösteriler, spor, sinema… Ve dört şehirde durup gezilere çıkıyoruz! Açıkçası asıl sorun ne yapacağını seçmek olacak.</div></div></div>
+<div class="obj"><div class="q">« J'ai peur d'avoir le mal de mer. »</div><div class="tr">Deniz tutmasından korkuyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est une inquiétude normale, mais rassure-toi : les bateaux modernes sont énormes et très stables — la plupart des gens ne sentent rien. Et au pire, il y a des médicaments très efficaces, et un médecin à bord. Ce n'est vraiment plus un problème aujourd'hui.</div>
+<div class="tr">Normal bir endişe ama için rahat olsun: modern gemiler devasa ve çok dengeli — çoğu insan hiçbir şey hissetmiyor. En kötü ihtimalle çok etkili ilaçlar var, gemide de doktor. Bugün artık gerçekten sorun değil.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 2 BATEAU SANS PERMIS -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">2 · Bateau sans permis</div><div class="st">Ehliyetsiz tekne kiralama, 3-6 gün · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour la location de bateaux sans permis. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de louer un bateau pour un séjour de 3 à 6 jours.</div>
+<div class="tr">Ehliyetsiz tekne kiralama ilanı okudun. Arkadaşına anlatıyorsun. Onu 3-6 günlük bir konaklama için tekne kiralamaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>LOUEZ UN BATEAU SANS PERMIS !</b><br>
+Naviguez sur les canaux et les rivières, à votre rythme · Aucun permis nécessaire — formation de 30 minutes au départ · Bateaux tout équipés : cuisine, couchages, douche · Séjours de 3 à 6 jours · À partir de 690 $ le bateau (jusqu'à 6 personnes)</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de louer un bateau sans permis pour naviguer sur les canaux, de trois à six jours. Aucun permis n'est nécessaire — juste une formation de trente minutes au départ. Les bateaux sont tout équipés, et c'est à partir de 690 dollars pour six personnes.</div>
+<div class="tr">Kanallarda gezmek için ehliyetsiz tekne kiralamak, üç-altı gün. Ehliyet gerekmiyor — sadece başlangıçta 30 dakikalık eğitim. Tekneler tam donanımlı ve altı kişi için 690 dolardan başlıyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">C'est des vacances uniques : ta maison flotte, et le paysage change chaque jour. Tu t'arrêtes où tu veux, quand tu veux.</div><div class="tr">Eşsiz bir tatil: evin yüzüyor ve manzara her gün değişiyor. İstediğin yerde, istediğin zaman duruyorsun.</div></div>
+<div class="argitem"><div class="fr">Aucun permis nécessaire — trente minutes de formation, et c'est parti. Sur les canaux, on avance doucement, c'est très facile.</div><div class="tr">Ehliyet gerekmiyor — 30 dakika eğitim ve yola çıkılıyor. Kanallarda yavaş gidiliyor, çok kolay.</div></div>
+<div class="argitem"><div class="fr">À six sur le bateau, ça fait environ 115 dollars par personne pour plusieurs jours — logement ET transport inclus. Moins cher qu'un hôtel !</div><div class="tr">Teknede altı kişi olunca birkaç gün için kişi başı ~115 dolar — konaklama VE ulaşım dahil. Otelden ucuz!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Conduire un bateau sans permis, c'est dangereux, non ? »</div><div class="tr">Ehliyetsiz tekne kullanmak tehlikeli değil mi?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ne t'inquiète pas — ces bateaux sont conçus pour les débutants : ils avancent lentement, et sur les canaux, il n'y a pas de vagues. La formation de trente minutes suffit vraiment, des milliers de familles le font chaque été. Si c'était dangereux, ce serait interdit sans permis !</div>
+<div class="tr">Endişelenme — bu tekneler yeni başlayanlar için tasarlanmış: yavaş gidiyorlar ve kanallarda dalga yok. 30 dakikalık eğitim gerçekten yetiyor, her yaz binlerce aile yapıyor. Tehlikeli olsa ehliyetsiz yasak olurdu!</div></div></div>
+<div class="obj"><div class="q">« Dormir sur un bateau, ça doit être inconfortable. »</div><div class="tr">Teknede uyumak rahatsız olmalı.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">En fait, les bateaux sont tout équipés — de vrais couchages, une cuisine, même une douche. C'est comme un petit appartement flottant. Et s'endormir sur l'eau, bercé doucement… beaucoup de gens disent qu'ils n'ont jamais aussi bien dormi !</div>
+<div class="tr">Aslında tekneler tam donanımlı — gerçek yataklar, mutfak, hatta duş. Yüzen küçük bir daire gibi. Ve suyun üstünde, hafifçe sallanarak uyumak… birçok insan hiç bu kadar iyi uyumadığını söylüyor!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 3 ROULOTTE AGRICULTEUR -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">3 · Vacances en roulotte chez un agriculteur</div><div class="st">Çiftçinin yanında karavan tatili</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des vacances en roulotte chez un agriculteur. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de passer ces vacances avec vous.</div>
+<div class="tr">Bir çiftçinin yanında karavan tatili ilanı okudun. Arkadaşına anlatıyorsun. Onu bu tatili seninle geçirmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>VACANCES EN ROULOTTE À LA FERME</b><br>
+Dormez dans une roulotte traditionnelle au cœur d'une ferme familiale · Produits frais de la ferme au petit-déjeuner · Participez si vous voulez : soins aux animaux, récolte du potager · Calme absolu, étoiles garanties · 75 $ la nuit pour deux personnes</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de vacances en roulotte traditionnelle, au cœur d'une ferme familiale. Le petit-déjeuner vient des produits frais de la ferme, et si on veut, on peut participer aux soins des animaux ou à la récolte. C'est 75 dollars la nuit pour deux.</div>
+<div class="tr">Bir aile çiftliğinin ortasında geleneksel karavan tatili. Kahvaltı çiftliğin taze ürünlerinden ve istersek hayvan bakımına veya hasada katılabiliyoruz. İki kişi gecelik 75 dolar.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu dis que tu es épuisée par le bruit de la ville — là-bas, c'est le calme absolu, et un ciel plein d'étoiles la nuit.</div><div class="tr">Şehrin gürültüsünden bittiğini söylüyorsun — orada mutlak sessizlik ve gece yıldız dolu bir gökyüzü.</div></div>
+<div class="argitem"><div class="fr">Le petit-déjeuner avec des produits frais de la ferme — des œufs du matin, du vrai lait… Un luxe qu'on n'a jamais en ville.</div><div class="tr">Çiftliğin taze ürünleriyle kahvaltı — sabah yumurtası, gerçek süt… Şehirde asla bulamadığımız bir lüks.</div></div>
+<div class="argitem"><div class="fr">75 dollars la nuit pour deux, c'est le prix d'un hôtel basique — mais avec une expérience unique en plus.</div><div class="tr">İki kişi gecelik 75 dolar, basit bir otel fiyatı — ama üstüne eşsiz bir deneyimle.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Une roulotte ? Sans vraie salle de bain ? Non merci. »</div><div class="tr">Karavan mı? Gerçek banyo olmadan mı? Hayır teşekkürler.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Détrompe-toi — les roulottes d'aujourd'hui sont aménagées pour les vacanciers, et les sanitaires de la ferme sont à côté, propres et modernes. Ce n'est pas du camping sauvage ! C'est le charme de la roulotte avec le confort d'un gîte.</div>
+<div class="tr">Yanılıyorsun — bugünün karavanları tatilciler için düzenlenmiş ve çiftliğin banyoları hemen yanda, temiz ve modern. Vahşi kamp değil bu! Karavan cazibesi artı pansiyon konforu.</div></div></div>
+<div class="obj"><div class="q">« Je ne vais pas travailler à la ferme pendant mes vacances ! »</div><div class="tr">Tatilimde çiftlikte çalışacak değilim!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, regarde bien : c'est « si vous voulez » — rien n'est obligatoire ! Tu peux passer tes journées dans un hamac. Mais crois-moi, donner à manger aux animaux le matin, c'est plus un plaisir qu'un travail. Les gens paient pour ça !</div>
+<div class="tr">İşte bak dikkatli: "isterseniz" diyor — hiçbir şey zorunlu değil! Günlerini hamakta geçirebilirsin. Ama inan bana, sabah hayvanları beslemek işten çok keyif. İnsanlar bunun için para ödüyor!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 4 FERME BIO -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">4 · Vacances à la ferme bio</div><div class="st">Organik çiftlikte tatil · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des vacances à la ferme biologique. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre d'y passer un séjour.</div>
+<div class="tr">Organik çiftlikte tatil ilanı okudun. Arkadaşına anlatıyorsun. Onu orada bir tatil geçirmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>SÉJOUR À LA FERME BIOLOGIQUE</b><br>
+Découvrez la vie d'une ferme bio en famille · Chambres d'hôtes confortables · Repas bio préparés avec les produits de la ferme · Activités : traite des vaches, fabrication du fromage, balades · Idéal pour déconnecter · Forfait week-end ou semaine</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un séjour dans une ferme biologique, avec des chambres d'hôtes confortables et des repas bio préparés avec les produits de la ferme. On peut participer à la traite des vaches, à la fabrication du fromage… Il y a des forfaits week-end ou semaine.</div>
+<div class="tr">Organik bir çiftlikte konaklama, konforlu misafir odaları ve çiftlik ürünleriyle hazırlanan organik yemeklerle. İnek sağımına, peynir yapımına katılınabiliyor… Hafta sonu veya haftalık paketler var.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu fais très attention à ce que tu manges — là, tout est bio et vient directement de la ferme. Tu verras d'où vient vraiment la nourriture.</div><div class="tr">Ne yediğine çok dikkat ediyorsun — orada her şey organik ve doğrudan çiftlikten. Yemeğin gerçekten nereden geldiğini göreceksin.</div></div>
+<div class="argitem"><div class="fr">Fabriquer son propre fromage, traire une vache — ce sont des expériences qu'on ne vit nulle part ailleurs.</div><div class="tr">Kendi peynirini yapmak, inek sağmak — başka hiçbir yerde yaşanmayan deneyimler.</div></div>
+<div class="argitem"><div class="fr">C'est parfait pour déconnecter — pas de bruit, pas de stress, juste la nature. Et les chambres sont confortables, ce n'est pas du camping.</div><div class="tr">Kafa dinlemek için mükemmel — gürültü yok, stres yok, sadece doğa. Ve odalar konforlu, kamp değil.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« La ferme, ça sent mauvais et il y a des mouches partout. »</div><div class="tr">Çiftlik kötü kokar, her yerde sinek olur.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu regardes trop de clichés ! Une ferme bio moderne accueillant des hôtes, c'est très bien entretenu — les chambres sont séparées des animaux. Oui, c'est la campagne, mais c'est justement ce qu'on cherche : l'air pur, pas l'air conditionné.</div>
+<div class="tr">Fazla klişelere bakıyorsun! Misafir ağırlayan modern bir organik çiftlik çok bakımlı olur — odalar hayvanlardan ayrı. Evet kırsal, ama aradığımız da tam bu: klima değil temiz hava.</div></div></div>
+<div class="obj"><div class="q">« Se lever à 5h pour traire les vaches ? Quel cauchemar ! »</div><div class="tr">İnek sağmak için 5'te kalkmak mı? Ne kâbus!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Les activités sont proposées, pas imposées ! Tu peux dormir jusqu'à 10h et juste profiter du petit-déjeuner bio. Mais je te parie que, une fois là-bas, tu voudras essayer la fabrication du fromage — ça se fait l'après-midi, rassure-toi !</div>
+<div class="tr">Aktiviteler öneri, zorunluluk değil! 10'a kadar uyuyup sadece organik kahvaltının keyfini çıkarabilirsin. Ama bahse girerim oraya gidince peynir yapımını denemek isteyeceksin — öğleden sonra yapılıyor, için rahat olsun!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 5 DETOX NUMERIQUE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">5 · Séjour détox numérique</div><div class="st">Dijital detoks kampı · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un séjour de détox numérique. Vous en parlez à un(e) ami(e) qui passe beaucoup de temps sur son téléphone. Essayez de le (la) convaincre de participer à ce séjour.</div>
+<div class="tr">Dijital detoks kampı ilanı okudun. Telefonda çok vakit geçiren bir arkadaşına anlatıyorsun. Onu bu kampa katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>SÉJOUR DÉTOX NUMÉRIQUE — Déconnectez pour mieux vous retrouver</b><br>
+Un week-end sans écran, en pleine nature · Téléphones déposés à l'arrivée (urgences possibles via l'accueil) · Au programme : randonnées, méditation, ateliers créatifs, feux de camp · Chalets confortables · Forfait tout compris : 240 $</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un week-end de détox numérique en pleine nature. On dépose son téléphone à l'arrivée, et au programme : randonnées, méditation, ateliers créatifs, feux de camp. Le forfait tout compris est à 240 dollars, avec des chalets confortables.</div>
+<div class="tr">Doğada dijital detoks hafta sonu. Girişte telefon teslim ediliyor ve programda: yürüyüşler, meditasyon, yaratıcı atölyeler, kamp ateşi. Her şey dahil paket 240 dolar, konforlu dağ evleriyle.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis toi-même que tu passes cinq heures par jour sur ton téléphone et que ça te fatigue — c'est l'occasion de faire une vraie pause.</div><div class="tr">Günde beş saat telefonda geçirdiğini ve bunun seni yorduğunu kendin söylüyorsun — gerçek bir mola fırsatı.</div></div>
+<div class="argitem"><div class="fr">Ce n'est pas juste « sans téléphone » — il y a un vrai programme : randonnées, feux de camp, méditation. Tu n'auras pas le temps de t'ennuyer.</div><div class="tr">Sadece "telefonsuz" değil — gerçek bir program var: yürüyüşler, kamp ateşi, meditasyon. Sıkılmaya vaktin olmayacak.</div></div>
+<div class="argitem"><div class="fr">C'est seulement un week-end — deux jours. C'est le format parfait pour essayer sans risque.</div><div class="tr">Sadece bir hafta sonu — iki gün. Risksiz denemek için mükemmel format.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Sans téléphone ? Et si ma famille a besoin de me joindre en urgence ? »</div><div class="tr">Telefonsuz mu? Ya ailemin acil ulaşması gerekirse?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est prévu — regarde l'annonce : les urgences passent par l'accueil, qui est joignable 24h/24. Tu laisses le numéro à ta famille avant de partir. Donc tu es joignable pour les vraies urgences, mais protégée des notifications !</div>
+<div class="tr">Düşünülmüş — ilana bak: acil durumlar 7/24 ulaşılabilir resepsiyon üzerinden. Gitmeden numarayı ailene bırakıyorsun. Yani gerçek aciller için ulaşılabilirsin ama bildirimlerden korunuyorsun!</div></div></div>
+<div class="obj"><div class="q">« Deux jours sans téléphone, je vais devenir folle. »</div><div class="tr">İki gün telefonsuz, delirmişim ben.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement — si l'idée de deux jours sans téléphone te fait peur, c'est peut-être le signe qu'il faut essayer, non ? Tout le monde dit que les trois premières heures sont bizarres, et qu'après, c'est une liberté incroyable. Au pire, tu auras tenu un week-end — tu n'as rien à perdre.</div>
+<div class="tr">İşte tam da bu — iki gün telefonsuzluk fikri korkutuyorsa, belki de denemek gerektiğinin işaretidir, değil mi? Herkes ilk üç saatin tuhaf olduğunu, sonrasının inanılmaz bir özgürlük olduğunu söylüyor. En kötü ihtimalle bir hafta sonu dayanmış olursun — kaybedecek bir şeyin yok.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 6 REPAS CHEZ L'HABITANT -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">6 · Repas partagés avec des voyageurs</div><div class="st">Gezginlerle ev yemeği paylaşım platformu · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un site de repas partagés entre habitants et voyageurs. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de s'inscrire sur ce site.</div>
+<div class="tr">Ev sahipleriyle gezginler arasında yemek paylaşım sitesi ilanı okudun. Arkadaşına anlatıyorsun. Onu bu siteye kaydolmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>MANGEZ CHEZ L'HABITANT — Le site qui connecte voyageurs et cuisiniers locaux</b><br>
+Recevez des voyageurs du monde entier à votre table · Ou mangez chez des locaux pendant VOS voyages · Vous fixez votre menu, votre prix et vos disponibilités · Inscription gratuite · Communauté dans 80 pays</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un site qui connecte les voyageurs et les cuisiniers locaux. Tu peux recevoir des voyageurs du monde entier à ta table — ou manger chez des locaux pendant tes propres voyages. C'est toi qui fixes le menu, le prix et les disponibilités, et l'inscription est gratuite.</div>
+<div class="tr">Gezginlerle yerel ev aşçılarını buluşturan bir site. Dünyanın her yerinden gezginleri sofrana konuk edebiliyorsun — ya da kendi seyahatlerinde yerel insanların evinde yiyorsun. Menüyü, fiyatı ve müsaitliği sen belirliyorsun, kayıt ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu adores cuisiner et rencontrer des gens — là, tu fais les deux : le monde entier vient à ta table !</div><div class="tr">Yemek yapmayı ve insanlarla tanışmayı seviyorsun — burada ikisi bir arada: bütün dünya sofrana geliyor!</div></div>
+<div class="argitem"><div class="fr">Tout est sous ton contrôle : ton menu, ton prix, tes dates. Tu reçois seulement quand tu veux.</div><div class="tr">Her şey senin kontrolünde: menün, fiyatın, tarihlerin. Sadece istediğin zaman konuk ağırlıyorsun.</div></div>
+<div class="argitem"><div class="fr">Et pense à tes prochains voyages : manger chez des locaux dans 80 pays — c'est mille fois mieux que les restaurants touristiques.</div><div class="tr">Bir de gelecek seyahatlerini düşün: 80 ülkede yerel insanların evinde yemek — turistik restoranlardan bin kat iyi.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Inviter des inconnus chez moi ? C'est risqué. »</div><div class="tr">Evime yabancıları davet etmek mi? Riskli.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends ta prudence, c'est même une qualité. Mais le site a un système de profils vérifiés et d'avis, comme les plateformes de logement — tu vois qui vient avant d'accepter. Et pour commencer, tu peux recevoir un couple ou une famille, jamais une personne seule. Tu gardes le contrôle total.</div>
+<div class="tr">Temkinini anlıyorum, hatta bu bir meziyet. Ama sitenin konaklama platformları gibi doğrulanmış profil ve yorum sistemi var — kabul etmeden önce kimin geleceğini görüyorsun. Başlangıç için tek kişi değil, bir çift ya da aile ağırlayabilirsin. Tam kontrol sende.</div></div></div>
+<div class="obj"><div class="q">« Ma cuisine n'est pas assez bonne pour faire payer des gens. »</div><div class="tr">Yemeklerim insanlardan para alacak kadar iyi değil.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu te trompes complètement — ta cuisine est délicieuse, tout le monde le dit ! Et les voyageurs ne cherchent pas un restaurant étoilé : ils veulent un vrai repas fait maison et une rencontre authentique. C'est exactement ce que tu offres.</div>
+<div class="tr">Tamamen yanılıyorsun — yemeklerin nefis, herkes söylüyor! Gezginler yıldızlı restoran aramıyor: gerçek ev yemeği ve samimi bir tanışma istiyorlar. Sunduğun tam da bu.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 7 BENEVOLAT ENFANTS VOYAGE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">7 · S'occuper d'enfants en voyage</div><div class="st">Yolculukta çocuklarla ilgilenme — gönüllüye bilet hediye</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce : des bénévoles s'occupent d'enfants pendant un voyage, et les billets sont offerts aux bénévoles. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de participer.</div>
+<div class="tr">Şu ilanı okudun: gönüllüler yolculuk sırasında çocuklarla ilgileniyor ve gönüllülere biletler hediye. Arkadaşına anlatıyorsun. Onu katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>VOYAGEZ GRATUITEMENT — Accompagnateurs bénévoles recherchés</b><br>
+Accompagnez des groupes d'enfants pendant leurs voyages de vacances · Encadrement avec des animateurs professionnels · Billets de transport OFFERTS aux bénévoles · Hébergement pris en charge · Formation d'une journée avant le départ</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'accompagner des groupes d'enfants pendant leurs voyages de vacances, comme bénévole. Il y a des animateurs professionnels avec toi, une formation avant le départ — et le meilleur : les billets sont offerts et l'hébergement est pris en charge !</div>
+<div class="tr">Tatil yolculuklarında çocuk gruplarına gönüllü olarak eşlik etmek. Yanında profesyonel animatörler var, gitmeden önce eğitim veriliyor — ve en güzeli: biletler hediye, konaklama karşılanıyor!</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu voyages gratuitement — les billets et l'hébergement sont pris en charge. C'est le bon plan voyage de l'année !</div><div class="tr">Bedava seyahat ediyorsun — biletler ve konaklama karşılanıyor. Yılın seyahat fırsatı bu!</div></div>
+<div class="argitem"><div class="fr">Tu n'es jamais seule avec les enfants — il y a des animateurs professionnels, toi tu es en soutien.</div><div class="tr">Çocuklarla asla yalnız değilsin — profesyonel animatörler var, sen destek konumundasın.</div></div>
+<div class="argitem"><div class="fr">Les enfants en voyage, c'est de la joie pure — tu rentres fatiguée peut-être, mais le cœur plein.</div><div class="tr">Yolculuktaki çocuklar saf neşe demek — belki yorgun dönersin ama yüreğin dolu döner.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Être responsable d'enfants, c'est trop de responsabilité pour moi. »</div><div class="tr">Çocuklardan sorumlu olmak benim için fazla sorumluluk.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais regarde bien : la responsabilité principale est portée par les animateurs professionnels — toi, tu accompagnes. Et il y a une formation d'une journée avant le départ, où on t'explique exactement ton rôle. Tu es responsable, justement — c'est pour ça que tu serais parfaite.</div>
+<div class="tr">Anlıyorum ama iyi bak: ana sorumluluk profesyonel animatörlerde — sen eşlik ediyorsun. Ve kalkıştan önce rolünün tam olarak anlatıldığı bir günlük eğitim var. Sen zaten sorumluluk sahibisin — tam da bu yüzden mükemmel olursun.</div></div></div>
+<div class="obj"><div class="q">« Un voyage avec des enfants qui crient, ce ne sont pas des vacances ! »</div><div class="tr">Bağıran çocuklarla yolculuk tatil değil!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu n'as pas tort, ce n'est pas des vacances classiques — c'est une aventure ! Mais les journées sont organisées par les animateurs, et tu as aussi du temps libre. Et surtout : c'est un voyage GRATUIT. Pour découvrir une nouvelle région sans rien payer, c'est un petit compromis, non ?</div>
+<div class="tr">Haksız değilsin, klasik tatil değil — bir macera! Ama günler animatörlerce organize ediliyor ve senin de boş vaktin var. Ve en önemlisi: BEDAVA bir yolculuk. Hiç para ödemeden yeni bir bölge keşfetmek için küçük bir taviz, değil mi?</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 8 SEJOUR LINGUISTIQUE ADOS -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">8 · Bénévolat — séjour linguistique pour ados</div><div class="st">Gençler için dil kampında gönüllülük</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce : on recherche des bénévoles pour un séjour linguistique pour adolescents. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de faire ce bénévolat.</div>
+<div class="tr">Şu ilanı okudun: gençler için bir dil kampında gönüllü aranıyor. Arkadaşına anlatıyorsun. Onu bu gönüllülüğü yapmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>SÉJOUR LINGUISTIQUE ADOS — Bénévoles recherchés !</b><br>
+Deux semaines d'été au bord d'un lac · Animez des conversations et des jeux avec des ados qui apprennent la langue · Aucun diplôme d'enseignement requis · Logement et repas offerts · Activités : baignade, sports, soirées à thème</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un séjour linguistique pour adolescents, deux semaines d'été au bord d'un lac. Comme bénévole, tu animes des conversations et des jeux — aucun diplôme n'est requis. Le logement et les repas sont offerts, et il y a plein d'activités : la baignade, les sports, les soirées à thème.</div>
+<div class="tr">Gençler için dil kampı, göl kenarında iki yaz haftası. Gönüllü olarak sohbetleri ve oyunları yönetiyorsun — diploma gerekmiyor. Konaklama ve yemekler hediye, bir sürü aktivite var: yüzme, spor, temalı geceler.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Deux semaines au bord d'un lac, logée et nourrie — c'est des vacances d'été gratuites, avec du sens en plus.</div><div class="tr">Göl kenarında iki hafta, konaklama ve yemek dahil — anlamı da olan bedava bir yaz tatili.</div></div>
+<div class="argitem"><div class="fr">Ton rôle, c'est juste de discuter et de jouer avec les ados — pas de cours à préparer, aucun diplôme requis.</div><div class="tr">Rolün sadece gençlerle sohbet etmek ve oynamak — hazırlanacak ders yok, diploma gerekmiyor.</div></div>
+<div class="argitem"><div class="fr">Et toi qui apprends aussi une langue — tu vas voir de l'intérieur comment on apprend en s'amusant. Ça va t'inspirer !</div><div class="tr">Sen de dil öğrenen biri olarak — eğlenerek nasıl öğrenildiğini içeriden göreceksin. Sana ilham verecek!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Les ados, c'est difficile — ils ne m'écouteront pas. »</div><div class="tr">Gençler zor — beni dinlemezler.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends cette image, mais là, ce sont des ados en vacances qui ont CHOISI ce séjour — ils sont motivés ! Et tu n'es pas leur prof : tu es l'adulte cool qui joue et discute avec eux. C'est une relation complètement différente.</div>
+<div class="tr">Bu algıyı anlıyorum ama bunlar bu kampı SEÇMİŞ, tatildeki gençler — motiveler! Ve sen onların öğretmeni değilsin: onlarla oynayıp sohbet eden havalı yetişkinsin. Bambaşka bir ilişki.</div></div></div>
+<div class="obj"><div class="q">« Deux semaines, c'est long — je ne peux pas quitter ma vie si longtemps. »</div><div class="tr">İki hafta uzun — hayatımı o kadar süre bırakamam.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est vrai, c'est un engagement. Mais réfléchis : c'est exactement la durée de vacances d'été normales — sauf que là, elles sont gratuites et inoubliables. Et on peut vérifier s'ils acceptent aussi une seule semaine. Ça vaut la peine de demander, non ?</div>
+<div class="tr">Doğru, bir taahhüt. Ama düşün: normal bir yaz tatili süresi tam olarak bu — üstelik burada bedava ve unutulmaz. Tek hafta kabul edip etmediklerini de sorabiliriz. Sormaya değer, değil mi?</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<div class="foot">Voyages &amp; Séjours · 8 sujet</div>
+</div>
+
+<script>
+var MODE = 'study';
+function setMode(m) {
+  MODE = m;
+  var trs = document.getElementsByClassName('tr');
+  var i;
+  for (i = 0; i < trs.length; i++) {
+    trs[i].style.display = (m === 'test') ? 'none' : 'block';
+  }
+  document.getElementById('btnStudy').className = 'modebtn' + (m === 'study' ? ' on' : '');
+  document.getElementById('btnTest').className = 'modebtn' + (m === 'test' ? ' on' : '');
+  if (m === 'test') {
+    var reps = document.getElementsByClassName('rep');
+    for (i = 0; i < reps.length; i++) {
+      if (reps[i].className.indexOf('hidden') === -1) { reps[i].className = 'rep hidden'; }
+    }
+    var btns = document.getElementsByClassName('revealbtn');
+    for (i = 0; i < btns.length; i++) { btns[i].innerHTML = 'Cevabı göster'; }
+  }
+}
+function tog(head) {
+  var body = head.nextSibling;
+  while (body && body.nodeType !== 1) { body = body.nextSibling; }
+  if (!body) { return; }
+  body.style.display = (body.style.display === 'block') ? 'none' : 'block';
+}
+function rev(btn) {
+  var rep = btn.nextSibling;
+  while (rep && rep.nodeType !== 1) { rep = rep.nextSibling; }
+  if (!rep) { return; }
+  if (rep.className.indexOf('hidden') !== -1) {
+    rep.className = 'rep';
+    if (MODE === 'test') {
+      var trs = rep.getElementsByClassName('tr');
+      for (var i = 0; i < trs.length; i++) { trs[i].style.display = 'none'; }
+    }
+    btn.innerHTML = 'Cevabı gizle';
+  } else {
+    rep.className = 'rep hidden';
+    btn.innerHTML = 'Cevabı göster';
+  }
+}
+</script>
+</body>
+</html>

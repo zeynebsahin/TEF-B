@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section B — Petits Boulots</title>
+<style>
+body { margin:0; padding:0; background:#ffffff; color:#22303c;
+  font-family:-apple-system,'Helvetica Neue',Arial,sans-serif; font-size:16px; }
+.wrap { max-width:720px; margin:0 auto; padding:16px; }
+a.back { text-decoration:none; color:#1565c0; font-size:15px; }
+h1 { font-size:24px; margin:12px 0 4px 0; }
+.sub { color:#6b7a88; font-size:14px; margin-bottom:14px; }
+.modebtn { display:inline-block; border:1px solid #1565c0; color:#1565c0;
+  background:#ffffff; border-radius:8px; padding:8px 14px; font-size:15px;
+  font-weight:600; cursor:pointer; margin-bottom:16px; }
+.modebtn.on { background:#1565c0; color:#ffffff; }
+.sujet { border:1px solid #d8dee4; border-radius:10px; margin-bottom:12px; overflow:hidden; }
+.shead { padding:13px 15px; background:#fbfcfd; cursor:pointer; }
+.shead .t { font-size:17px; font-weight:700; }
+.shead .st { font-size:13px; color:#6b7a88; margin-top:2px; }
+.sbody { padding:0 15px 14px 15px; display:none; border-top:1px solid #e9edf1; }
+.lbl { font-size:12px; font-weight:700; letter-spacing:0.8px; margin:16px 0 6px 0; }
+.lbl.consigne { color:#546e7a; }
+.lbl.annonce { color:#8d6e30; }
+.lbl.sunum { color:#1565c0; }
+.lbl.arg { color:#2e7d32; }
+.lbl.itiraz { color:#c62828; }
+.fr { margin:4px 0 0 0; line-height:1.45; }
+.tr { margin:3px 0 0 0; line-height:1.4; color:#7a6a52; font-size:14px; font-style:italic; }
+.annbox { border:1px dashed #c9b280; background:#fdfaf2; border-radius:8px;
+  padding:10px 12px; font-size:15px; line-height:1.5; }
+.argitem { border-left:4px solid #2e7d32; padding:4px 0 4px 10px; margin-bottom:8px; }
+.obj { border:1px solid #eed7d7; border-left:5px solid #c62828; border-radius:8px;
+  padding:9px 12px; margin-bottom:9px; background:#fdf9f9; }
+.obj .q { font-weight:600; color:#c62828; }
+.rep { border-left:4px solid #6a1b9a; padding:5px 0 2px 10px; margin-top:8px; }
+.rep .fr { color:#4a2a6a; }
+.revealbtn { display:inline-block; margin-top:7px; border:1px solid #6a1b9a; color:#6a1b9a;
+  background:#ffffff; border-radius:7px; padding:5px 11px; font-size:14px; cursor:pointer; }
+.hidden { display:none; }
+.kalipnote { font-size:13px; color:#9aa5af; margin-top:14px; border-top:1px solid #e9edf1; padding-top:8px; }
+.kalipnote a { color:#1565c0; }
+.foot { font-size:13px; color:#9aa5af; margin-top:24px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">‹ Ana menü</a>
+<h1>💼 Petits Boulots</h1>
+<div class="sub">8 sujet · Açılış/kapanış → <b>Evrensel Kalıp</b></div>
+
+<span class="modebtn on" id="btnStudy" onclick="setMode('study')">Çalışma (FR+TR)</span>
+<span class="modebtn" id="btnTest" onclick="setMode('test')">Test (sadece FR)</span>
+
+<!-- 1 CLIENT MYSTERE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">1 · Client mystère</div><div class="st">Gizli müşteri olarak ek gelir · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce qui recherche des clients mystères. Vous en parlez à un(e) ami(e) qui cherche un revenu complémentaire. Essayez de le (la) convaincre de devenir client mystère.</div>
+<div class="tr">Gizli müşteri arayan bir ilan okudun. Ek gelir arayan bir arkadaşına anlatıyorsun. Onu gizli müşteri olmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>DEVENEZ CLIENT MYSTÈRE !</b><br>
+Visitez des magasins et des restaurants, testez le service, et donnez votre avis · Missions rémunérées de 15 à 50 $ · Repas et achats souvent remboursés · Vous choisissez vos missions sur l'application · Aucune expérience requise</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de devenir client mystère : tu visites des magasins ou des restaurants, tu testes le service, et tu donnes ton avis dans un petit rapport. Les missions sont payées de 15 à 50 dollars, et les repas ou les achats sont souvent remboursés. Tu choisis tes missions sur une application.</div>
+<div class="tr">Gizli müşteri olmak: mağazaları veya restoranları ziyaret ediyorsun, servisi test ediyorsun ve kısa bir raporla görüşünü bildiriyorsun. Görevler 15-50 dolar arası ödeniyor, yemekler veya alışverişler çoğunlukla iade ediliyor. Görevleri bir uygulamadan sen seçiyorsun.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu cherches un revenu complémentaire sans engagement — là, tu choisis tes missions quand tu veux, où tu veux.</div><div class="tr">Taahhütsüz ek gelir arıyorsun — burada görevleri istediğin zaman, istediğin yerde sen seçiyorsun.</div></div>
+<div class="argitem"><div class="fr">Tu es payée pour des choses que tu fais déjà : faire du shopping, aller au restaurant… C'est le boulot rêvé !</div><div class="tr">Zaten yaptığın şeyler için para alıyorsun: alışveriş, restorana gitmek… Rüya iş bu!</div></div>
+<div class="argitem"><div class="fr">Tu es observatrice et honnête — exactement le profil qu'ils cherchent. Aucune expérience n'est requise.</div><div class="tr">Gözlemci ve dürüstsün — tam aradıkları profil. Deneyim de gerekmiyor.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Espionner les employés, ce n'est pas très moral. »</div><div class="tr">Çalışanları gözetlemek pek ahlaklı değil.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends ton point de vue, mais en fait, ce n'est pas de l'espionnage — c'est du contrôle qualité. Ton rapport aide les entreprises à améliorer le service et la formation. Et tu évalues le service, pas les personnes. Beaucoup d'employés bien notés reçoivent même des primes grâce à ça !</div>
+<div class="tr">Bakış açını anlıyorum ama aslında bu casusluk değil — kalite kontrolü. Raporun, şirketlerin servisi ve eğitimi iyileştirmesine yardım ediyor. Ve kişileri değil servisi değerlendiriyorsun. İyi not alan birçok çalışan bu sayede prim bile alıyor!</div></div></div>
+<div class="obj"><div class="q">« 15 dollars pour une mission, c'est rien du tout. »</div><div class="tr">Bir görev için 15 dolar hiçbir şey.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Regarde le calcul complet : 15 à 50 dollars PLUS le repas ou l'achat remboursé. Un dîner au restaurant remboursé plus 30 dollars, pour une soirée que tu aurais passée de toute façon — c'est loin d'être rien ! Et plusieurs missions par mois, ça s'additionne.</div>
+<div class="tr">Tam hesaba bak: 15-50 dolar ARTI iade edilen yemek veya alışveriş. İadeli bir restoran akşamı artı 30 dolar, zaten geçireceğin bir akşam için — hiç de az değil! Ayda birkaç görev de birikiyor.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 2 CYCLO VENDEUR -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">2 · Cyclo-vendeur</div><div class="st">Bisikletli satıcılık — yaz işi · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette offre d'emploi de cyclo-vendeur. Vous en parlez à un(e) ami(e) qui cherche un travail d'été. Essayez de le (la) convaincre de postuler.</div>
+<div class="tr">Bisikletli satıcı iş ilanı okudun. Yaz işi arayan bir arkadaşına anlatıyorsun. Onu başvurmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>RECHERCHE CYCLO-VENDEURS pour l'été !</b><br>
+Vendez glaces et boissons fraîches à vélo dans les parcs et sur les plages · Vélo-triporteur fourni · Salaire fixe + commission sur les ventes · Horaires flexibles · Ambiance jeune et dynamique</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un travail d'été de cyclo-vendeur : tu vends des glaces et des boissons fraîches à vélo, dans les parcs et sur les plages. Le vélo-triporteur est fourni, il y a un salaire fixe plus une commission sur les ventes, et les horaires sont flexibles.</div>
+<div class="tr">Bisikletli satıcılık yaz işi: parklarda ve plajlarda bisikletle dondurma ve soğuk içecek satıyorsun. Üç tekerlekli bisiklet veriliyor, sabit maaş artı satış komisyonu var ve saatler esnek.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu travailles dehors, au soleil, dans les parcs et sur les plages — pendant que les autres sont enfermés dans un bureau !</div><div class="tr">Dışarıda, güneşte, parklarda ve plajlarda çalışıyorsun — başkaları ofise kapanmışken!</div></div>
+<div class="argitem"><div class="fr">Salaire fixe PLUS commission : plus tu es souriante et dynamique, plus tu gagnes. Et toi, tu es exactement comme ça.</div><div class="tr">Sabit maaş ARTI komisyon: ne kadar güler yüzlü ve enerjik olursan o kadar kazanıyorsun. Sen de tam öylesin.</div></div>
+<div class="argitem"><div class="fr">Les horaires sont flexibles — tu peux garder tes matinées libres et travailler aux heures chaudes, quand les ventes explosent.</div><div class="tr">Saatler esnek — sabahlarını boş tutup satışların patladığı sıcak saatlerde çalışabilirsin.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Pédaler toute la journée en plein soleil, c'est épuisant ! »</div><div class="tr">Bütün gün güneşte pedal çevirmek yorucu!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est physique, c'est vrai — mais les triporteurs sont souvent électriques, et tu t'arrêtes là où il y a du monde, tu ne pédales pas sans arrêt. Et vois le bonus : tu seras en pleine forme à la fin de l'été, payée pour faire du sport !</div>
+<div class="tr">Fiziksel, doğru — ama üç tekerlekliler çoğu zaman elektrikli ve kalabalık olan yerde duruyorsun, sürekli pedal çevirmiyorsun. Bonusa da bak: yaz sonunda formda olacaksın, spor yapmak için para alarak!</div></div></div>
+<div class="obj"><div class="q">« Vendre, ce n'est pas pour moi — je ne sais pas convaincre les gens. »</div><div class="tr">Satış bana göre değil — insanları ikna edemem.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Mais là, tu ne convaincs personne — une glace à la plage, ça se vend toute seule ! Les clients viennent à toi, tu souris, tu encaisses. C'est la vente la plus facile du monde. Et c'est justement une bonne façon de gagner en confiance.</div>
+<div class="tr">Ama burada kimseyi ikna etmiyorsun — plajda dondurma kendi kendini satıyor! Müşteriler sana geliyor, gülümsüyorsun, parayı alıyorsun. Dünyanın en kolay satışı. Ve özgüven kazanmak için de güzel bir yol.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 3 CASTING FIGURANTS -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">3 · Casting de figurants</div><div class="st">Film/dizi için figüranlık · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce de casting pour des figurants. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de participer au casting.</div>
+<div class="tr">Figüran arayan bir casting ilanı okudun. Arkadaşına anlatıyorsun. Onu castinge katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>CASTING — Figurants recherchés pour une série télévisée !</b><br>
+Tous âges, tous profils · Aucune expérience nécessaire · Tournage dans votre ville le mois prochain · Rémunération : 120 $ par jour de tournage, repas inclus · Inscription en ligne avec photo</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un casting de figurants pour une série télévisée qui sera tournée dans notre ville. Tous les profils sont recherchés, aucune expérience n'est nécessaire, et c'est payé 120 dollars par jour de tournage, repas inclus.</div>
+<div class="tr">Şehrimizde çekilecek bir dizi için figüran castingi. Her profil aranıyor, deneyim gerekmiyor ve çekim günü başına 120 dolar ödeniyor, yemek dahil.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Voir les coulisses d'un vrai tournage — les caméras, les acteurs, les décors — c'est une expérience unique.</div><div class="tr">Gerçek bir çekimin perde arkasını görmek — kameralar, oyuncular, dekorlar — eşsiz bir deneyim.</div></div>
+<div class="argitem"><div class="fr">120 dollars par jour, repas inclus, pour marcher dans une rue ou boire un café en arrière-plan — franchement, facile !</div><div class="tr">Günde 120 dolar, yemek dahil — arka planda sokakta yürümek ya da kahve içmek için. Açıkçası kolay!</div></div>
+<div class="argitem"><div class="fr">Et imagine : te voir à la télé quand la série sortira ! On organisera une soirée pour chercher ta scène.</div><div class="tr">Bir de düşün: dizi çıkınca kendini televizyonda görmek! Sahneni aramak için bir gece düzenleriz.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je ne suis pas photogénique, ils ne me prendront jamais. »</div><div class="tr">Fotojenik değilim, beni asla almazlar.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, ils ne cherchent pas des mannequins — ils cherchent des gens NORMAUX, de tous âges et tous profils, pour que les scènes soient réalistes. Ton visage « de tous les jours », c'est exactement ce qu'ils veulent !</div>
+<div class="tr">İşte tam da manken aramıyorlar — sahneler gerçekçi olsun diye her yaştan, her profilden NORMAL insanlar arıyorlar. Senin "sıradan" yüzün tam istedikleri şey!</div></div></div>
+<div class="obj"><div class="q">« Il paraît qu'on attend des heures sur les tournages. »</div><div class="tr">Çekimlerde saatlerce beklendiği söyleniyor.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est vrai, il y a de l'attente — je ne vais pas te mentir. Mais tu es payée pour ces heures aussi, les repas sont fournis, et tu peux apporter un livre. Et entre les prises, tu observes le travail des acteurs — c'est ça le spectacle. C'est de l'attente payée et intéressante !</div>
+<div class="tr">Doğru, bekleme var — yalan söylemeyeceğim. Ama o saatler için de para alıyorsun, yemekler veriliyor ve kitap getirebilirsin. Çekimler arasında oyuncuların çalışmasını izliyorsun — asıl gösteri o. Ücretli ve ilginç bir bekleyiş!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 4 TESTEUR MEDICAMENTS -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">4 · Testeur de médicaments</div><div class="st">Klinik araştırma gönüllülüğü · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce qui recherche des volontaires pour des essais cliniques. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de participer.</div>
+<div class="tr">Klinik araştırmalar için gönüllü arayan bir ilan okudun. Arkadaşına anlatıyorsun. Onu katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>CENTRE DE RECHERCHE MÉDICALE — Volontaires recherchés</b><br>
+Participez à des essais cliniques encadrés par des médecins · Bilan de santé complet gratuit · Indemnisation de 200 à 1 500 $ selon l'étude · Suivi médical pendant toute la durée · Études approuvées par le comité d'éthique</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de participer à des essais cliniques dans un centre de recherche médicale. Tout est encadré par des médecins, les études sont approuvées par le comité d'éthique, et l'indemnisation va de 200 à 1 500 dollars selon l'étude. Il y a même un bilan de santé complet gratuit.</div>
+<div class="tr">Bir tıbbi araştırma merkezinde klinik denemelere katılmak. Her şey doktorlar gözetiminde, çalışmalar etik kurul onaylı ve tazminat çalışmaya göre 200-1500 dolar arası. Üstelik ücretsiz tam sağlık taraması bile var.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Le bilan de santé complet gratuit vaut déjà des centaines de dollars — tu sauras exactement où tu en es.</div><div class="tr">Ücretsiz tam sağlık taraması zaten yüzlerce dolar değerinde — durumunu tam olarak öğreneceksin.</div></div>
+<div class="argitem"><div class="fr">L'indemnisation peut aller jusqu'à 1 500 dollars — pour ton projet d'économies, c'est un vrai coup de pouce.</div><div class="tr">Tazminat 1500 dolara kadar çıkabiliyor — birikim hedefin için gerçek bir destek.</div></div>
+<div class="argitem"><div class="fr">Et tu contribues à la science — les médicaments que nous prenons tous existent grâce à des volontaires comme ça.</div><div class="tr">Ve bilime katkı sağlıyorsun — hepimizin kullandığı ilaçlar böyle gönüllüler sayesinde var.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Tester des médicaments ? C'est dangereux, je ne suis pas un cobaye ! »</div><div class="tr">İlaç test etmek mi? Tehlikeli, ben denek değilim!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends ta réaction, c'est la première chose que tout le monde pense. Mais regarde : les études sont approuvées par un comité d'éthique, encadrées par des médecins, avec un suivi complet. Les produits ont déjà passé des années de tests avant d'arriver aux volontaires. Et tu peux choisir des études simples — parfois c'est juste tester une crème ou porter un capteur. Tu poses toutes tes questions AVANT de signer, et tu peux arrêter à tout moment.</div>
+<div class="tr">Tepkini anlıyorum, herkesin ilk düşündüğü bu. Ama bak: çalışmalar etik kurul onaylı, doktor gözetiminde, tam takipli. Ürünler gönüllülere ulaşmadan önce yıllarca testten geçmiş oluyor. Basit çalışmalar da seçebilirsin — bazen sadece bir krem denemek ya da sensör takmak. İmzalamadan ÖNCE tüm sorularını soruyorsun ve istediğin an bırakabilirsin.</div></div></div>
+<div class="obj"><div class="q">« Et si j'ai des effets secondaires ? »</div><div class="tr">Ya yan etki yaşarsam?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est une vraie question, et c'est bien de la poser. C'est exactement pour ça qu'il y a un suivi médical pendant toute la durée — au moindre signe, les médecins réagissent immédiatement, et tu es couverte par une assurance spéciale. Tu es honnêtement plus surveillée là-bas que dans la vie normale. Mais bien sûr, lis tout le document d'information avant — c'est ton droit et ton devoir.</div>
+<div class="tr">Gerçek bir soru ve sorman doğru. Süre boyunca tıbbi takip olmasının nedeni tam da bu — en ufak belirtide doktorlar anında müdahale ediyor ve özel bir sigortayla korunuyorsun. Dürüst olmak gerekirse orada normal hayattakinden daha çok gözetim altındasın. Ama tabii önce tüm bilgilendirme belgesini oku — hem hakkın hem görevin.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 5 JARDINAGE PLATEFORME -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">5 · Services de jardinage en ligne</div><div class="st">Bahçe hizmetlerini online platformda sunma</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour une plateforme de services de jardinage. Vous en parlez à un(e) ami(e) qui adore jardiner. Essayez de le (la) convaincre de proposer ses services sur cette plateforme.</div>
+<div class="tr">Bahçe hizmetleri platformu ilanı okudun. Bahçeyle uğraşmayı seven bir arkadaşına anlatıyorsun. Onu hizmetlerini bu platformda sunmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>JARDIN'SERVICES — La plateforme des jardiniers amateurs</b><br>
+Proposez vos services : arroser les plantes, entretenir un balcon, enlever les mauvaises herbes · Vous fixez vos tarifs et vos disponibilités · Paiement sécurisé par la plateforme · Inscription gratuite · Clients dans votre quartier</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une plateforme où les jardiniers amateurs proposent leurs services : arroser les plantes, entretenir un balcon, enlever les mauvaises herbes… Tu fixes tes tarifs et tes disponibilités, le paiement est sécurisé, et l'inscription est gratuite.</div>
+<div class="tr">Amatör bahçıvanların hizmet sunduğu bir platform: bitki sulama, balkon bakımı, yabani ot temizliği… Fiyatını ve müsaitliğini sen belirliyorsun, ödeme güvenli ve kayıt ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu passes déjà tes week-ends à jardiner par plaisir — là, tu fais la même chose, mais payée !</div><div class="tr">Zaten hafta sonlarını keyif için bahçede geçiriyorsun — burada aynı şeyi yapıyorsun ama para alarak!</div></div>
+<div class="argitem"><div class="fr">Tout est sous ton contrôle : tes tarifs, tes horaires, tes clients — tu acceptes seulement ce qui t'arrange.</div><div class="tr">Her şey kontrolünde: fiyatların, saatlerin, müşterilerin — sadece sana uyanı kabul ediyorsun.</div></div>
+<div class="argitem"><div class="fr">Les clients sont dans ton quartier — pas de trajets, et le paiement est sécurisé par la plateforme.</div><div class="tr">Müşteriler mahallende — yol yok ve ödeme platform güvencesinde.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Transformer mon hobby en travail, ça va me dégoûter du jardinage. »</div><div class="tr">Hobimi işe çevirmek bahçıvanlıktan soğutur beni.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est un vrai risque quand on est obligé — mais là, tu n'as aucune obligation ! Tu acceptes une mission quand tu en as envie, tu refuses quand tu n'en as pas. Commence par une ou deux missions par mois, et vois comment tu te sens. Tu gardes le contrôle total.</div>
+<div class="tr">Mecburiyet olunca gerçek bir risk — ama burada hiçbir zorunluluğun yok! Canın isteyince görev kabul ediyorsun, istemeyince reddediyorsun. Ayda bir-iki görevle başla, nasıl hissettiğine bak. Tam kontrol sende.</div></div></div>
+<div class="obj"><div class="q">« Je ne suis pas un professionnel, et si j'abîme les plantes des gens ? »</div><div class="tr">Profesyonel değilim, ya insanların bitkilerine zarar verirsem?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Regarde les missions : arroser, désherber, entretenir un balcon — ce sont des choses que tu fais les yeux fermés depuis des années. Ce ne sont pas des jardins de château ! Et tes propres plantes sont magnifiques — c'est la meilleure preuve de compétence.</div>
+<div class="tr">Görevlere bak: sulama, ot ayıklama, balkon bakımı — yıllardır gözün kapalı yaptığın şeyler. Şato bahçeleri değil bunlar! Ve kendi bitkilerin muhteşem — yetkinliğin en iyi kanıtı bu.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 6 SIDE HUSTLE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">6 · Activité secondaire rémunérée</div><div class="st">Ek iş (side hustle) başlatma</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cet article sur les activités secondaires rémunérées. Vous en parlez à un(e) ami(e) qui a un talent (pâtisserie, photo, bricolage…). Essayez de le (la) convaincre de se lancer.</div>
+<div class="tr">Ek gelir getiren yan işlerle ilgili bir yazı okudun. Bir yeteneği olan (pastacılık, fotoğraf, tamirat…) arkadaşına anlatıyorsun. Onu başlamaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>LANCEZ VOTRE ACTIVITÉ SECONDAIRE !</b><br>
+Transformez votre talent en revenu complémentaire · Plateformes en ligne pour vendre vos créations ou vos services · Commencez petit, sans quitter votre emploi · Témoignages : de 200 à 800 $ par mois en moyenne · Guide gratuit pour débuter</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de lancer une activité secondaire à côté de ton travail : tu transformes ton talent en revenu complémentaire, grâce aux plateformes en ligne. D'après les témoignages, ça rapporte de 200 à 800 dollars par mois en moyenne — et il y a un guide gratuit pour débuter.</div>
+<div class="tr">İşinin yanında bir yan iş başlatmak: online platformlar sayesinde yeteneğini ek gelire çeviriyorsun. Deneyimlere göre ortalama ayda 200-800 dolar getiriyor — başlamak için ücretsiz bir rehber de var.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tes gâteaux sont incroyables — tout le monde te dit « tu devrais les vendre » ! Là, c'est le moment de les écouter.</div><div class="tr">Pastaların inanılmaz — herkes "bunları satmalısın" diyor! İşte onları dinleme zamanı.</div></div>
+<div class="argitem"><div class="fr">Tu commences petit, sans quitter ton emploi — quelques commandes le week-end, zéro risque pour ta sécurité.</div><div class="tr">Küçük başlıyorsun, işinden ayrılmadan — hafta sonu birkaç sipariş, güvencen için sıfır risk.</div></div>
+<div class="argitem"><div class="fr">200 à 800 dollars par mois, ça change les choses : tes vacances, ton épargne… Et qui sait où ça peut mener à long terme.</div><div class="tr">Ayda 200-800 dolar işleri değiştirir: tatilin, birikimin… Ve uzun vadede nereye varır kim bilir.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Avec mon travail, je n'ai pas l'énergie pour un deuxième boulot. »</div><div class="tr">İşimle birlikte ikinci bir işe enerjim yok.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, et je ne te parle pas d'un deuxième emploi — je te parle de vendre ce que tu fais DÉJÀ par plaisir. Tu fais des gâteaux tous les week-ends de toute façon ! La seule différence, c'est que quelqu'un les paie. Et tu fixes ton rythme : deux commandes par mois, c'est déjà un début.</div>
+<div class="tr">Anlıyorum ve sana ikinci bir işten bahsetmiyorum — ZATEN keyif için yaptığını satmandan bahsediyorum. Nasılsa her hafta sonu pasta yapıyorsun! Tek fark birinin bunun için ödeme yapması. Temponu da sen belirliyorsun: ayda iki sipariş bile bir başlangıç.</div></div></div>
+<div class="obj"><div class="q">« Et si personne n'achète ? Ce serait humiliant. »</div><div class="tr">Ya kimse almazsa? Küçük düşerim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Commence sans pression : propose d'abord à ton entourage — tes collègues, les parents de l'école… Les premières commandes viendront de là, et le bouche-à-oreille fera le reste. Et au pire ? Tu auras essayé, appris des choses, et tu continueras à faire des gâteaux pour le plaisir. Tu n'as littéralement rien à perdre.</div>
+<div class="tr">Baskısız başla: önce çevrene öner — iş arkadaşların, okuldaki veliler… İlk siparişler oradan gelir, gerisini kulaktan kulağa halleder. Ya en kötü ihtimalle? Denemiş, bir şeyler öğrenmiş olursun ve keyif için pasta yapmaya devam edersin. Kelimenin tam anlamıyla kaybedecek bir şeyin yok.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 7 TESTEUR DE VOYAGE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">7 · Testeur de voyage</div><div class="st">Tüm masraflar ödenmiş seyahat test etme · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce qui recherche des testeurs de voyage. Vous en parlez à un(e) ami(e) qui adore voyager. Essayez de le (la) convaincre de postuler.</div>
+<div class="tr">Seyahat test edecek kişiler arayan bir ilan okudun. Seyahat etmeye bayılan bir arkadaşına anlatıyorsun. Onu başvurmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>DEVENEZ TESTEUR DE VOYAGE !</b><br>
+Vous souhaitez voyager dans le monde entier tous frais payés ? · Si vous êtes une personne curieuse et observatrice · Si vous voulez découvrir de nouvelles cultures · Si les nouveautés culinaires ne vous font pas peur · Rédigez des avis détaillés sur les hôtels, les circuits et les restaurants</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de devenir testeur de voyage : tu voyages dans le monde entier, tous frais payés, et en échange, tu rédiges des avis détaillés sur les hôtels, les circuits et les restaurants. Ils cherchent des personnes curieuses et observatrices, ouvertes aux nouvelles cultures.</div>
+<div class="tr">Seyahat testçisi olmak: tüm masraflar ödenmiş şekilde dünyayı geziyorsun ve karşılığında oteller, turlar ve restoranlar hakkında ayrıntılı değerlendirmeler yazıyorsun. Meraklı, gözlemci ve yeni kültürlere açık insanlar arıyorlar.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Voyager dans le monde entier tous frais payés — c'est littéralement ton rêve, écrit dans une annonce !</div><div class="tr">Tüm masraflar ödenmiş dünya seyahati — kelimenin tam anlamıyla senin hayalin, bir ilana yazılmış hali!</div></div>
+<div class="argitem"><div class="fr">Le profil recherché, c'est TOI : curieuse, observatrice, et tu goûtes à tout sans peur. Tu coches toutes les cases.</div><div class="tr">Aranan profil SENSİN: meraklı, gözlemci ve korkmadan her şeyi tadıyorsun. Tüm kutucukları işaretliyorsun.</div></div>
+<div class="argitem"><div class="fr">Et tu adores déjà écrire des avis sur les restaurants — là, on te paie le voyage pour faire exactement ça.</div><div class="tr">Zaten restoran yorumları yazmaya bayılıyorsun — burada tam olarak bunu yapman için seyahatini ödüyorlar.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« C'est trop beau pour être vrai — c'est sûrement une arnaque. »</div><div class="tr">Gerçek olamayacak kadar güzel — kesin dolandırıcılık.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ta prudence est une qualité, et tu as raison de vérifier ! Mais ce métier existe vraiment — les agences de voyage et les plateformes ont besoin d'avis fiables. La règle d'or : un vrai poste ne demande JAMAIS d'argent au candidat. Si l'inscription est gratuite et l'entreprise vérifiable, c'est bon. On peut vérifier ensemble avant de postuler.</div>
+<div class="tr">Temkinin bir meziyet ve kontrol etmekte haklısın! Ama bu meslek gerçekten var — seyahat acenteleri ve platformların güvenilir değerlendirmelere ihtiyacı var. Altın kural: gerçek bir iş adaydan ASLA para istemez. Kayıt ücretsizse ve şirket doğrulanabiliyorsa sorun yok. Başvurmadan önce birlikte kontrol edebiliriz.</div></div></div>
+<div class="obj"><div class="q">« Écrire des rapports pendant les vacances, ce n'est plus des vacances. »</div><div class="tr">Tatilde rapor yazmak artık tatil olmaz.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu n'as pas tort, c'est un travail — mais quel travail ! Une heure de notes le soir contre une journée de découvertes gratuites. Et toi, tu observes et tu racontes déjà tout naturellement — tes messages après chaque voyage sont des rapports complets ! Tu ferais ce « travail » sans t'en rendre compte.</div>
+<div class="tr">Haksız değilsin, bu bir iş — ama ne iş! Akşam bir saatlik not karşılığında bir gün bedava keşif. Ve sen zaten doğal olarak gözlemleyip anlatıyorsun — her seyahat sonrası mesajların tam birer rapor! Bu "işi" farkında olmadan yapardın.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 8 ANIMER LOISIRS ENFANTS -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">8 · Organiser des loisirs pour enfants</div><div class="st">Çocuklara etkinlik düzenleme — animatörlük</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce : le centre communautaire cherche des animateurs pour organiser des activités de loisirs pour des enfants. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de postuler.</div>
+<div class="tr">Şu ilanı okudun: toplum merkezi, çocuklara boş zaman etkinlikleri düzenleyecek animatörler arıyor. Arkadaşına anlatıyorsun. Onu başvurmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>LE CENTRE COMMUNAUTAIRE RECRUTE — Animateurs / Animatrices</b><br>
+Organisez des activités de loisirs pour des enfants de 6 à 12 ans : jeux, arts plastiques, sorties · Le mercredi après-midi et pendant les vacances scolaires · 18 $ de l'heure · Formation offerte par le centre · Débutants motivés bienvenus</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un poste d'animatrice au centre communautaire : tu organises des activités pour des enfants de 6 à 12 ans — des jeux, des arts plastiques, des sorties. C'est le mercredi après-midi et pendant les vacances scolaires, payé 18 dollars de l'heure, et la formation est offerte.</div>
+<div class="tr">Toplum merkezinde animatörlük: 6-12 yaş çocuklara etkinlikler düzenliyorsun — oyunlar, resim-el işi, geziler. Çarşamba öğleden sonraları ve okul tatillerinde, saati 18 dolar ve eğitim merkez tarafından veriliyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu es créative et pleine d'énergie — inventer des jeux et des ateliers, c'est exactement ton élément.</div><div class="tr">Yaratıcısın ve enerji dolususun — oyunlar ve atölyeler tasarlamak tam senin alanın.</div></div>
+<div class="argitem"><div class="fr">Le mercredi après-midi, tu es libre de toute façon — 18 dollars de l'heure pour jouer et créer, c'est un super complément.</div><div class="tr">Çarşamba öğleden sonraları zaten boşsun — oynamak ve üretmek için saati 18 dolar, süper bir ek gelir.</div></div>
+<div class="argitem"><div class="fr">La formation est offerte, et les débutants motivés sont bienvenus — pas besoin de diplôme pour commencer.</div><div class="tr">Eğitim veriliyor ve motive yeni başlayanlar hoş karşılanıyor — başlamak için diploma gerekmiyor.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Gérer un groupe d'enfants toute une après-midi, je ne saurai pas faire. »</div><div class="tr">Bütün öğleden sonra bir çocuk grubunu idare etmeyi beceremem.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, le centre offre une formation avant de commencer — tu apprends les techniques d'animation, la gestion de groupe… Et tu ne seras pas seule : les nouveaux animateurs travaillent en binôme avec les expérimentés. Personne ne te jette dans le grand bain sans préparation.</div>
+<div class="tr">İşte merkez başlamadan önce eğitim veriyor — animasyon tekniklerini, grup yönetimini öğreniyorsun… Ve yalnız olmayacaksın: yeni animatörler deneyimlilerle eşli çalışıyor. Kimse seni hazırlıksız derin suya atmıyor.</div></div></div>
+<div class="obj"><div class="q">« Les enfants d'aujourd'hui sont impossibles, ils ne respectent rien. »</div><div class="tr">Bugünün çocukları imkânsız, hiçbir şeye saygıları yok.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je pense que tu fais fausse route — ce sont des enfants qui viennent pour des LOISIRS qu'ils adorent : les jeux, les sorties… Ils sont contents d'être là ! Ce n'est pas une salle de classe. Et avec ton énergie, ils vont t'adorer, crois-moi.</div>
+<div class="tr">Bence yanlış yoldasın — bunlar bayıldıkları BOŞ ZAMAN etkinlikleri için gelen çocuklar: oyunlar, geziler… Orada olmaktan memnunlar! Sınıf değil orası. Ve senin enerjinle sana bayılacaklar, inan bana.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<div class="foot">Petits Boulots · 8 sujet</div>
+</div>
+
+<script>
+var MODE = 'study';
+function setMode(m) {
+  MODE = m;
+  var trs = document.getElementsByClassName('tr');
+  var i;
+  for (i = 0; i < trs.length; i++) {
+    trs[i].style.display = (m === 'test') ? 'none' : 'block';
+  }
+  document.getElementById('btnStudy').className = 'modebtn' + (m === 'study' ? ' on' : '');
+  document.getElementById('btnTest').className = 'modebtn' + (m === 'test' ? ' on' : '');
+  if (m === 'test') {
+    var reps = document.getElementsByClassName('rep');
+    for (i = 0; i < reps.length; i++) {
+      if (reps[i].className.indexOf('hidden') === -1) { reps[i].className = 'rep hidden'; }
+    }
+    var btns = document.getElementsByClassName('revealbtn');
+    for (i = 0; i < btns.length; i++) { btns[i].innerHTML = 'Cevabı göster'; }
+  }
+}
+function tog(head) {
+  var body = head.nextSibling;
+  while (body && body.nodeType !== 1) { body = body.nextSibling; }
+  if (!body) { return; }
+  body.style.display = (body.style.display === 'block') ? 'none' : 'block';
+}
+function rev(btn) {
+  var rep = btn.nextSibling;
+  while (rep && rep.nodeType !== 1) { rep = rep.nextSibling; }
+  if (!rep) { return; }
+  if (rep.className.indexOf('hidden') !== -1) {
+    rep.className = 'rep';
+    if (MODE === 'test') {
+      var trs = rep.getElementsByClassName('tr');
+      for (var i = 0; i < trs.length; i++) { trs[i].style.display = 'none'; }
+    }
+    btn.innerHTML = 'Cevabı gizle';
+  } else {
+    rep.className = 'rep hidden';
+    btn.innerHTML = 'Cevabı göster';
+  }
+}
+</script>
+</body>
+</html>

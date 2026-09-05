@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section B — Sport &amp; Aventure</title>
+<style>
+body { margin:0; padding:0; background:#ffffff; color:#22303c;
+  font-family:-apple-system,'Helvetica Neue',Arial,sans-serif; font-size:16px; }
+.wrap { max-width:720px; margin:0 auto; padding:16px; }
+a.back { text-decoration:none; color:#1565c0; font-size:15px; }
+h1 { font-size:24px; margin:12px 0 4px 0; }
+.sub { color:#6b7a88; font-size:14px; margin-bottom:14px; }
+.modebtn { display:inline-block; border:1px solid #1565c0; color:#1565c0;
+  background:#ffffff; border-radius:8px; padding:8px 14px; font-size:15px;
+  font-weight:600; cursor:pointer; margin-bottom:16px; }
+.modebtn.on { background:#1565c0; color:#ffffff; }
+.sujet { border:1px solid #d8dee4; border-radius:10px; margin-bottom:12px; overflow:hidden; }
+.shead { padding:13px 15px; background:#fbfcfd; cursor:pointer; }
+.shead .t { font-size:17px; font-weight:700; }
+.shead .st { font-size:13px; color:#6b7a88; margin-top:2px; }
+.sbody { padding:0 15px 14px 15px; display:none; border-top:1px solid #e9edf1; }
+.lbl { font-size:12px; font-weight:700; letter-spacing:0.8px; margin:16px 0 6px 0; }
+.lbl.consigne { color:#546e7a; }
+.lbl.annonce { color:#8d6e30; }
+.lbl.sunum { color:#1565c0; }
+.lbl.arg { color:#2e7d32; }
+.lbl.itiraz { color:#c62828; }
+.fr { margin:4px 0 0 0; line-height:1.45; }
+.tr { margin:3px 0 0 0; line-height:1.4; color:#7a6a52; font-size:14px; font-style:italic; }
+.annbox { border:1px dashed #c9b280; background:#fdfaf2; border-radius:8px;
+  padding:10px 12px; font-size:15px; line-height:1.5; }
+.argitem { border-left:4px solid #2e7d32; padding:4px 0 4px 10px; margin-bottom:8px; }
+.obj { border:1px solid #eed7d7; border-left:5px solid #c62828; border-radius:8px;
+  padding:9px 12px; margin-bottom:9px; background:#fdf9f9; }
+.obj .q { font-weight:600; color:#c62828; }
+.rep { border-left:4px solid #6a1b9a; padding:5px 0 2px 10px; margin-top:8px; }
+.rep .fr { color:#4a2a6a; }
+.revealbtn { display:inline-block; margin-top:7px; border:1px solid #6a1b9a; color:#6a1b9a;
+  background:#ffffff; border-radius:7px; padding:5px 11px; font-size:14px; cursor:pointer; }
+.hidden { display:none; }
+.kalipnote { font-size:13px; color:#9aa5af; margin-top:14px; border-top:1px solid #e9edf1; padding-top:8px; }
+.kalipnote a { color:#1565c0; }
+.foot { font-size:13px; color:#9aa5af; margin-top:24px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">‹ Ana menü</a>
+<h1>🏃 Sport &amp; Aventure</h1>
+<div class="sub">8 sujet · Açılış/kapanış → <b>Evrensel Kalıp</b></div>
+
+<span class="modebtn on" id="btnStudy" onclick="setMode('study')">Çalışma (FR+TR)</span>
+<span class="modebtn" id="btnTest" onclick="setMode('test')">Test (sadece FR)</span>
+
+<!-- 1 PARACHUTE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">1 · Saut en parachute</div><div class="st">Paraşütle atlama · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des sauts en parachute dans votre ville. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de faire un saut avec vous.</div>
+<div class="tr">Şehrinde paraşüt atlayışı ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle atlamaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>OSEZ LE GRAND SAUT ! — Parachutisme en tandem</b><br>
+Saut en tandem avec un moniteur diplômé · Aucune expérience nécessaire · Formation de 30 minutes avant le saut · Vidéo souvenir incluse · 249 $ par personne, réduction de 20 % pour deux inscriptions · www.grandsaut.ca</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un saut en parachute en tandem, avec un moniteur diplômé. Aucune expérience n'est nécessaire — il y a une formation de trente minutes avant. Et si on s'inscrit à deux, on a vingt pour cent de réduction !</div>
+<div class="tr">Diplomalı eğitmenle tandem paraşüt atlayışı. Deneyim gerekmiyor — öncesinde 30 dakikalık eğitim var. İki kişi kaydolursak yüzde 20 indirim!</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">C'est en tandem : tu es attachée à un moniteur professionnel qui s'occupe de tout — toi, tu profites juste de la vue.</div><div class="tr">Tandem: her şeyle ilgilenen profesyonel bir eğitmene bağlısın — sen sadece manzaranın tadını çıkarıyorsun.</div></div>
+<div class="argitem"><div class="fr">Avec la réduction pour deux, ça revient à environ 200 dollars — pour un souvenir inoubliable avec la vidéo incluse.</div><div class="tr">İkili indirimle yaklaşık 200 dolara geliyor — video dahil unutulmaz bir anı için.</div></div>
+<div class="argitem"><div class="fr">Tu me dis toujours que tu veux sortir de ta routine — franchement, il n'y a pas mieux que ça !</div><div class="tr">Rutininden çıkmak istediğini hep söylüyorsun — açıkçası bundan iyisi yok!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Sauter d'un avion ? Jamais de la vie, j'ai le vertige ! »</div><div class="tr">Uçaktan atlamak mı? Asla, yükseklik korkum var!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est normal d'avoir peur, tout le monde a peur avant le premier saut ! Mais tu sais quoi ? Beaucoup de gens qui ont le vertige disent qu'en parachute, on ne le sent pas — c'est trop haut, le cerveau ne compare plus. Et le moniteur contrôle tout du début à la fin.</div>
+<div class="tr">Korkmak normal, ilk atlayıştan önce herkes korkar! Ama biliyor musun? Yükseklik korkusu olan birçok kişi paraşütte bunun hissedilmediğini söylüyor — çok yüksek, beyin artık kıyaslamıyor. Ve eğitmen baştan sona her şeyi kontrol ediyor.</div></div></div>
+<div class="obj"><div class="q">« 249 dollars pour quelques minutes, c'est trop cher. »</div><div class="tr">Birkaç dakika için 249 dolar çok pahalı.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, ce n'est pas rien. Mais avec la réduction à deux, c'est 200 dollars — et ce n'est pas « quelques minutes », c'est une expérience de toute une journée, avec la formation, le vol, le saut et la vidéo souvenir. Certaines expériences valent vraiment le prix.</div>
+<div class="tr">Anlıyorum, az para değil. Ama ikili indirimle 200 dolar — ve "birkaç dakika" değil, eğitimi, uçuşu, atlayışı ve hatıra videosuyla koca bir günlük deneyim. Bazı deneyimler gerçekten fiyatına değer.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 2 RANDO CHEVAL -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">2 · Randonnée à cheval</div><div class="st">At üstünde doğa yürüyüşü · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des randonnées à cheval. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de participer à une randonnée avec vous.</div>
+<div class="tr">At üstünde doğa gezisi ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle bir geziye katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>RANDONNÉE À CHEVAL — Découvrez la nature autrement !</b><br>
+Balades d'une demi-journée ou d'une journée · Débutants bienvenus, chevaux calmes et bien dressés · Accompagnement par des guides expérimentés · Petits groupes (6 personnes maximum) · Équipement fourni</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de randonnées à cheval dans la nature. Les débutants sont bienvenus — les chevaux sont calmes et bien dressés, et un guide expérimenté accompagne le groupe. Tout l'équipement est fourni.</div>
+<div class="tr">Doğada at gezileri. Yeni başlayanlar hoş karşılanıyor — atlar sakin ve iyi eğitilmiş, deneyimli bir rehber gruba eşlik ediyor. Tüm ekipman veriliyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Découvrir la nature à cheval, c'est magique — on voit des endroits inaccessibles à pied ou en voiture.</div><div class="tr">Doğayı at üstünde keşfetmek büyülü — yürüyerek veya arabayla ulaşılamayan yerleri görüyorsun.</div></div>
+<div class="argitem"><div class="fr">C'est adapté aux débutants : chevaux calmes, guide expérimenté, petits groupes de six maximum.</div><div class="tr">Yeni başlayanlara uygun: sakin atlar, deneyimli rehber, en fazla altı kişilik küçük gruplar.</div></div>
+<div class="argitem"><div class="fr">L'équipement est fourni — tu n'as besoin de rien acheter, juste de venir.</div><div class="tr">Ekipman veriliyor — hiçbir şey almana gerek yok, sadece gel.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je n'ai jamais monté à cheval, je vais tomber ! »</div><div class="tr">Hiç ata binmedim, düşerim!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ne t'inquiète pas — les chevaux sont choisis pour les débutants, très calmes. Le guide t'explique tout avant de partir, et on marche au pas, pas au galop ! Des enfants le font, tu peux le faire.</div>
+<div class="tr">Endişelenme — atlar yeni başlayanlar için seçilmiş, çok sakin. Rehber yola çıkmadan her şeyi anlatıyor ve dörtnala değil, adım adım gidiliyor! Çocuklar bile yapıyor, sen de yaparsın.</div></div></div>
+<div class="obj"><div class="q">« Les animaux, ça me fait un peu peur. »</div><div class="tr">Hayvanlardan biraz korkarım.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, c'est impressionnant au début. Mais ces chevaux sont habitués aux personnes nerveuses — ils sont très doux. Et le guide reste toujours à côté de toi. Après dix minutes, tu seras à l'aise, promis.</div>
+<div class="tr">Anlıyorum, başta etkileyici geliyor. Ama bu atlar gergin insanlara alışık — çok uysallar. Rehber de hep yanında. On dakika sonra rahatlarsın, söz.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 3 RANDO CLUB URBAIN -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">3 · Rando-club urbain</div><div class="st">Şehir içi yürüyüş kulübü · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un club de randonnée urbaine. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de rejoindre ce club avec vous.</div>
+<div class="tr">Şehir yürüyüşü kulübü ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle bu kulübe katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>RANDO-CLUB URBAIN — Marchez, découvrez, respirez !</b><br>
+Redécouvrez votre ville à pied : parcours thématiques (histoire, street art, parcs cachés) · Deux sorties par semaine, en soirée et le week-end · Tous niveaux · Adhésion : 20 $ par an · Premier essai gratuit</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un club de randonnée urbaine : on redécouvre la ville à pied, avec des parcours thématiques — l'histoire, le street art, les parcs cachés. Il y a deux sorties par semaine, l'adhésion coûte vingt dollars par an, et le premier essai est gratuit.</div>
+<div class="tr">Şehir yürüyüşü kulübü: şehri yürüyerek yeniden keşfediyoruz, temalı rotalarla — tarih, sokak sanatı, gizli parklar. Haftada iki çıkış var, üyelik yılda 20 dolar ve ilk deneme ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">C'est du sport doux — pas besoin d'être athlète, et c'est excellent pour la santé.</div><div class="tr">Hafif bir spor — atlet olmaya gerek yok ve sağlık için mükemmel.</div></div>
+<div class="argitem"><div class="fr">Les parcours sont thématiques : tu vas découvrir des coins de la ville que tu ne connais pas, même après des années ici.</div><div class="tr">Rotalar temalı: yıllardır burada olsan bile bilmediğin köşeleri keşfedeceksin.</div></div>
+<div class="argitem"><div class="fr">Vingt dollars par an, c'est rien — et le premier essai est gratuit, donc zéro risque.</div><div class="tr">Yılda 20 dolar hiçbir şey — ve ilk deneme ücretsiz, yani sıfır risk.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Marcher en ville ? Je le fais déjà tous les jours ! »</div><div class="tr">Şehirde yürümek mi? Zaten her gün yapıyorum!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, ce n'est pas pareil ! Marcher pour aller au travail et marcher pour découvrir, c'est différent. Avec les parcours thématiques, tu vois ta ville avec de nouveaux yeux — le street art, les histoires des quartiers… Et surtout, tu marches avec un groupe sympa.</div>
+<div class="tr">İşte tam da aynı şey değil! İşe gitmek için yürümekle keşfetmek için yürümek farklı. Temalı rotalarla şehrini yeni gözlerle görüyorsun — sokak sanatı, mahallelerin hikâyeleri… Ve en önemlisi hoş bir grupla yürüyorsun.</div></div></div>
+<div class="obj"><div class="q">« Le soir, après le travail, je suis trop fatigué(e). »</div><div class="tr">Akşam işten sonra çok yorgun oluyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais tu sais, marcher après le travail, ça enlève justement la fatigue mentale — c'est prouvé ! Et sinon, il y a aussi les sorties du week-end. Tu choisis ce qui t'arrange.</div>
+<div class="tr">Anlıyorum ama biliyor musun, işten sonra yürümek zihinsel yorgunluğu alıyor — kanıtlanmış! Olmazsa hafta sonu çıkışları da var. Sana uyanı seçersin.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 4 VELO EN VILLE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">4 · Vélo en ville</div><div class="st">Şehirde birlikte bisiklete binme</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce sur le vélo en ville. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de faire du vélo en ville avec vous.</div>
+<div class="tr">Şehirde bisiklet ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle şehirde bisiklete binmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>LA VILLE À VÉLO — C'est parti !</b><br>
+Nouveau réseau de pistes cyclables sécurisées · Vélos en libre-service : 1 $ les 30 minutes, abonnement 15 $ par mois · Stations partout en ville · Application mobile pour trouver un vélo</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit du nouveau réseau de vélos en libre-service : des stations partout en ville, un dollar les trente minutes, ou quinze dollars par mois en abonnement. Et les pistes cyclables sont maintenant sécurisées.</div>
+<div class="tr">Yeni paylaşımlı bisiklet ağı: şehrin her yerinde istasyonlar, 30 dakikası 1 dolar veya aylık abonelik 15 dolar. Ve bisiklet yolları artık güvenli.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">C'est plus rapide que le bus aux heures de pointe — et tu n'attends jamais.</div><div class="tr">Yoğun saatlerde otobüsten hızlı — ve hiç beklemiyorsun.</div></div>
+<div class="argitem"><div class="fr">Quinze dollars par mois, c'est bien moins cher que l'essence ou les transports — tu fais de vraies économies.</div><div class="tr">Ayda 15 dolar, benzinden veya toplu taşımadan çok daha ucuz — gerçek tasarruf.</div></div>
+<div class="argitem"><div class="fr">C'est du sport sans y penser : trente minutes de vélo par jour, et tu es en forme sans aller à la salle.</div><div class="tr">Farkında olmadan spor: günde 30 dakika bisiklet ve spor salonuna gitmeden formdasın.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Le vélo en ville, c'est trop dangereux avec les voitures. »</div><div class="tr">Şehirde bisiklet arabalarla çok tehlikeli.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprenais cette peur avant, mais regarde : les nouvelles pistes cyclables sont séparées de la route. Tu ne roules plus avec les voitures. Et on peut commencer par des trajets calmes le week-end pour prendre confiance.</div>
+<div class="tr">Bu korkuyu eskiden anlardım ama bak: yeni bisiklet yolları yoldan ayrılmış. Artık arabalarla birlikte sürmüyorsun. Güven kazanmak için hafta sonu sakin rotalarla başlayabiliriz.</div></div></div>
+<div class="obj"><div class="q">« Et quand il pleut ? Ici, il pleut tout le temps ! »</div><div class="tr">Ya yağmur yağınca? Burada sürekli yağıyor!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu n'as pas tort ! Mais justement, avec le libre-service, tu n'es pas obligée : les jours de pluie, tu prends le bus, les beaux jours, le vélo. C'est ça l'avantage — zéro engagement, tu décides chaque matin.</div>
+<div class="tr">Haksız değilsin! Ama işte paylaşımlı sistemin avantajı: mecbur değilsin. Yağmurlu günler otobüs, güzel günler bisiklet. Sıfır taahhüt, her sabah sen karar veriyorsun.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 5 DEFI CYCLISTE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">5 · Défi cycliste pour la planète</div><div class="st">Çevre için bisiklet maratonu · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un défi cycliste. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre d'y participer avec vous.</div>
+<div class="tr">Bir bisiklet mücadelesi ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>PARTICIPEZ AU DÉFI CYCLISTE POUR LA PLANÈTE !</b><br>
+Pédalez et amassez des fonds · Défi : 135 km par jour pendant 2 jours · Équipes de 5 cyclistes · Frais d'inscription libres · La sécurité sur la route sera assurée par la police · Tous les profits iront à une association écologiste · Grande fête à l'arrivée !</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un défi cycliste pour la planète : 135 kilomètres par jour pendant deux jours, en équipes de cinq. Les frais d'inscription sont libres, la police assure la sécurité sur la route, et tous les profits vont à une association écologiste. Et à l'arrivée, il y a une grande fête !</div>
+<div class="tr">Gezegen için bisiklet mücadelesi: iki gün boyunca günde 135 km, beş kişilik ekiplerle. Kayıt ücreti serbest, yolda güvenliği polis sağlıyor ve tüm gelir bir çevre derneğine gidiyor. Varışta da büyük şenlik!</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu fais déjà du vélo régulièrement — là, tu pédales pour une vraie cause : l'environnement.</div><div class="tr">Zaten düzenli bisiklete biniyorsun — burada gerçek bir amaç için pedal çeviriyorsun: çevre.</div></div>
+<div class="argitem"><div class="fr">C'est en équipe de cinq — on se motive, on s'entraide, et on partage un souvenir inoubliable ensemble.</div><div class="tr">Beş kişilik ekip — birbirimizi motive ediyoruz, yardımlaşıyoruz ve unutulmaz bir anıyı paylaşıyoruz.</div></div>
+<div class="argitem"><div class="fr">Tout est encadré : la police sécurise la route, et les frais d'inscription sont libres — tu donnes ce que tu peux.</div><div class="tr">Her şey kontrollü: polis yolu güvene alıyor ve kayıt ücreti serbest — verebildiğini veriyorsun.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« 135 km par jour ?! C'est impossible pour moi ! »</div><div class="tr">Günde 135 km mi?! Benim için imkânsız!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, ça impressionne. Mais en fait, si on regarde de plus près : en équipe de cinq, on roule ensemble, à un rythme tranquille, avec des pauses. 135 km sur toute une journée, c'est environ 15 km/h — ce n'est pas une course ! Et il nous reste des semaines pour nous entraîner ensemble.</div>
+<div class="tr">Anlıyorum, gözünü korkutuyor. Ama aslında yakından bakınca: beş kişilik ekiple, sakin tempoda, molalarla birlikte sürülüyor. Bütün güne yayılmış 135 km saatte ~15 km demek — yarış değil! Ve birlikte antrenman yapmak için haftalarımız var.</div></div></div>
+<div class="obj"><div class="q">« Dormir où ? Et si j'abandonne au milieu ? »</div><div class="tr">Nerede uyuyacağız? Ya yarıda bırakırsam?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tout est organisé — l'hébergement de la nuit est prévu par les organisateurs. Et si tu es fatiguée, il y a des véhicules d'assistance qui suivent le parcours. Personne n'est laissé sur la route. Au pire, tu montes dans le véhicule et tu nous encourages !</div>
+<div class="tr">Her şey organize — gece konaklaması organizatörlerce ayarlanmış. Yorulursan parkuru takip eden destek araçları var. Kimse yolda bırakılmıyor. En kötü ihtimalle araca biner, bize tezahürat yaparsın!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 6 CHIENS DE TRAINEAU -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">6 · Randonnée en chiens de traîneau</div><div class="st">Köpekli kızak turu · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des randonnées en chiens de traîneau. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre d'y participer avec vous.</div>
+<div class="tr">Köpekli kızak turu ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>RANDONNÉE EN CHIENS DE TRAÎNEAU</b><br>
+Débutants acceptés · Plusieurs circuits possibles · Activité en groupe · Guides professionnels · Possibilité de s'occuper des chiens</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une randonnée en chiens de traîneau ! Les débutants sont acceptés, il y a plusieurs circuits possibles, des guides professionnels — et le meilleur : on peut même s'occuper des chiens.</div>
+<div class="tr">Köpekli kızak turu! Yeni başlayanlar kabul, birden çok rota seçeneği var, profesyonel rehberler — ve en güzeli: köpeklerle bile ilgilenebiliyoruz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu adores les chiens — imagine passer la journée avec une équipe de huskys et même t'occuper d'eux !</div><div class="tr">Köpeklere bayılıyorsun — bütün günü bir husky ekibiyle geçirdiğini, hatta onlarla ilgilendiğini düşünsene!</div></div>
+<div class="argitem"><div class="fr">C'est une expérience typiquement canadienne — on vit ici, il faut l'avoir fait au moins une fois !</div><div class="tr">Tipik bir Kanada deneyimi — burada yaşıyoruz, en az bir kez yapmış olmak lazım!</div></div>
+<div class="argitem"><div class="fr">Débutants acceptés, guides professionnels, plusieurs circuits — on choisit le plus facile pour commencer.</div><div class="tr">Yeni başlayanlar kabul, profesyonel rehberler, birçok rota — başlamak için en kolayını seçeriz.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Par ce froid ? On va geler ! »</div><div class="tr">Bu soğukta mı? Donarız!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais on sera bien équipés — et tu sais, quand on bouge et qu'on s'occupe des chiens, on n'a pas froid du tout. En plus, les paysages d'hiver sous le soleil, c'est magnifique. Et après, un chocolat chaud, c'est mérité !</div>
+<div class="tr">Anlıyorum ama iyi giyineceğiz — ve biliyor musun, hareket edip köpeklerle ilgilenince insan hiç üşümüyor. Üstelik güneş altındaki kış manzaraları muhteşem. Sonrasında sıcak çikolata da hak edilmiş olur!</div></div></div>
+<div class="obj"><div class="q">« Conduire un traîneau, ça doit être compliqué. »</div><div class="tr">Kızak sürmek zor olmalı.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Pas du tout — les débutants sont acceptés, et les guides professionnels t'expliquent tout avant de partir. Les chiens connaissent le circuit par cœur, ils font le plus gros du travail. Toi, tu profites du paysage !</div>
+<div class="tr">Hiç de değil — yeni başlayanlar kabul ediliyor ve profesyonel rehberler yola çıkmadan her şeyi anlatıyor. Köpekler rotayı ezbere biliyor, işin çoğunu onlar yapıyor. Sen manzaranın tadını çıkar!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 7 SEJOUR LOUPS -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">7 · Séjour nature avec des loups</div><div class="st">Kurtlarla doğada konaklama — dışarıda uyunuyor</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un séjour en pleine nature où l'on dort dehors, près des loups. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de participer à ce séjour.</div>
+<div class="tr">Doğada, kurtların yakınında açık havada uyunan bir konaklama ilanı okudun. Arkadaşına anlatıyorsun. Onu bu konaklamaya katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>DORMEZ AVEC LES LOUPS — Séjour nature exceptionnel</b><br>
+Une nuit en pleine forêt, au cœur d'un parc animalier · Observation des loups au coucher du soleil avec un soigneur · Tentes confortables installées face à l'enclos · Dîner autour du feu · Groupe de 8 personnes maximum</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un séjour exceptionnel dans un parc animalier : on dort une nuit en pleine forêt, dans des tentes face à l'enclos des loups. Il y a une observation au coucher du soleil avec un soigneur, et un dîner autour du feu. Maximum huit personnes.</div>
+<div class="tr">Bir hayvan parkında sıra dışı konaklama: ormanın içinde, kurtların alanının karşısındaki çadırlarda bir gece uyunuyor. Gün batımında bakıcıyla gözlem ve ateş başında akşam yemeği var. En fazla sekiz kişi.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Entendre les loups hurler dans la nuit, autour d'un feu — c'est une expérience qu'on n'oublie jamais.</div><div class="tr">Ateş başında, gecenin içinde kurtların ulumasını duymak — asla unutulmayan bir deneyim.</div></div>
+<div class="argitem"><div class="fr">C'est encadré par un soigneur professionnel — on apprend plein de choses sur ces animaux fascinants.</div><div class="tr">Profesyonel bir bakıcı eşliğinde — bu büyüleyici hayvanlar hakkında bir sürü şey öğreniyoruz.</div></div>
+<div class="argitem"><div class="fr">Petit groupe de huit maximum, tentes confortables — c'est de l'aventure, mais bien organisée.</div><div class="tr">En fazla sekiz kişilik küçük grup, konforlu çadırlar — macera ama iyi organize edilmiş.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Dormir dehors à côté des loups ?! C'est dangereux ! »</div><div class="tr">Kurtların yanında dışarıda uyumak mı?! Tehlikeli!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Rassure-toi — les loups sont dans un enclos sécurisé, on dort en face, pas avec eux ! C'est un parc animalier professionnel, avec un soigneur présent toute la nuit. C'est le frisson de l'aventure, sans le danger.</div>
+<div class="tr">İçin rahat olsun — kurtlar güvenli bir alanda, karşısında uyuyoruz, onlarla değil! Profesyonel bir hayvan parkı, bakıcı bütün gece orada. Tehlikesiz macera heyecanı.</div></div></div>
+<div class="obj"><div class="q">« Dormir sous une tente, j'ai besoin de mon confort. »</div><div class="tr">Çadırda uyumak mı, konforuma düşkünüm.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je vois ce que tu veux dire, mais ce ne sont pas des tentes de camping basiques — elles sont confortables, avec de vrais lits. Et ce n'est qu'une nuit ! Une nuit un peu différente contre un souvenir pour toute la vie — ça vaut le coup, non ?</div>
+<div class="tr">Ne demek istediğini anlıyorum ama bunlar basit kamp çadırları değil — konforlu, gerçek yataklı. Ve sadece bir gece! Biraz farklı bir geceye karşılık ömürlük bir anı — değer, değil mi?</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 8 SPORT A DOMICILE WEBCAM -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">8 · Cours de sport à domicile (webcam)</div><div class="st">Webcam ile evde spor dersi · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des cours de sport à domicile par webcam. Vous en parlez à un(e) ami(e) qui veut se remettre en forme. Essayez de le (la) convaincre de s'y inscrire.</div>
+<div class="tr">Webcam ile evde spor dersi ilanı okudun. Formuna kavuşmak isteyen bir arkadaşına anlatıyorsun. Onu kaydolmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>VOTRE COACH SPORTIF À LA MAISON — par webcam !</b><br>
+Cours en direct avec un coach diplômé · Programme personnalisé selon votre niveau · Sans matériel, dans votre salon · Horaires flexibles, cours de 30 minutes · Premier cours d'essai gratuit · 12 $ par cours ou forfait mensuel</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de cours de sport à domicile, par webcam, avec un coach diplômé en direct. Le programme est personnalisé selon ton niveau, sans matériel, et les horaires sont flexibles. Le premier cours d'essai est gratuit.</div>
+<div class="tr">Webcam ile evde spor dersleri, diplomalı koçla canlı. Program seviyene göre kişiselleştiriliyor, malzemesiz ve saatler esnek. İlk deneme dersi ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis que tu n'as pas le temps d'aller à la salle — là, zéro trajet : trente minutes dans ton salon, c'est tout.</div><div class="tr">Salona gitmeye vaktin olmadığını söylüyorsun — burada sıfır yol: salonunda 30 dakika, hepsi bu.</div></div>
+<div class="argitem"><div class="fr">C'est un vrai coach en direct, pas une vidéo YouTube — il te corrige et adapte le programme à ton niveau.</div><div class="tr">Canlı gerçek bir koç, YouTube videosu değil — seni düzeltiyor ve programı seviyene uyarlıyor.</div></div>
+<div class="argitem"><div class="fr">Le premier cours est gratuit — tu essaies, et si ça ne te plaît pas, tu arrêtes. Zéro risque.</div><div class="tr">İlk ders ücretsiz — deniyorsun, hoşuna gitmezse bırakıyorsun. Sıfır risk.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Faire du sport devant une webcam, c'est bizarre. »</div><div class="tr">Webcam önünde spor yapmak tuhaf.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, au début ça peut sembler étrange. Mais en fait, c'est comme un appel vidéo avec un ami — après cinq minutes, tu oublies la caméra. Et c'est moins intimidant que la salle de sport, où tout le monde te regarde !</div>
+<div class="tr">Anlıyorum, başta tuhaf gelebilir. Ama aslında bir arkadaşla görüntülü konuşma gibi — beş dakika sonra kamerayı unutuyorsun. Ve herkesin sana baktığı spor salonundan daha az gerdirici!</div></div></div>
+<div class="obj"><div class="q">« Seul(e) à la maison, je vais vite abandonner. »</div><div class="tr">Evde tek başıma çabuk bırakırım.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, c'est la différence avec les vidéos : le coach t'attend à une heure précise, en direct. C'est un vrai rendez-vous — beaucoup plus difficile d'abandonner. Et on peut s'inscrire tous les deux pour se motiver !</div>
+<div class="tr">İşte videolarla farkı tam bu: koç seni belli bir saatte canlı bekliyor. Gerçek bir randevu — bırakması çok daha zor. Hem ikimiz de kaydolup birbirimizi motive edebiliriz!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<div class="foot">Sport &amp; Aventure · 8 sujet</div>
+</div>
+
+<script>
+var MODE = 'study';
+function setMode(m) {
+  MODE = m;
+  var trs = document.getElementsByClassName('tr');
+  var i;
+  for (i = 0; i < trs.length; i++) {
+    trs[i].style.display = (m === 'test') ? 'none' : 'block';
+  }
+  document.getElementById('btnStudy').className = 'modebtn' + (m === 'study' ? ' on' : '');
+  document.getElementById('btnTest').className = 'modebtn' + (m === 'test' ? ' on' : '');
+  if (m === 'test') {
+    var reps = document.getElementsByClassName('rep');
+    for (i = 0; i < reps.length; i++) {
+      if (reps[i].className.indexOf('hidden') === -1) { reps[i].className = 'rep hidden'; }
+    }
+    var btns = document.getElementsByClassName('revealbtn');
+    for (i = 0; i < btns.length; i++) { btns[i].innerHTML = 'Cevabı göster'; }
+  }
+}
+function tog(head) {
+  var body = head.nextSibling;
+  while (body && body.nodeType !== 1) { body = body.nextSibling; }
+  if (!body) { return; }
+  body.style.display = (body.style.display === 'block') ? 'none' : 'block';
+}
+function rev(btn) {
+  var rep = btn.nextSibling;
+  while (rep && rep.nodeType !== 1) { rep = rep.nextSibling; }
+  if (!rep) { return; }
+  if (rep.className.indexOf('hidden') !== -1) {
+    rep.className = 'rep';
+    if (MODE === 'test') {
+      var trs = rep.getElementsByClassName('tr');
+      for (var i = 0; i < trs.length; i++) { trs[i].style.display = 'none'; }
+    }
+    btn.innerHTML = 'Cevabı gizle';
+  } else {
+    rep.className = 'rep hidden';
+    btn.innerHTML = 'Cevabı göster';
+  }
+}
+</script>
+</body>
+</html>

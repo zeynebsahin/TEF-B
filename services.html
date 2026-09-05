@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section B — Services &amp; Vie quotidienne</title>
+<style>
+body { margin:0; padding:0; background:#ffffff; color:#22303c;
+  font-family:-apple-system,'Helvetica Neue',Arial,sans-serif; font-size:16px; }
+.wrap { max-width:720px; margin:0 auto; padding:16px; }
+a.back { text-decoration:none; color:#1565c0; font-size:15px; }
+h1 { font-size:24px; margin:12px 0 4px 0; }
+.sub { color:#6b7a88; font-size:14px; margin-bottom:14px; }
+.modebtn { display:inline-block; border:1px solid #1565c0; color:#1565c0;
+  background:#ffffff; border-radius:8px; padding:8px 14px; font-size:15px;
+  font-weight:600; cursor:pointer; margin-bottom:16px; }
+.modebtn.on { background:#1565c0; color:#ffffff; }
+.sujet { border:1px solid #d8dee4; border-radius:10px; margin-bottom:12px; overflow:hidden; }
+.shead { padding:13px 15px; background:#fbfcfd; cursor:pointer; }
+.shead .t { font-size:17px; font-weight:700; }
+.shead .st { font-size:13px; color:#6b7a88; margin-top:2px; }
+.sbody { padding:0 15px 14px 15px; display:none; border-top:1px solid #e9edf1; }
+.lbl { font-size:12px; font-weight:700; letter-spacing:0.8px; margin:16px 0 6px 0; }
+.lbl.consigne { color:#546e7a; }
+.lbl.annonce { color:#8d6e30; }
+.lbl.sunum { color:#1565c0; }
+.lbl.arg { color:#2e7d32; }
+.lbl.itiraz { color:#c62828; }
+.fr { margin:4px 0 0 0; line-height:1.45; }
+.tr { margin:3px 0 0 0; line-height:1.4; color:#7a6a52; font-size:14px; font-style:italic; }
+.annbox { border:1px dashed #c9b280; background:#fdfaf2; border-radius:8px;
+  padding:10px 12px; font-size:15px; line-height:1.5; }
+.argitem { border-left:4px solid #2e7d32; padding:4px 0 4px 10px; margin-bottom:8px; }
+.obj { border:1px solid #eed7d7; border-left:5px solid #c62828; border-radius:8px;
+  padding:9px 12px; margin-bottom:9px; background:#fdf9f9; }
+.obj .q { font-weight:600; color:#c62828; }
+.rep { border-left:4px solid #6a1b9a; padding:5px 0 2px 10px; margin-top:8px; }
+.rep .fr { color:#4a2a6a; }
+.revealbtn { display:inline-block; margin-top:7px; border:1px solid #6a1b9a; color:#6a1b9a;
+  background:#ffffff; border-radius:7px; padding:5px 11px; font-size:14px; cursor:pointer; }
+.hidden { display:none; }
+.kalipnote { font-size:13px; color:#9aa5af; margin-top:14px; border-top:1px solid #e9edf1; padding-top:8px; }
+.kalipnote a { color:#1565c0; }
+.foot { font-size:13px; color:#9aa5af; margin-top:24px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">‹ Ana menü</a>
+<h1>🛒 Services &amp; Vie quotidienne</h1>
+<div class="sub">12 sujet · Açılış/kapanış → <b>Evrensel Kalıp</b></div>
+
+<span class="modebtn on" id="btnStudy" onclick="setMode('study')">Çalışma (FR+TR)</span>
+<span class="modebtn" id="btnTest" onclick="setMode('test')">Test (sadece FR)</span>
+
+<!-- 1 MEDICAMENTS EN LIGNE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">1 · Médicaments en ligne</div><div class="st">İlaçları internetten alma · ÇIKMIŞ (tefcanada.ca)</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour une pharmacie en ligne. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre d'acheter ses médicaments en ligne.</div>
+<div class="tr">Bir online eczane ilanı okudun. Arkadaşına anlatıyorsun. Onu ilaçlarını internetten almaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>VOTRE PHARMACIE EN LIGNE</b><br>
+Livraison à domicile en 24h · De 30 à 40 % de réduction sur les produits de parapharmacie · Toutes les marques disponibles · Pharmaciens diplômés disponibles par chat · Site sécurisé et agréé</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une pharmacie en ligne agréée. La livraison à domicile se fait en 24 heures, il y a de 30 à 40 pour cent de réduction, et toutes les marques sont disponibles. Et des pharmaciens diplômés répondent aux questions par chat.</div>
+<div class="tr">Onaylı bir online eczane. Eve teslimat 24 saatte, yüzde 30-40 indirim var ve tüm markalar mevcut. Diplomalı eczacılar da chat üzerinden soruları cevaplıyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">30 à 40 % de réduction — sur les produits que tu achètes tous les mois, ça fait de vraies économies à la fin de l'année.</div><div class="tr">Yüzde 30-40 indirim — her ay aldığın ürünlerde yıl sonunda gerçek bir tasarruf demek.</div></div>
+<div class="argitem"><div class="fr">La livraison en 24h à domicile — fini de courir à la pharmacie après le travail ou quand tu es malade.</div><div class="tr">24 saatte eve teslimat — işten sonra ya da hastayken eczaneye koşmak bitti.</div></div>
+<div class="argitem"><div class="fr">Toutes les marques sont disponibles — même celles que ta petite pharmacie n'a jamais en stock.</div><div class="tr">Tüm markalar mevcut — küçük eczanende hiç bulunmayanlar bile.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Acheter des médicaments sur Internet, ce n'est pas sûr — il y a des faux ! »</div><div class="tr">İnternetten ilaç almak güvenli değil — sahteleri var!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu as raison d'être prudente — pour les sites inconnus ! Mais celui-ci est un site agréé et sécurisé, avec de vrais pharmaciens diplômés. C'est la même réglementation qu'une pharmacie physique, juste avec la livraison en plus. Il faut juste vérifier l'agrément, et celui-là l'a.</div>
+<div class="tr">Temkinli olmakta haklısın — bilinmeyen siteler için! Ama bu onaylı ve güvenli bir site, gerçek diplomalı eczacılarla. Fiziksel eczaneyle aynı mevzuat, sadece üstüne teslimat var. Tek gereken onayı kontrol etmek, bunda var.</div></div></div>
+<div class="obj"><div class="q">« J'aime bien demander conseil à mon pharmacien en personne. »</div><div class="tr">Eczacıma yüz yüze danışmayı severim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, et tu peux continuer ! L'un n'empêche pas l'autre : les questions importantes chez ton pharmacien, et les produits habituels — les vitamines, les produits de parapharmacie — en ligne avec la réduction. Et il y a aussi des pharmaciens par chat si besoin.</div>
+<div class="tr">Anlıyorum ve devam edebilirsin! Biri diğerine engel değil: önemli sorular eczacında, alışıldık ürünler — vitaminler, parafarmasi ürünleri — indirimli online. Gerekirse chat'te de eczacılar var.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 2 COURSES EN LIGNE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">2 · Courses en ligne</div><div class="st">Market alışverişini internete taşıma · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un service de courses en ligne. Vous en parlez à un(e) ami(e) qui n'a jamais essayé. Essayez de le (la) convaincre de faire ses courses en ligne.</div>
+<div class="tr">Online market servisi ilanı okudun. Hiç denememiş bir arkadaşına anlatıyorsun. Onu alışverişini internetten yapmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>VOS COURSES EN LIGNE — Livrées chez vous !</b><br>
+Commandez sur le site ou l'application · Créneaux de livraison le jour même · Produits frais garantis · 10 $ offerts sur la première commande · Livraison gratuite dès 60 $ d'achat</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un service de courses en ligne : tu commandes sur l'application, et tout est livré chez toi, même le jour même. Les produits frais sont garantis, il y a 10 dollars offerts sur la première commande, et la livraison est gratuite dès 60 dollars d'achat.</div>
+<div class="tr">Online market servisi: uygulamadan sipariş veriyorsun ve her şey evine geliyor, aynı gün bile. Taze ürünler garantili, ilk siparişte 10 dolar hediye ve 60 dolar üzeri teslimat ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu gagnes deux heures chaque semaine — plus de queue, plus de parking, plus de sacs lourds à porter.</div><div class="tr">Her hafta iki saat kazanıyorsun — kuyruk yok, otopark yok, taşınacak ağır poşet yok.</div></div>
+<div class="argitem"><div class="fr">Tu dépenses moins : en ligne, pas d'achats impulsifs — tu achètes ta liste, c'est tout. Et tu compares les prix facilement.</div><div class="tr">Daha az harcıyorsun: online'da dürtüsel alışveriş yok — listeni alıyorsun, o kadar. Fiyatları da kolayca karşılaştırıyorsun.</div></div>
+<div class="argitem"><div class="fr">La première commande a 10 dollars offerts — c'est le moment parfait pour tester sans risque.</div><div class="tr">İlk siparişte 10 dolar hediye — risksiz denemek için mükemmel zaman.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je veux choisir mes fruits et légumes moi-même ! »</div><div class="tr">Meyve sebzemi kendim seçmek isterim!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, c'est l'objection classique ! Mais les produits frais sont garantis — si quelque chose ne te plaît pas, ils remboursent sans discussion. Et tu peux faire un mix : le frais au marché le samedi, et tout le reste — les produits lourds, les conserves, les boissons — livré. C'est ça, la vraie liberté.</div>
+<div class="tr">Anlıyorum, klasik itiraz bu! Ama taze ürünler garantili — bir şey hoşuna gitmezse tartışmasız iade ediyorlar. Karma da yapabilirsin: tazeler cumartesi pazardan, geri kalan her şey — ağır ürünler, konserveler, içecekler — eve teslim. Gerçek özgürlük bu.</div></div></div>
+<div class="obj"><div class="q">« Les frais de livraison, c'est de l'argent jeté par les fenêtres. »</div><div class="tr">Teslimat ücreti çöpe atılan para.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">En fait, dès 60 dollars, la livraison est gratuite — et une course de la semaine dépasse facilement ça. Et pense au calcul complet : l'essence, le parking, ton temps… La livraison gratuite est souvent moins chère que d'y aller toi-même !</div>
+<div class="tr">Aslında 60 dolar üzeri teslimat ücretsiz — haftalık alışveriş bunu kolayca geçiyor. Tam hesabı da düşün: benzin, otopark, zamanın… Ücretsiz teslimat çoğu zaman kendin gitmekten ucuz!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 3 E-CIGARETTE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">3 · Cigarette électronique</div><div class="st">Sigarayı bırakmak isteyen arkadaşa e-sigara · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour une boutique de cigarettes électroniques. Vous en parlez à un(e) ami(e) qui fume et veut arrêter. Essayez de le (la) convaincre d'essayer la cigarette électronique.</div>
+<div class="tr">Bir e-sigara mağazası ilanı okudun. Sigara içen ve bırakmak isteyen bir arkadaşına anlatıyorsun. Onu e-sigarayı denemeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>VAPO'STOP — Pour en finir avec le tabac</b><br>
+Accompagnement personnalisé pour arrêter de fumer · Kit débutant complet à 29 $ · Dosage de nicotine dégressif · Conseillers formés en boutique · Économisez jusqu'à 2 000 $ par an par rapport au tabac</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une boutique spécialisée pour arrêter de fumer avec la cigarette électronique. Il y a un kit débutant à 29 dollars, un dosage de nicotine dégressif, et des conseillers formés qui t'accompagnent. D'après eux, on économise jusqu'à 2 000 dollars par an par rapport au tabac.</div>
+<div class="tr">E-sigarayla sigarayı bırakmaya yönelik uzman bir mağaza. 29 dolara başlangıç kiti, kademeli azalan nikotin dozu ve sana eşlik eden eğitimli danışmanlar var. Onlara göre tütüne kıyasla yılda 2000 dolara kadar tasarruf ediliyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis depuis des mois que tu veux arrêter — là, le dosage dégressif te permet de réduire doucement, sans choc.</div><div class="tr">Aylardır bırakmak istediğini söylüyorsun — burada kademeli doz, şok yaşamadan yavaşça azaltmanı sağlıyor.</div></div>
+<div class="argitem"><div class="fr">Jusqu'à 2 000 dollars d'économies par an — imagine ce que tu peux faire avec ça : un voyage, par exemple !</div><div class="tr">Yılda 2000 dolara kadar tasarruf — bununla ne yapabileceğini düşün: mesela bir seyahat!</div></div>
+<div class="argitem"><div class="fr">Tu n'es pas seule : les conseillers t'accompagnent et adaptent le dosage avec toi. C'est un vrai plan, pas juste un gadget.</div><div class="tr">Yalnız değilsin: danışmanlar sana eşlik ediyor ve dozu seninle ayarlıyor. Gerçek bir plan bu, oyuncak değil.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« J'ai déjà essayé d'arrêter trois fois, ça ne marche jamais. »</div><div class="tr">Üç kez bırakmayı denedim, hiç işe yaramıyor.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je sais, et je sais que c'est dur. Mais tu as essayé d'arrêter d'un coup, seule — c'est la méthode la plus difficile. Là, c'est différent : le dosage diminue progressivement, et un conseiller te suit. Ce n'est pas retenter la même chose — c'est essayer une nouvelle méthode.</div>
+<div class="tr">Biliyorum ve zor olduğunu da biliyorum. Ama bir anda, tek başına bırakmayı denedin — en zor yöntem bu. Burada farklı: doz kademeli azalıyor ve bir danışman seni takip ediyor. Aynı şeyi tekrar denemek değil — yeni bir yöntem denemek.</div></div></div>
+<div class="obj"><div class="q">« La cigarette électronique, c'est peut-être aussi mauvais pour la santé. »</div><div class="tr">E-sigara da belki sağlığa zararlı.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est une bonne question, et c'est vrai que ce n'est pas neutre. Mais l'objectif ici n'est pas de vapoter pour toujours — c'est un outil de transition, avec un dosage qui descend jusqu'à zéro. Et tu peux en parler à ton médecin avant de commencer, pour être rassurée.</div>
+<div class="tr">İyi bir soru ve tamamen masum olmadığı doğru. Ama buradaki amaç sonsuza dek e-sigara içmek değil — sıfıra kadar inen dozla bir geçiş aracı. Ve içinin rahat etmesi için başlamadan önce doktorunla da konuşabilirsin.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 4 VOITURE ELECTRIQUE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">4 · Voiture électrique en libre-service</div><div class="st">Paylaşımlı elektrikli araba servisi · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un service de voitures électriques en libre-service. Vous en parlez à un(e) ami(e) qui utilise beaucoup sa voiture. Essayez de le (la) convaincre d'essayer ce service.</div>
+<div class="tr">Paylaşımlı elektrikli araba servisi ilanı okudun. Arabasını çok kullanan bir arkadaşına anlatıyorsun. Onu bu servisi denemeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>ÉLECTRO'CAR — Voitures électriques en libre-service</b><br>
+Des voitures disponibles 24h/24 dans toute la ville · Réservation par application en 30 secondes · Tarif : 12 $ de l'heure ou forfaits mensuels · Assurance, recharge et stationnement inclus · Sans engagement</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un service de voitures électriques en libre-service : des voitures disponibles 24 heures sur 24 dans toute la ville, réservées par application en trente secondes. C'est 12 dollars de l'heure, avec l'assurance, la recharge et le stationnement inclus.</div>
+<div class="tr">Paylaşımlı elektrikli araba servisi: şehrin her yerinde 7/24 erişilebilir arabalar, uygulamadan 30 saniyede rezervasyon. Saati 12 dolar; sigorta, şarj ve park dahil.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Fais le calcul de ta voiture : le crédit, l'assurance, l'essence, l'entretien, le stationnement… Ce service peut te coûter trois fois moins cher.</div><div class="tr">Arabanın hesabını yap: kredi, sigorta, benzin, bakım, park… Bu servis üç kat ucuza gelebilir.</div></div>
+<div class="argitem"><div class="fr">Tout est inclus — l'assurance, la recharge, le stationnement. Zéro paperasse, zéro garage, zéro souci.</div><div class="tr">Her şey dahil — sigorta, şarj, park. Sıfır evrak, sıfır tamirci, sıfır dert.</div></div>
+<div class="argitem"><div class="fr">C'est électrique — silencieux, propre, et tu fais un geste pour la planète à chaque trajet.</div><div class="tr">Elektrikli — sessiz, temiz ve her yolculukta gezegen için bir şey yapıyorsun.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Et si j'ai besoin d'une voiture et qu'il n'y en a pas de disponible ? »</div><div class="tr">Ya arabaya ihtiyacım olduğunda müsait araba yoksa?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est une inquiétude normale, mais il y a des stations dans toute la ville, et l'application te montre les voitures disponibles en temps réel — tu peux même réserver à l'avance pour être sûre. Et garde ta voiture au début si tu veux : teste le service un mois, et compare.</div>
+<div class="tr">Normal bir endişe ama şehrin her yerinde istasyonlar var ve uygulama müsait arabaları gerçek zamanlı gösteriyor — emin olmak için önceden rezervasyon bile yapabilirsin. İstersen başta arabanı da tut: servisi bir ay dene, karşılaştır.</div></div></div>
+<div class="obj"><div class="q">« Les voitures partagées, elles sont toujours sales. »</div><div class="tr">Paylaşımlı arabalar hep kirli olur.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ça arrive, je ne vais pas te mentir. Mais le service fait des nettoyages réguliers, et l'application permet de signaler un problème — les utilisateurs qui laissent la voiture sale sont pénalisés. Et franchement, pour la différence de prix, un petit compromis de temps en temps, ça vaut le coup.</div>
+<div class="tr">Oluyor, yalan söylemeyeceğim. Ama servis düzenli temizlik yapıyor ve uygulamadan sorun bildirilebiliyor — arabayı kirli bırakanlar cezalandırılıyor. Ve açıkçası aradaki fiyat farkı için arada bir küçük taviz, buna değer.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 5 PANNEAUX SOLAIRES -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">5 · Panneaux solaires</div><div class="st">Müstakil evi olan arkadaşa güneş paneli · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette publicité pour une entreprise de panneaux solaires. Vous en parlez à un(e) ami(e) qui habite en maison. Essayez de le (la) convaincre d'équiper sa maison avec un panneau solaire.</div>
+<div class="tr">Bir güneş paneli firması ilanı okudun. Müstakil evde oturan bir arkadaşına anlatıyorsun. Onu evine güneş paneli taktırmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>PANNEAUX SOLAIRES EXPERT-SOL</b><br>
+Jusqu'à 30 % de dépenses d'énergie en moins ! · Installation de panneaux solaires sur le toit de votre maison · Faites un vrai geste pour la planète ! Écologique et économique ! · Diagnostic et devis gratuits · Aide et conseils de nos techniciens · Tarifs compétitifs · Service 24h · www.expert-sol.qc.ca</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une entreprise qui installe des panneaux solaires sur le toit des maisons. Ça permet jusqu'à trente pour cent de dépenses d'énergie en moins. Et le diagnostic et le devis sont gratuits — les techniciens viennent voir ta maison sans engagement.</div>
+<div class="tr">Evlerin çatısına güneş paneli kuran bir firma. Enerji harcamasında yüzde otuza kadar azalma sağlıyor. Keşif ve fiyat teklifi ücretsiz — teknisyenler taahhütsüz evine bakmaya geliyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Jusqu'à 30 % de moins sur ta facture d'énergie — avec ta grande maison, ça fait des centaines de dollars par an.</div><div class="tr">Enerji faturanda yüzde 30'a kadar azalma — büyük evinle yılda yüzlerce dolar demek.</div></div>
+<div class="argitem"><div class="fr">Le diagnostic et le devis sont gratuits — tu sauras exactement combien tu peux économiser, sans rien payer ni t'engager.</div><div class="tr">Keşif ve teklif ücretsiz — hiçbir şey ödemeden ve taahhüde girmeden tam olarak ne kadar tasarruf edebileceğini öğreneceksin.</div></div>
+<div class="argitem"><div class="fr">C'est un vrai geste pour la planète — et en plus, une maison équipée en solaire prend de la valeur à la revente.</div><div class="tr">Gezegen için gerçek bir adım — üstelik güneş panelli bir ev satışta değer kazanıyor.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« L'installation coûte une fortune, non ? »</div><div class="tr">Kurulum servete mal olmuyor mu?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est un investissement, c'est vrai. Mais réfléchis à long terme : avec 30 % d'économies chaque année, l'installation se rembourse toute seule en quelques années — et après, c'est du gain pur. Commence par le devis gratuit : tu auras les vrais chiffres pour TA maison, et tu décideras avec des faits.</div>
+<div class="tr">Bir yatırım, doğru. Ama uzun vadeli düşün: her yıl yüzde 30 tasarrufla kurulum birkaç yılda kendini amorti ediyor — sonrası saf kazanç. Ücretsiz teklifle başla: SENİN evin için gerçek rakamları görür, verilerle karar verirsin.</div></div></div>
+<div class="obj"><div class="q">« Ici, il n'y a pas assez de soleil pour que ça marche. »</div><div class="tr">Burada bunun çalışması için yeterli güneş yok.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est une idée reçue ! Les panneaux modernes fonctionnent même par temps nuageux — ils captent la lumière, pas seulement le soleil direct. L'Allemagne, pas très ensoleillée, est un leader du solaire. Et justement, le diagnostic gratuit mesure le potentiel exact de TON toit — s'il n'est pas bon, ils te le diront.</div>
+<div class="tr">Yaygın bir yanılgı! Modern paneller bulutlu havada bile çalışıyor — sadece doğrudan güneşi değil, ışığı yakalıyorlar. Pek güneşli olmayan Almanya güneş enerjisinde lider. Ve işte ücretsiz keşif SENİN çatının tam potansiyelini ölçüyor — uygun değilse söylerler.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 6 GARAGE SOLIDAIRE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">6 · Garage solidaire</div><div class="st">Dayanışma tamirhanesi — arabayı kendin tamir et · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un garage solidaire. Vous en parlez à un(e) ami(e) dont la voiture est en panne. Essayez de le (la) convaincre d'utiliser ce garage.</div>
+<div class="tr">Bir dayanışma tamirhanesi ilanı okudun. Arabası arızalı bir arkadaşına anlatıyorsun. Onu bu tamirhaneyi kullanmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>LE GARAGE SOLIDAIRE — Réparez votre voiture à petit prix !</b><br>
+Réparez vous-même avec l'aide de mécaniciens professionnels · Outils et pont élévateur à disposition · Tarifs solidaires : 50 à 70 % moins cher qu'un garage classique · Ouvert à tous, adhésion annuelle de 20 $ · Ateliers d'initiation à la mécanique</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un garage solidaire : tu répares ta voiture toi-même, mais avec l'aide de mécaniciens professionnels et tous les outils à disposition. C'est 50 à 70 pour cent moins cher qu'un garage classique, et l'adhésion coûte seulement 20 dollars par an.</div>
+<div class="tr">Dayanışma tamirhanesi: arabanı kendin tamir ediyorsun ama profesyonel tamircilerin yardımıyla ve tüm aletler emrinde. Klasik tamirhaneden yüzde 50-70 ucuz ve üyelik yılda sadece 20 dolar.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">50 à 70 % moins cher — pour ta réparation, ça peut faire des centaines de dollars de différence.</div><div class="tr">Yüzde 50-70 daha ucuz — senin tamirin için yüzlerce dolar fark edebilir.</div></div>
+<div class="argitem"><div class="fr">Tu n'es pas seule : des mécaniciens professionnels te guident à chaque étape. C'est eux qui vérifient le travail.</div><div class="tr">Yalnız değilsin: profesyonel tamirciler her adımda yönlendiriyor. İşi kontrol eden de onlar.</div></div>
+<div class="argitem"><div class="fr">En plus, tu apprends la mécanique — la prochaine petite panne, tu sauras la gérer toi-même.</div><div class="tr">Üstelik tamir öğreniyorsun — bir dahaki küçük arızayı kendin halledebileceksin.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je n'y connais rien en mécanique, je vais aggraver la panne ! »</div><div class="tr">Tamirden hiç anlamam, arızayı büyütürüm!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ne t'inquiète pas — les mécaniciens professionnels sont là exactement pour ça. Ils diagnostiquent la panne avec toi, te montrent les gestes, et vérifient tout à la fin. Tu ne peux rien aggraver sous leur supervision. Et il y a même des ateliers d'initiation pour commencer.</div>
+<div class="tr">Endişelenme — profesyonel tamirciler tam da bunun için orada. Arızayı seninle teşhis ediyor, hareketleri gösteriyor ve sonunda her şeyi kontrol ediyorlar. Onların gözetiminde hiçbir şeyi kötüleştiremezsin. Başlamak için tanıtım atölyeleri bile var.</div></div></div>
+<div class="obj"><div class="q">« Je n'ai pas le temps de passer une journée à réparer ma voiture. »</div><div class="tr">Arabamı tamir etmekle bir gün geçirecek vaktim yok.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais compare : au garage classique, tu attends souvent plusieurs jours pour un rendez-vous, et tu paies le double. Ici, quelques heures un samedi, et c'est réglé — avec des centaines de dollars économisés. Ton samedi vaut cher, mais pas si cher !</div>
+<div class="tr">Anlıyorum ama kıyasla: klasik tamirhanede randevu için çoğu zaman günlerce bekliyorsun ve iki katını ödüyorsun. Burada bir cumartesi birkaç saat ve iş bitiyor — yüzlerce dolar cepte. Cumartesin değerli ama o kadar da değil!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- PART2 -->
+<!-- 7 CAFE DEPANNEUR -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">7 · Café Dépanneur</div><div class="st">Eşyalarını tamir kafesinde onarma · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un café de réparation. Vous en parlez à un(e) ami(e) dont le grille-pain est cassé. Essayez de le (la) convaincre d'y aller au lieu d'en acheter un nouveau.</div>
+<div class="tr">Bir tamir kafesi ilanı okudun. Ekmek kızartma makinesi bozulan bir arkadaşına anlatıyorsun. Onu yenisini almak yerine oraya gitmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>LE CAFÉ DÉPANNEUR — Ne jetez plus, réparez !</b><br>
+Apportez vos objets cassés : petit électroménager, vélos, vêtements, jouets · Des bénévoles réparateurs vous aident à les réparer · Participation libre · Café et gâteaux sur place · Tous les samedis de 10h à 16h</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un café de réparation : tu apportes ton objet cassé — le petit électroménager, un vélo, des vêtements — et des bénévoles réparateurs t'aident à le réparer. La participation est libre, et c'est tous les samedis, avec du café et des gâteaux !</div>
+<div class="tr">Bir tamir kafesi: bozuk eşyanı getiriyorsun — küçük ev aletleri, bisiklet, kıyafet — ve gönüllü tamirciler onarmana yardım ediyor. Katılım ücreti serbest ve her cumartesi, kahve ve kekle birlikte!</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Ton grille-pain a peut-être juste un petit problème — le réparer coûte presque rien, un neuf coûte 40 dollars.</div><div class="tr">Makinenin belki sadece küçük bir sorunu var — tamiri neredeyse bedava, yenisi 40 dolar.</div></div>
+<div class="argitem"><div class="fr">C'est écologique — chaque objet réparé, c'est un déchet de moins. Toi qui parles toujours de la planète !</div><div class="tr">Ekolojik — tamir edilen her eşya bir çöp eksik demek. Hep gezegenden bahseden sensin!</div></div>
+<div class="argitem"><div class="fr">L'ambiance est géniale : du café, des gâteaux, des gens sympas — et tu apprends à réparer toi-même.</div><div class="tr">Ortam harika: kahve, kek, hoş insanlar — ve kendin tamir etmeyi öğreniyorsun.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Un grille-pain neuf coûte 40 dollars, pourquoi perdre un samedi ? »</div><div class="tr">Yeni makine 40 dolar, neden bir cumartesi harcayayım?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu n'as pas tort sur le prix, mais ce n'est pas qu'une question d'argent. C'est une sortie sympa d'une heure ou deux, pas toute la journée. Et il ne s'agit pas que du grille-pain : une fois que tu connais l'endroit, tu y retournes pour le vélo, les vêtements… À long terme, les économies s'additionnent.</div>
+<div class="tr">Fiyatta haksız değilsin ama mesele sadece para değil. Bir-iki saatlik hoş bir aktivite, bütün gün değil. Ve konu sadece makine değil: mekânı bir kez tanıyınca bisiklet, kıyafet için de dönüyorsun… Uzun vadede tasarruflar birikiyor.</div></div></div>
+<div class="obj"><div class="q">« Et si c'est irréparable ? J'aurai perdu mon temps. »</div><div class="tr">Ya tamir edilemezse? Vaktimi boşa harcamış olurum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Au pire, les réparateurs te le disent en dix minutes, et tu achètes un neuf en connaissance de cause — sans regret. Et tu auras quand même passé un bon moment avec un café. Franchement, tu n'as rien à perdre.</div>
+<div class="tr">En kötü ihtimalle tamirciler on dakikada söyler ve gönül rahatlığıyla yenisini alırsın — pişmanlıksız. Ve yine de kahve eşliğinde güzel vakit geçirmiş olursun. Açıkçası kaybedecek bir şeyin yok.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 8 CHEF A DOMICILE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">8 · Chef cuisinier à domicile</div><div class="st">Ev partisi için eve şef çağırma</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un service de chef à domicile. Vous en parlez à un(e) ami(e) qui veut organiser une soirée. Essayez de le (la) convaincre de faire appel à un chef cuisinier à domicile.</div>
+<div class="tr">Eve şef servisi ilanı okudun. Bir parti düzenlemek isteyen arkadaşına anlatıyorsun. Onu eve şef çağırmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>UN CHEF DANS VOTRE CUISINE !</b><br>
+Réservez un chef cuisinier chez vous · Vivez une expérience culinaire unique · Découvrez nos menus variés et notre savoir-faire · Nos chefs s'occupent de tout ! · Nouveaux clients : 10 % de réduction</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un service de chef à domicile : un vrai chef vient cuisiner chez toi pour ta soirée. Les menus sont variés, les chefs s'occupent de tout — même de la vaisselle ! Et pour les nouveaux clients, il y a dix pour cent de réduction.</div>
+<div class="tr">Eve şef servisi: gerçek bir şef, gecen için evine gelip yemek yapıyor. Menüler çeşitli, şefler her şeyle ilgileniyor — bulaşıkla bile! Yeni müşterilere de yüzde on indirim var.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Pour une fois, tu profites de TA soirée — pas de courses, pas de cuisine, pas de stress. Le chef s'occupe de tout.</div><div class="tr">Bir kez olsun KENDİ gecenin tadını çıkarıyorsun — alışveriş yok, mutfak yok, stres yok. Şef her şeyle ilgileniyor.</div></div>
+<div class="argitem"><div class="fr">C'est une expérience unique pour tes invités — un restaurant gastronomique dans ton salon. Ils vont en parler pendant des mois !</div><div class="tr">Misafirlerin için eşsiz bir deneyim — salonunda gastronomik bir restoran. Aylarca konuşacaklar!</div></div>
+<div class="argitem"><div class="fr">Avec la réduction de 10 % pour les nouveaux clients, c'est le bon moment pour essayer.</div><div class="tr">Yeni müşterilere yüzde 10 indirimle denemek için doğru zaman.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Un chef à domicile, ça doit coûter une fortune ! »</div><div class="tr">Eve şef servete mal olmalı!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Moins que tu ne le penses ! Fais le calcul : un bon restaurant pour huit personnes avec les boissons, c'est déjà très cher. Le chef à domicile coûte souvent pareil — mais chez toi, avec tes vins, sans limite de temps. Et avec les 10 % de réduction, la différence est encore plus petite.</div>
+<div class="tr">Sandığından az! Hesabı yap: sekiz kişi için içecekleriyle iyi bir restoran zaten çok pahalı. Eve şef çoğu zaman aynıya geliyor — ama kendi evinde, kendi şarabınla, zaman sınırı olmadan. Yüzde 10 indirimle fark daha da küçülüyor.</div></div></div>
+<div class="obj"><div class="q">« Un inconnu dans ma cuisine ? C'est gênant. »</div><div class="tr">Mutfağımda bir yabancı mı? Rahatsız edici.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais ce sont des professionnels — ils ont l'habitude, ils sont discrets et ils laissent la cuisine plus propre qu'avant ! Et pense au côté positif : tes invités adorent discuter avec le chef. Ça fait partie du spectacle.</div>
+<div class="tr">Anlıyorum ama bunlar profesyonel — alışıklar, göze batmıyorlar ve mutfağı öncekinden temiz bırakıyorlar! Olumlu tarafını da düşün: misafirler şefle sohbet etmeye bayılıyor. Gösterinin bir parçası.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 9 VIDE DRESSING -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">9 · Vide-dressing</div><div class="st">Giymediği kıyafetleri satması/bağışlaması için ikna · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un vide-dressing. Vous en parlez à un(e) ami(e) dont le grenier est plein de vêtements qu'il/elle ne porte plus. Essayez de le (la) convaincre d'y participer.</div>
+<div class="tr">Bir kıyafet pazarı (vide-dressing) ilanı okudun. Tavan arası artık giymediği kıyafetlerle dolu bir arkadaşına anlatıyorsun. Onu katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>GRAND VIDE-DRESSING DU QUARTIER</b><br>
+Vendez les vêtements que vous ne portez plus ! · Réservez votre stand : 10 $ la table · Dimanche prochain, salle des fêtes · Entrée gratuite pour les visiteurs · Les invendus peuvent être donnés à une association sur place</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un grand vide-dressing dans le quartier, dimanche prochain. Tu réserves une table pour dix dollars, tu vends les vêtements que tu ne portes plus — et les invendus peuvent être donnés à une association directement sur place.</div>
+<div class="tr">Mahallede büyük bir kıyafet pazarı, önümüzdeki pazar. On dolara bir masa ayırtıyorsun, artık giymediğin kıyafetleri satıyorsun — satılmayanlar da yerinde bir derneğe bağışlanabiliyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis toi-même que ton grenier déborde — en un dimanche, tu vides tout ET tu gagnes de l'argent avec.</div><div class="tr">Tavan arasının taştığını kendin söylüyorsun — bir pazar gününde hepsini boşaltıyorsun VE üstüne para kazanıyorsun.</div></div>
+<div class="argitem"><div class="fr">Ces vêtements que tu ne portes plus, quelqu'un d'autre en rêve — c'est mieux qu'ils vivent une deuxième vie.</div><div class="tr">Artık giymediğin o kıyafetlerin hayalini başkası kuruyor — ikinci bir hayat yaşamaları daha iyi.</div></div>
+<div class="argitem"><div class="fr">Et le génie du système : les invendus partent à une association sur place. Tu rentres les mains vides, garanti !</div><div class="tr">Ve sistemin dehası: satılmayanlar yerinde derneğe gidiyor. Eve eli boş dönüyorsun, garanti!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je garde ces vêtements au cas où — je vais peut-être les reporter un jour. »</div><div class="tr">Bu kıyafetleri "belki lazım olur" diye tutuyorum — bir gün belki yine giyerim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Sois honnête : ça fait combien d'années qu'ils sont dans le grenier ? La règle est simple : pas porté depuis deux ans = jamais reporté. Et si un jour tu as vraiment besoin d'une pièce, tu la rachèteras — pour moins cher que la place qu'elles occupent dans ta maison !</div>
+<div class="tr">Dürüst ol: kaç yıldır tavan arasındalar? Kural basit: iki yıldır giyilmeyen = bir daha asla giyilmez. Ve bir gün gerçekten bir parçaya ihtiyacın olursa yeniden alırsın — evinde kapladıkları yerden daha ucuza!</div></div></div>
+<div class="obj"><div class="q">« Passer tout un dimanche derrière une table, quel ennui. »</div><div class="tr">Bütün pazarı bir masanın arkasında geçirmek, ne sıkıcı.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Détrompe-toi, l'ambiance des vide-dressings est super — tu discutes avec les visiteurs, tu négocies, tu rencontres tes voisins… Et je viens t'aider ! À deux, on rigole bien, et on partage un bon repas entre les ventes.</div>
+<div class="tr">Yanılıyorsun, vide-dressing ortamı süper — ziyaretçilerle sohbet ediyorsun, pazarlık yapıyorsun, komşularınla tanışıyorsun… Ben de yardıma geliyorum! İkimiz güzel eğleniriz, satış aralarında güzel bir yemek de paylaşırız.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 10 JARDINS PARTAGES -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">10 · Jardins partagés</div><div class="st">Ortak bahçe projesine katılma · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des jardins partagés. Vous en parlez à un(e) ami(e) qui habite en appartement. Essayez de le (la) convaincre de rejoindre ce projet.</div>
+<div class="tr">Ortak bahçeler ilanı okudun. Apartmanda oturan bir arkadaşına anlatıyorsun. Onu bu projeye katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>LES JARDINS PARTAGÉS DU QUARTIER</b><br>
+Cultivez votre propre parcelle en ville ! · Parcelles de 10 m², outils et eau fournis · Conseils de jardiniers expérimentés · Cotisation : 40 $ par an · Fête des récoltes en septembre</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit des jardins partagés du quartier : tu cultives ta propre parcelle de dix mètres carrés en ville. Les outils et l'eau sont fournis, des jardiniers expérimentés donnent des conseils, et la cotisation est de quarante dollars par an.</div>
+<div class="tr">Mahallenin ortak bahçeleri: şehirde kendi on metrekarelik parselini ekiyorsun. Aletler ve su sağlanıyor, deneyimli bahçıvanlar tavsiye veriyor ve aidat yılda kırk dolar.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu habites en appartement et tu rêves de verdure — voilà TON jardin, à cinq minutes de chez toi.</div><div class="tr">Apartmanda oturuyorsun ve yeşillik hayali kuruyorsun — işte SENİN bahçen, evinden beş dakika mesafede.</div></div>
+<div class="argitem"><div class="fr">Tes propres tomates, tes herbes fraîches — le goût n'a rien à voir avec le supermarché, et c'est bio par définition.</div><div class="tr">Kendi domateslerin, taze otların — tadı süpermarketle kıyaslanamaz ve tanımı gereği organik.</div></div>
+<div class="argitem"><div class="fr">Quarante dollars par an, outils et eau inclus — c'est le loisir le moins cher qui existe, et il te nourrit en plus !</div><div class="tr">Aletler ve su dahil yılda kırk dolar — var olan en ucuz hobi, üstelik seni doyuruyor!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je n'ai pas la main verte, tout va mourir. »</div><div class="tr">Bahçıvanlıkta elim yatkın değil, her şey ölür.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est un mythe, la main verte ! Le jardinage, ça s'apprend — et justement, des jardiniers expérimentés sont là pour te conseiller. Commence par les plantes faciles : les radis, les courgettes, la menthe — presque impossibles à rater.</div>
+<div class="tr">Yeşil el diye bir şey efsane! Bahçıvanlık öğrenilir — ve işte deneyimli bahçıvanlar tavsiye için orada. Kolay bitkilerle başla: turp, kabak, nane — mahvetmesi neredeyse imkânsız.</div></div></div>
+<div class="obj"><div class="q">« Un jardin, ça demande du temps tous les jours. »</div><div class="tr">Bahçe her gün zaman ister.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Pas dix mètres carrés ! Deux passages par semaine suffisent — et l'arrosage peut se partager entre voisins de parcelle quand tu pars en vacances. C'est justement l'avantage du jardin PARTAGÉ : on s'entraide.</div>
+<div class="tr">On metrekare için değil! Haftada iki uğrama yetiyor — tatile gidince sulama parsel komşularıyla paylaşılabiliyor. ORTAK bahçenin avantajı tam da bu: yardımlaşılıyor.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 11 FET'ANIM -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">11 · Fêt'Anim — animation d'anniversaire</div><div class="st">Çocuğun doğum günü için animasyon servisi · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un service d'animation d'anniversaires. Vous en parlez à un(e) ami(e) qui organise l'anniversaire de son enfant. Essayez de le (la) convaincre de faire appel à ce service.</div>
+<div class="tr">Doğum günü animasyon servisi ilanı okudun. Çocuğunun doğum gününü düzenleyen bir arkadaşına anlatıyorsun. Onu bu servisi kullanmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>FÊT'ANIM — Des anniversaires inoubliables !</b><br>
+Animateurs professionnels à domicile · Jeux, magie, maquillage, chasse au trésor · Formules de 2 ou 3 heures · Matériel fourni · À partir de 120 $ · Réservation : www.fetanim.ca</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un service d'animation d'anniversaires à domicile : des animateurs professionnels viennent avec des jeux, de la magie, du maquillage, une chasse au trésor… Le matériel est fourni, et les formules commencent à 120 dollars pour deux heures.</div>
+<div class="tr">Evde doğum günü animasyon servisi: profesyonel animatörler oyunlar, sihirbazlık, yüz boyama, hazine avıyla geliyor… Malzeme sağlanıyor ve paketler iki saat için 120 dolardan başlıyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Douze enfants pendant trois heures, c'est un marathon — avec un animateur, TOI aussi tu profites de la fête de ton fils.</div><div class="tr">Üç saat boyunca on iki çocuk bir maraton demek — animatörle SEN de oğlunun partisinin tadını çıkarıyorsun.</div></div>
+<div class="argitem"><div class="fr">Les animateurs sont des professionnels : ils savent gérer un groupe d'enfants, les timides comme les turbulents.</div><div class="tr">Animatörler profesyonel: utangacından yaramazına, bir çocuk grubunu yönetmeyi biliyorlar.</div></div>
+<div class="argitem"><div class="fr">La magie, la chasse au trésor, le maquillage — ton fils aura un anniversaire dont ses copains parleront toute l'année.</div><div class="tr">Sihirbazlık, hazine avı, yüz boyama — oğlunun arkadaşlarının bütün yıl konuşacağı bir doğum günü olacak.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« 120 dollars pour des jeux ? Je peux animer moi-même ! »</div><div class="tr">Oyunlar için 120 dolar mı? Kendim de eğlendirebilirim!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu peux, bien sûr — mais rappelle-toi l'année dernière : tu as passé la fête à courir, et tu étais épuisée le soir. 120 dollars, c'est le prix de TA tranquillité et des photos que tu pourras enfin prendre. Certaines choses valent la dépense.</div>
+<div class="tr">Yapabilirsin tabii — ama geçen yılı hatırla: partiyi koşturarak geçirdin ve akşam bitkindin. 120 dolar, SENİN huzurunun ve nihayet çekebileceğin fotoğrafların fiyatı. Bazı şeyler harcamaya değer.</div></div></div>
+<div class="obj"><div class="q">« Mon fils est timide, il n'aimera pas un inconnu qui anime. »</div><div class="tr">Oğlum utangaç, yabancı bir animatörden hoşlanmaz.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, les animateurs professionnels savent gérer les enfants timides — ils ne forcent jamais, ils attirent avec le jeu. Et en général, au bout de dix minutes de magie, même les plus timides sont au premier rang ! Tu peux aussi en parler à l'animateur avant.</div>
+<div class="tr">İşte profesyonel animatörler utangaç çocukları yönetmeyi tam da biliyor — asla zorlamıyor, oyunla çekiyorlar. Genelde on dakikalık sihirbazlıktan sonra en utangaçlar bile ön sırada! Önceden animatörle de konuşabilirsin.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 12 ADOPTER UN CHAT -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">12 · Adopter un chat</div><div class="st">Arkadaşı kedi sahiplenmeye ikna etme</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce d'un refuge qui propose des chats à l'adoption. Vous en parlez à un(e) ami(e) qui vit seul(e). Essayez de le (la) convaincre d'adopter un chat.</div>
+<div class="tr">Sahiplendirilecek kedileri olan bir barınağın ilanını okudun. Yalnız yaşayan bir arkadaşına anlatıyorsun. Onu bir kedi sahiplenmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>ADOPTEZ, NE PAS ACHETEZ ! — Nos chats cherchent une famille</b><br>
+Chats vaccinés, stérilisés et identifiés · Frais d'adoption : 80 $ (tout inclus) · Période d'essai de deux semaines · Conseils et suivi gratuits après l'adoption · Visitez le refuge le week-end</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un refuge qui propose des chats à l'adoption. Les chats sont vaccinés, stérilisés et identifiés — tout est inclus dans les frais de 80 dollars. Et le meilleur : il y a une période d'essai de deux semaines, avec des conseils gratuits après l'adoption.</div>
+<div class="tr">Kedi sahiplendiren bir barınak. Kediler aşılı, kısırlaştırılmış ve çipli — 80 dolarlık ücrete her şey dahil. En güzeli: iki haftalık deneme süresi var, sahiplenme sonrası ücretsiz danışmanlıkla.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis que ton appartement est trop silencieux le soir — un chat, c'est une présence douce qui t'attend à la maison.</div><div class="tr">Akşamları dairenin fazla sessiz olduğunu söylüyorsun — kedi, evde seni bekleyen tatlı bir varlık.</div></div>
+<div class="argitem"><div class="fr">Le chat est l'animal parfait pour ton rythme : indépendant la journée quand tu travailles, câlin le soir.</div><div class="tr">Kedi senin temposu için mükemmel hayvan: sen çalışırken gündüz bağımsız, akşam sevgi dolu.</div></div>
+<div class="argitem"><div class="fr">Et regarde : période d'essai de deux semaines ! Si vraiment ça ne marche pas, le refuge le reprend. Zéro risque.</div><div class="tr">Ve bak: iki haftalık deneme süresi! Gerçekten yürümezse barınak geri alıyor. Sıfır risk.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Un animal, c'est trop de responsabilité — et les vacances ? »</div><div class="tr">Hayvan çok sorumluluk — ya tatiller?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais un chat, c'est l'animal le plus autonome qui existe — pas de promenades, pas de dressage. Et pour les vacances, un voisin qui passe une fois par jour suffit… et je me porte volontaire ! Tu vois, le problème est déjà réglé.</div>
+<div class="tr">Anlıyorum ama kedi, var olan en bağımsız hayvan — gezdirme yok, eğitim yok. Tatiller içinse günde bir uğrayan bir komşu yetiyor… ve ben gönüllüyüm! Gördün mü, sorun şimdiden çözüldü.</div></div></div>
+<div class="obj"><div class="q">« Les poils partout, les griffes sur le canapé… non merci. »</div><div class="tr">Her yerde tüy, koltukta tırnak izi… hayır teşekkürler.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est vrai qu'il y a un peu de poils — je ne vais pas mentir. Mais un brossage par semaine règle 90 % du problème, et un griffoir protège le canapé. Et franchement, compare ces petits inconvénients au bonheur d'un chat qui ronronne sur tes genoux le soir. Il n'y a pas photo !</div>
+<div class="tr">Biraz tüy olduğu doğru — yalan söylemeyeceğim. Ama haftada bir fırçalama sorunun yüzde 90'ını çözüyor, tırmalama tahtası da koltuğu koruyor. Ve açıkçası bu küçük dezavantajları akşam kucağında mırlayan bir kedinin mutluluğuyla kıyasla. Tartışma bile olmaz!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<div class="foot">Services &amp; Vie quotidienne · 12 sujet</div>
+</div>
+
+<script>
+var MODE = 'study';
+function setMode(m) {
+  MODE = m;
+  var trs = document.getElementsByClassName('tr');
+  var i;
+  for (i = 0; i < trs.length; i++) {
+    trs[i].style.display = (m === 'test') ? 'none' : 'block';
+  }
+  document.getElementById('btnStudy').className = 'modebtn' + (m === 'study' ? ' on' : '');
+  document.getElementById('btnTest').className = 'modebtn' + (m === 'test' ? ' on' : '');
+  if (m === 'test') {
+    var reps = document.getElementsByClassName('rep');
+    for (i = 0; i < reps.length; i++) {
+      if (reps[i].className.indexOf('hidden') === -1) { reps[i].className = 'rep hidden'; }
+    }
+    var btns = document.getElementsByClassName('revealbtn');
+    for (i = 0; i < btns.length; i++) { btns[i].innerHTML = 'Cevabı göster'; }
+  }
+}
+function tog(head) {
+  var body = head.nextSibling;
+  while (body && body.nodeType !== 1) { body = body.nextSibling; }
+  if (!body) { return; }
+  body.style.display = (body.style.display === 'block') ? 'none' : 'block';
+}
+function rev(btn) {
+  var rep = btn.nextSibling;
+  while (rep && rep.nodeType !== 1) { rep = rep.nextSibling; }
+  if (!rep) { return; }
+  if (rep.className.indexOf('hidden') !== -1) {
+    rep.className = 'rep';
+    if (MODE === 'test') {
+      var trs = rep.getElementsByClassName('tr');
+      for (var i = 0; i < trs.length; i++) { trs[i].style.display = 'none'; }
+    }
+    btn.innerHTML = 'Cevabı gizle';
+  } else {
+    rep.className = 'rep hidden';
+    btn.innerHTML = 'Cevabı göster';
+  }
+}
+</script>
+</body>
+</html>

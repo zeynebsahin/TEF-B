@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section B — Cours &amp; Apprentissage</title>
+<style>
+body { margin:0; padding:0; background:#ffffff; color:#22303c;
+  font-family:-apple-system,'Helvetica Neue',Arial,sans-serif; font-size:16px; }
+.wrap { max-width:720px; margin:0 auto; padding:16px; }
+a.back { text-decoration:none; color:#1565c0; font-size:15px; }
+h1 { font-size:24px; margin:12px 0 4px 0; }
+.sub { color:#6b7a88; font-size:14px; margin-bottom:14px; }
+.modebtn { display:inline-block; border:1px solid #1565c0; color:#1565c0;
+  background:#ffffff; border-radius:8px; padding:8px 14px; font-size:15px;
+  font-weight:600; cursor:pointer; margin-bottom:16px; }
+.modebtn.on { background:#1565c0; color:#ffffff; }
+.sujet { border:1px solid #d8dee4; border-radius:10px; margin-bottom:12px; overflow:hidden; }
+.shead { padding:13px 15px; background:#fbfcfd; cursor:pointer; }
+.shead .t { font-size:17px; font-weight:700; }
+.shead .st { font-size:13px; color:#6b7a88; margin-top:2px; }
+.sbody { padding:0 15px 14px 15px; display:none; border-top:1px solid #e9edf1; }
+.lbl { font-size:12px; font-weight:700; letter-spacing:0.8px; margin:16px 0 6px 0; }
+.lbl.consigne { color:#546e7a; }
+.lbl.annonce { color:#8d6e30; }
+.lbl.sunum { color:#1565c0; }
+.lbl.arg { color:#2e7d32; }
+.lbl.itiraz { color:#c62828; }
+.fr { margin:4px 0 0 0; line-height:1.45; }
+.tr { margin:3px 0 0 0; line-height:1.4; color:#7a6a52; font-size:14px; font-style:italic; }
+.annbox { border:1px dashed #c9b280; background:#fdfaf2; border-radius:8px;
+  padding:10px 12px; font-size:15px; line-height:1.5; }
+.argitem { border-left:4px solid #2e7d32; padding:4px 0 4px 10px; margin-bottom:8px; }
+.obj { border:1px solid #eed7d7; border-left:5px solid #c62828; border-radius:8px;
+  padding:9px 12px; margin-bottom:9px; background:#fdf9f9; }
+.obj .q { font-weight:600; color:#c62828; }
+.rep { border-left:4px solid #6a1b9a; padding:5px 0 2px 10px; margin-top:8px; }
+.rep .fr { color:#4a2a6a; }
+.revealbtn { display:inline-block; margin-top:7px; border:1px solid #6a1b9a; color:#6a1b9a;
+  background:#ffffff; border-radius:7px; padding:5px 11px; font-size:14px; cursor:pointer; }
+.hidden { display:none; }
+.kalipnote { font-size:13px; color:#9aa5af; margin-top:14px; border-top:1px solid #e9edf1; padding-top:8px; }
+.kalipnote a { color:#1565c0; }
+.foot { font-size:13px; color:#9aa5af; margin-top:24px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">‹ Ana menü</a>
+<h1>🎓 Cours &amp; Apprentissage</h1>
+<div class="sub">8 sujet · Açılış/kapanış → <b>Evrensel Kalıp</b></div>
+
+<span class="modebtn on" id="btnStudy" onclick="setMode('study')">Çalışma (FR+TR)</span>
+<span class="modebtn" id="btnTest" onclick="setMode('test')">Test (sadece FR)</span>
+
+<!-- 1 COURS CUISINE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">1 · Cours de cuisine</div><div class="st">Yemek kursuna kaydolma</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des cours de cuisine. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de s'y inscrire avec vous.</div>
+<div class="tr">Yemek kursu ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle kaydolmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>L'ATELIER DES GOURMANDS — Cours de cuisine pour tous</b><br>
+Apprenez à cuisiner avec un chef professionnel · Cuisine du monde : italienne, thaïe, marocaine… · Petits groupes de 8 personnes · Le jeudi soir, 2 heures · On mange ensemble ce qu'on a préparé ! · 35 $ par atelier, ingrédients inclus</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de cours de cuisine avec un chef professionnel. Chaque jeudi soir, on apprend une cuisine du monde différente — italienne, thaïe, marocaine. Les groupes sont petits, les ingrédients sont inclus, et à la fin, on mange ensemble ce qu'on a préparé !</div>
+<div class="tr">Profesyonel bir şefle yemek kursu. Her perşembe akşamı farklı bir dünya mutfağı öğreniliyor — İtalyan, Tay, Fas. Gruplar küçük, malzemeler dahil ve sonunda hazırladığımızı birlikte yiyoruz!</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis toujours que tu manges la même chose toutes les semaines — là, tu apprends une nouvelle cuisine chaque jeudi.</div><div class="tr">Her hafta aynı şeyi yediğini hep söylüyorsun — burada her perşembe yeni bir mutfak öğreniyorsun.</div></div>
+<div class="argitem"><div class="fr">Trente-cinq dollars avec les ingrédients ET le dîner inclus — au final, ça coûte comme un restaurant, mais tu repars avec des compétences.</div><div class="tr">Malzemeler VE akşam yemeği dahil 35 dolar — sonuçta bir restoran fiyatına ama beceri kazanarak çıkıyorsun.</div></div>
+<div class="argitem"><div class="fr">C'est un petit groupe de huit, ambiance détendue — on cuisine, on rit, on mange ensemble.</div><div class="tr">Sekiz kişilik küçük grup, rahat ortam — birlikte pişiriyor, gülüyor, yiyoruz.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je suis nul(le) en cuisine, je vais tout rater. »</div><div class="tr">Mutfakta berbatım, her şeyi mahvederim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, c'est un cours — c'est fait pour apprendre, pas pour être déjà bon ! Le chef montre chaque étape, et tout le monde débute. Personne ne rate un plat quand un professionnel guide.</div>
+<div class="tr">İşte tam da bu bir kurs — öğrenmek için, zaten iyi olmak için değil! Şef her adımı gösteriyor ve herkes yeni başlıyor. Bir profesyonel yönlendirince kimse yemeği mahvetmiyor.</div></div></div>
+<div class="obj"><div class="q">« Le jeudi soir, je suis fatigué(e) après le travail. »</div><div class="tr">Perşembe akşamı işten sonra yorgun oluyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais ce n'est pas un cours fatigant — c'est une soirée détente. Tu cuisines tranquillement, tu discutes, et tu dînes bien. C'est mieux que de rentrer fatiguée et de cuisiner seule, non ?</div>
+<div class="tr">Anlıyorum ama yorucu bir kurs değil — rahatlatıcı bir akşam. Sakin sakin pişiriyorsun, sohbet ediyorsun ve güzel bir akşam yemeği yiyorsun. Yorgun eve dönüp tek başına yemek yapmaktan iyidir, değil mi?</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 2 COURS DANSE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">2 · Cours de danse</div><div class="st">Dans kursuna kaydolma</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des cours de danse. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de s'y inscrire.</div>
+<div class="tr">Dans kursu ilanı okudun. Arkadaşına anlatıyorsun. Onu kaydolmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>STUDIO DANSE — Nouvelle session !</b><br>
+Salsa, swing, danses latines · Cours débutants et intermédiaires · Pas besoin de partenaire · Le lundi ou le mercredi soir · Premier cours d'essai gratuit · 60 $ par mois</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de cours de danse : salsa, swing, danses latines. Il y a des cours pour débutants, pas besoin de partenaire, et le premier cours d'essai est gratuit. C'est le lundi ou le mercredi soir.</div>
+<div class="tr">Dans kursları: salsa, swing, Latin dansları. Yeni başlayan kursları var, partner gerekmiyor ve ilk deneme dersi ücretsiz. Pazartesi veya çarşamba akşamları.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">La danse, c'est du sport sans en avoir l'air — tu bouges, tu transpires, mais tu t'amuses tellement que tu ne le sens pas.</div><div class="tr">Dans, spor gibi hissettirmeyen spor — hareket ediyorsun, terliyorsun ama o kadar eğleniyorsun ki fark etmiyorsun.</div></div>
+<div class="argitem"><div class="fr">Pas besoin de partenaire — on change de partenaire pendant le cours, donc tu rencontres tout le monde.</div><div class="tr">Partner gerekmiyor — ders boyunca partner değişiyor, yani herkesle tanışıyorsun.</div></div>
+<div class="argitem"><div class="fr">Le premier cours est gratuit — tu essaies sans engagement, et si ça ne te plaît pas, tant pis.</div><div class="tr">İlk ders ücretsiz — taahhütsüz deniyorsun, hoşuna gitmezse sorun yok.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je n'ai aucun sens du rythme, je vais me ridiculiser. »</div><div class="tr">Hiç ritim duygum yok, rezil olurum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tout le monde dit ça avant de commencer ! Le sens du rythme, ça s'apprend — c'est exactement le but du cours débutant. Et personne ne regarde personne : tout le monde est concentré sur ses propres pieds !</div>
+<div class="tr">Başlamadan önce herkes böyle diyor! Ritim duygusu öğrenilir — başlangıç kursunun amacı tam da bu. Ve kimse kimseye bakmıyor: herkes kendi ayaklarına odaklanmış durumda!</div></div></div>
+<div class="obj"><div class="q">« 60 dollars par mois, c'est un budget. »</div><div class="tr">Ayda 60 dolar bir bütçe demek.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est vrai, mais compare : c'est le prix d'un abonnement de salle de sport, sauf que là, tu as un vrai professeur. Ça fait environ 7 dollars par cours. Et commence par le cours gratuit — tu décideras après si ça vaut le coup.</div>
+<div class="tr">Doğru ama kıyasla: bir spor salonu üyeliği fiyatı, üstelik burada gerçek bir öğretmenin var. Ders başı yaklaşık 7 dolar ediyor. Önce ücretsiz dersle başla — değip değmediğine sonra karar verirsin.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 3 THEATRE IMPRO -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">3 · Théâtre d'improvisation</div><div class="st">Utangaç arkadaşı doğaçlama tiyatroya ikna etme · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des cours de théâtre d'improvisation. Vous en parlez à un(e) ami(e) timide. Essayez de le (la) convaincre de s'y inscrire pour surmonter sa timidité.</div>
+<div class="tr">Doğaçlama tiyatro kursu ilanı okudun. Utangaç bir arkadaşına anlatıyorsun. Onu utangaçlığını yenmek için kaydolmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>THÉÂTRE D'IMPRO — Osez la scène !</b><br>
+Cours d'improvisation théâtrale pour tous · Développez votre confiance en vous et votre spontanéité · Ambiance bienveillante, aucun jugement · Groupes de niveau débutant · Le samedi matin · Deux premiers cours offerts</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de cours de théâtre d'improvisation pour débutants. C'est fait pour développer la confiance en soi, dans une ambiance bienveillante, sans jugement. C'est le samedi matin, et les deux premiers cours sont offerts.</div>
+<div class="tr">Yeni başlayanlar için doğaçlama tiyatro kursu. Özgüven geliştirmek için tasarlanmış, destekleyici ve yargısız bir ortamda. Cumartesi sabahları ve ilk iki ders hediye.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis souvent que ta timidité te bloque au travail — l'impro, c'est exactement l'outil que les gens utilisent pour ça.</div><div class="tr">Utangaçlığının işte seni engellediğini sık söylüyorsun — doğaçlama tam da insanların bunun için kullandığı araç.</div></div>
+<div class="argitem"><div class="fr">L'ambiance est bienveillante, sans jugement — tout le monde est là pour la même raison que toi.</div><div class="tr">Ortam destekleyici, yargısız — herkes orada seninle aynı sebepten bulunuyor.</div></div>
+<div class="argitem"><div class="fr">Les deux premiers cours sont offerts — tu peux juste regarder au début si tu veux, sans pression.</div><div class="tr">İlk iki ders hediye — istersen başta sadece izleyebilirsin, baskı yok.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je suis timide, et tu veux m'envoyer sur une scène ?! C'est le pire endroit pour moi ! »</div><div class="tr">Utangacım ve beni sahneye mi göndermek istiyorsun?! Benim için en kötü yer!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends que ça paraisse fou ! Mais justement, c'est là que c'est intéressant : en impro, il n'y a pas de « bonne réponse », donc pas d'erreur possible. On apprend à parler sans se juger. Beaucoup de personnes timides disent que ça a changé leur vie.</div>
+<div class="tr">Delice göründüğünü anlıyorum! Ama işte ilginç olan tam bu: doğaçlamada "doğru cevap" yok, yani hata da mümkün değil. Kendini yargılamadan konuşmayı öğreniyorsun. Birçok utangaç insan bunun hayatlarını değiştirdiğini söylüyor.</div></div></div>
+<div class="obj"><div class="q">« Les gens vont rire de moi. »</div><div class="tr">İnsanlar bana güler.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">En impro, on rit AVEC les gens, jamais DES gens — c'est la règle numéro un, et l'ambiance est bienveillante. Et souviens-toi : tout le monde dans ce cours est débutant et un peu timide, comme toi.</div>
+<div class="tr">Doğaçlamada insanlarla BİRLİKTE gülünür, asla insanlara DEĞİL — bir numaralı kural bu, ortam da destekleyici. Ve unutma: o kurstaki herkes yeni başlayan ve senin gibi biraz utangaç.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 4 ECOLE MUSIQUE EN LIGNE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">4 · École de musique en ligne</div><div class="st">Online müzik okuluna kaydolma</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour une école de musique en ligne. Vous en parlez à un(e) ami(e) qui a toujours voulu apprendre un instrument. Essayez de le (la) convaincre de s'y inscrire.</div>
+<div class="tr">Online müzik okulu ilanı okudun. Hep bir enstrüman öğrenmek istemiş bir arkadaşına anlatıyorsun. Onu kaydolmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>MUSIQUE POUR TOUS — L'école de musique 100 % en ligne</b><br>
+Guitare, piano, chant… · Cours en direct avec de vrais professeurs · Vous choisissez vos horaires · À votre rythme, depuis chez vous · 25 $ par cours · Première leçon gratuite</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une école de musique entièrement en ligne : guitare, piano, chant… Les cours sont en direct avec de vrais professeurs, tu choisis tes horaires, et la première leçon est gratuite.</div>
+<div class="tr">Tamamen online bir müzik okulu: gitar, piyano, şan… Dersler gerçek öğretmenlerle canlı, saatleri sen seçiyorsun ve ilk ders ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis depuis des années que tu rêves de jouer de la guitare — voilà l'occasion, sans excuse possible !</div><div class="tr">Yıllardır gitar çalmayı hayal ettiğini söylüyorsun — işte fırsat, bahane yok!</div></div>
+<div class="argitem"><div class="fr">C'est en ligne : pas de trajet, tu choisis tes horaires — même 30 minutes le dimanche matin, ça marche.</div><div class="tr">Online: yol yok, saatleri sen seçiyorsun — pazar sabahı 30 dakika bile olur.</div></div>
+<div class="argitem"><div class="fr">Ce sont de vrais cours en direct avec un professeur qui te corrige — pas des vidéos préenregistrées.</div><div class="tr">Seni düzelten bir öğretmenle gerçek canlı dersler — önceden kaydedilmiş videolar değil.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Apprendre la musique en ligne, ce n'est pas sérieux. »</div><div class="tr">Online müzik öğrenmek ciddi bir şey değil.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends ce que tu veux dire, mais en fait, le professeur te voit et t'entend en direct — il corrige ta position, ton rythme, comme en présentiel. La seule différence, c'est que tu es dans ton salon. Des milliers de gens apprennent comme ça maintenant.</div>
+<div class="tr">Ne demek istediğini anlıyorum ama aslında öğretmen seni canlı görüyor ve duyuyor — pozisyonunu, ritmini yüz yüzedeki gibi düzeltiyor. Tek fark salonunda olman. Binlerce insan artık böyle öğreniyor.</div></div></div>
+<div class="obj"><div class="q">« À mon âge, c'est trop tard pour apprendre un instrument. »</div><div class="tr">Benim yaşımda enstrüman öğrenmek için çok geç.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Pas du tout, c'est un mythe ! Les adultes apprennent même plus vite au début, parce qu'ils comprennent la logique. Et tu n'as pas besoin de devenir un professionnel — juste de jouer tes chansons préférées pour le plaisir. Le meilleur moment pour commencer, c'est maintenant.</div>
+<div class="tr">Hiç de değil, bu bir efsane! Yetişkinler mantığı kavradıkları için başta daha hızlı bile öğreniyor. Profesyonel olmana gerek yok — sadece keyif için sevdiğin şarkıları çalacaksın. Başlamak için en iyi an şimdi.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 5 COURS LANGUE TELEPHONE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">5 · Cours de langue par téléphone</div><div class="st">Telefonla dil kursu · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des cours de langue par téléphone. Vous en parlez à un(e) ami(e) qui veut apprendre une langue. Essayez de le (la) convaincre de s'y inscrire.</div>
+<div class="tr">Telefonla dil kursu ilanı okudun. Dil öğrenmek isteyen bir arkadaşına anlatıyorsun. Onu kaydolmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>COURS DE LANGUE PAR TÉLÉPHONE</b><br>
+Flexibilité totale : 24h/24 et 7j/7 · Des cours de 30 à 60 minutes · 1 cours minimum par semaine · Pour tous les niveaux · Professeurs diplômés · Vous choisissez les thèmes abordés et vous progressez à votre rythme · Cours d'essai gratuit ! · www.courspartel.ca</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de cours de langue par téléphone, avec des professeurs diplômés. C'est totalement flexible — disponible 24 heures sur 24, 7 jours sur 7, des cours de 30 à 60 minutes. Tu choisis même les thèmes abordés, et le cours d'essai est gratuit.</div>
+<div class="tr">Diplomalı öğretmenlerle telefonda dil kursu. Tamamen esnek — 7/24 erişilebilir, 30-60 dakikalık dersler. Konuları bile sen seçiyorsun ve deneme dersi ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">C'est disponible 24h/24 et 7j/7 — avec tes horaires de travail compliqués, c'est la seule formule qui marche vraiment.</div><div class="tr">7/24 erişilebilir — karmaşık iş saatlerinle gerçekten işleyen tek format bu.</div></div>
+<div class="argitem"><div class="fr">Au téléphone, tu es obligée de PARLER — pas de lecture, pas d'écran. C'est exactement la compétence qui manque à tout le monde.</div><div class="tr">Telefonda KONUŞMAK zorundasın — okuma yok, ekran yok. Herkesin eksiği tam da bu beceri.</div></div>
+<div class="argitem"><div class="fr">Tu choisis les thèmes — tu peux travailler le vocabulaire de TON métier, pas des dialogues de manuel.</div><div class="tr">Konuları sen seçiyorsun — ders kitabı diyalogları değil, KENDİ mesleğinin kelimelerini çalışabilirsin.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Sans voir le professeur, je ne vais rien comprendre. »</div><div class="tr">Öğretmeni görmeden hiçbir şey anlamam.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais justement, c'est là que c'est intéressant : au téléphone, ton oreille travaille deux fois plus, parce qu'il n'y a pas de gestes pour t'aider. C'est l'entraînement parfait pour la vraie vie — les appels au travail, les rendez-vous… Et le prof adapte son niveau au tien.</div>
+<div class="tr">Anlıyorum ama işte ilginç olan tam bu: telefonda kulağın iki kat çalışıyor, çünkü yardımcı olacak jestler yok. Gerçek hayat için mükemmel antrenman — işteki aramalar, randevular… Öğretmen de seviyesini sana göre ayarlıyor.</div></div></div>
+<div class="obj"><div class="q">« Parler au téléphone dans une autre langue, ça me stresse trop. »</div><div class="tr">Başka dilde telefonda konuşmak beni çok geriyor.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est normal, le téléphone stresse tout le monde au début. Mais là, c'est un professeur patient, pas un inconnu — il est payé pour t'aider, pas pour te juger. Et après quelques cours, les vrais appels te sembleront faciles. Commence par le cours d'essai gratuit, tu verras.</div>
+<div class="tr">Normal, telefon başta herkesi geriyor. Ama burada karşında yabancı biri değil sabırlı bir öğretmen var — seni yargılamak için değil, yardım etmek için orada. Birkaç dersten sonra gerçek aramalar kolay gelecek. Ücretsiz deneme dersiyle başla, göreceksin.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 6 COURS INFORMATIQUE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">6 · Cours d'informatique débutants</div><div class="st">Bilgisayarla arası kötü arkadaşa bilgisayar kursu · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette publicité dans le journal. Vous en parlez à un(e) ami(e) qui a des difficultés avec l'informatique. Essayez de le (la) convaincre de prendre des cours d'informatique.</div>
+<div class="tr">Gazetede bu ilanı okudun. Bilgisayarla zorlanan bir arkadaşına anlatıyorsun. Onu bilgisayar kursu almaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>Des cours qui s'adressent à tous ceux qui ne comprennent rien à l'informatique !</b><br>
+Programme « grand débutant » : Découverte de l'ordinateur et des périphériques · Ouverture et enregistrement de documents · Utilisation d'Internet : création d'un compte mail · Découverte d'un logiciel de gestion de photos<br>
+Séances tous les jours de 10h à 12h et de 14h à 18h · Inscription à l'année, tarifs réduits · www.informatiquepourtous.qc.ca</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de cours d'informatique spécialement pour les grands débutants. Le programme part de zéro : la découverte de l'ordinateur, les documents, Internet, la création d'un compte mail… Il y a des séances tous les jours, et les tarifs sont réduits à l'année.</div>
+<div class="tr">Tam yeni başlayanlar için bilgisayar kursu. Program sıfırdan başlıyor: bilgisayarı tanıma, belgeler, internet, e-posta hesabı açma… Her gün seanslar var ve yıllık kayıtta indirimli tarife.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis que tout est en ligne maintenant et que ça te bloque — les rendez-vous, les factures, les photos… Ce cours résout exactement ça.</div><div class="tr">Artık her şeyin online olduğunu ve bunun seni tıkadığını söylüyorsun — randevular, faturalar, fotoğraflar… Bu kurs tam bunu çözüyor.</div></div>
+<div class="argitem"><div class="fr">C'est un programme « grand débutant » — personne ne suppose que tu sais déjà quelque chose. On part vraiment de zéro.</div><div class="tr">"Tam yeni başlayan" programı — kimse bir şey bildiğini varsaymıyor. Gerçekten sıfırdan başlanıyor.</div></div>
+<div class="argitem"><div class="fr">Les séances sont tous les jours, matin et après-midi — tu choisis les horaires qui t'arrangent.</div><div class="tr">Seanslar her gün, sabah ve öğleden sonra — sana uyan saatleri seçiyorsun.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je suis trop nul(le), même un cours ne peut pas m'aider. »</div><div class="tr">O kadar kötüyüm ki kurs bile yardım edemez.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je pense que tu te trompes — tu n'es pas nulle, tu n'as juste jamais appris ! C'est complètement différent. Ce cours est fait exactement pour les gens comme toi, et les formateurs ont l'habitude. En quelques semaines, tu enverras des mails toute seule.</div>
+<div class="tr">Bence yanılıyorsun — kötü değilsin, sadece hiç öğrenmedin! Bu tamamen farklı bir şey. Bu kurs tam senin gibi insanlar için yapılmış ve eğitmenler buna alışkın. Birkaç haftada tek başına mail atıyor olacaksın.</div></div></div>
+<div class="obj"><div class="q">« Je peux demander à mes enfants quand j'ai besoin. »</div><div class="tr">İhtiyacım olunca çocuklarıma sorabilirim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Bien sûr, mais tu me dis toi-même qu'ils vont trop vite et que tu n'oses pas redemander. Avec un cours, tu deviens autonome — plus besoin d'attendre quelqu'un. Et franchement, c'est une belle liberté à gagner.</div>
+<div class="tr">Tabii ama kendin söylüyorsun: çok hızlı gidiyorlar ve tekrar sormaya çekiniyorsun. Kursla bağımsız oluyorsun — kimseyi beklemeye gerek yok. Ve açıkçası kazanılacak güzel bir özgürlük bu.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 7 BIBLIOTHEQUE NUMERIQUE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">7 · Bibliothèque numérique</div><div class="st">Dijital kütüphaneye abone olma</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour une bibliothèque numérique. Vous en parlez à un(e) ami(e) qui aime lire. Essayez de le (la) convaincre de s'y abonner.</div>
+<div class="tr">Dijital kütüphane ilanı okudun. Okumayı seven bir arkadaşına anlatıyorsun. Onu abone olmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>BIBLIO+ — Votre bibliothèque numérique</b><br>
+Plus de 100 000 livres, magazines et livres audio · Lisez sur téléphone, tablette ou liseuse · Jusqu'à 10 emprunts en même temps · 9 $ par mois, sans engagement · Premier mois gratuit</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une bibliothèque numérique avec plus de cent mille livres, magazines et livres audio. Tu lis sur ton téléphone ou ta tablette, jusqu'à dix emprunts en même temps. C'est neuf dollars par mois sans engagement, et le premier mois est gratuit.</div>
+<div class="tr">Yüz binden fazla kitap, dergi ve sesli kitap içeren dijital kütüphane. Telefonunda veya tabletinde okuyorsun, aynı anda on ödünç alma hakkı. Taahhütsüz ayda 9 dolar ve ilk ay ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu dépenses une fortune en livres — là, pour 9 dollars par mois, tu as accès à cent mille titres. Un seul livre coûte déjà plus cher !</div><div class="tr">Kitaplara servet harcıyorsun — burada ayda 9 dolara yüz bin esere erişimin var. Tek bir kitap bile daha pahalı!</div></div>
+<div class="argitem"><div class="fr">Ta bibliothèque entière dans ton sac — dans le bus, en voyage, partout. Et il y a aussi les livres audio pour tes trajets.</div><div class="tr">Bütün kütüphanen çantanda — otobüste, seyahatte, her yerde. Yolculukların için sesli kitaplar da var.</div></div>
+<div class="argitem"><div class="fr">Le premier mois est gratuit et sans engagement — tu testes, et si tu n'aimes pas, tu annules en un clic.</div><div class="tr">İlk ay ücretsiz ve taahhütsüz — deniyorsun, beğenmezsen tek tıkla iptal.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« J'aime le papier, l'odeur des livres — l'écran, ce n'est pas pareil. »</div><div class="tr">Kâğıdı, kitap kokusunu severim — ekran aynı şey değil.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je te comprends complètement, moi aussi j'adore le papier ! Mais l'un n'empêche pas l'autre : le numérique, c'est pour les voyages, les nouveautés qu'on veut juste essayer, les magazines… Et tes livres préférés, tu continues à les acheter en papier. C'est un complément, pas un remplacement.</div>
+<div class="tr">Seni tamamen anlıyorum, ben de kâğıda bayılırım! Ama biri diğerine engel değil: dijital; seyahatler, sadece denemek istediğin yeni çıkanlar, dergiler için… Favori kitaplarını kâğıt almaya devam edersin. Bu bir tamamlayıcı, ikame değil.</div></div></div>
+<div class="obj"><div class="q">« Encore un abonnement de plus… J'en ai déjà trop. »</div><div class="tr">Bir abonelik daha… Zaten çok fazla var.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu n'as pas tort, mais fais le calcul : si tu achètes deux livres par mois, tu dépenses 40 dollars. Cet abonnement en remplace une partie pour 9 dollars. C'est peut-être le seul abonnement qui te fait ÉCONOMISER de l'argent !</div>
+<div class="tr">Haksız değilsin ama hesabı yap: ayda iki kitap alıyorsan 40 dolar harcıyorsun. Bu abonelik 9 dolara bunun bir kısmının yerini alıyor. Belki de sana para KAZANDIRAN tek abonelik bu!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 8 ARTISANAT POTERIE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">8 · Club Artisanat — poterie</div><div class="st">El sanatları kulübü / çömlek atölyesi · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un club d'artisanat. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de rejoindre l'atelier de poterie.</div>
+<div class="tr">Bir el sanatları kulübü ilanı okudun. Arkadaşına anlatıyorsun. Onu çömlek atölyesine katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>CLUB ARTISANAT POUR TOUS</b><br>
+Venez découvrir les plaisirs de l'artisanat : apprenez le travail du cuir, la couture ou encore la poterie…<br>
+Ateliers à la carte · Des conseils pour les débutants · Une exposition des créations en fin d'année · Des formations diplômantes · Inscription sur www.artisanatpourtous.com</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un club d'artisanat : le cuir, la couture, la poterie… Les ateliers sont à la carte, avec des conseils pour les débutants. Et en fin d'année, il y a une exposition des créations — il y a même des formations diplômantes.</div>
+<div class="tr">Bir el sanatları kulübü: deri işleme, dikiş, çömlek… Atölyeler seçmeli, yeni başlayanlara özel destek var. Yıl sonunda eserler sergileniyor — hatta diploma veren eğitimler bile var.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu passes tes journées devant un écran — la poterie, c'est l'inverse : tes mains créent quelque chose de réel. C'est très relaxant.</div><div class="tr">Günlerin ekran karşısında geçiyor — çömlek bunun tam tersi: ellerin gerçek bir şey yaratıyor. Çok rahatlatıcı.</div></div>
+<div class="argitem"><div class="fr">Les ateliers sont à la carte — tu viens quand tu veux, sans engagement fixe.</div><div class="tr">Atölyeler seçmeli — istediğin zaman geliyorsun, sabit taahhüt yok.</div></div>
+<div class="argitem"><div class="fr">À la fin de l'année, tes créations sont exposées — imagine tes bols et tes vases dans une vraie exposition !</div><div class="tr">Yıl sonunda eserlerin sergileniyor — kâselerini ve vazolarını gerçek bir sergide düşünsene!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je ne suis pas manuel(le) du tout. »</div><div class="tr">Elim hiç yatkın değil.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, il y a des conseils spéciaux pour les débutants ! Et la poterie, c'est très tolérant : si tu rates, tu remets la terre en boule et tu recommences. Il n'y a pas d'erreur définitive — c'est parfait pour apprendre sans pression.</div>
+<div class="tr">İşte tam da yeni başlayanlara özel destek var! Ve çömlek çok affedici: bozarsan çamuru topak yapıp yeniden başlıyorsun. Kalıcı hata yok — baskısız öğrenmek için mükemmel.</div></div></div>
+<div class="obj"><div class="q">« Fabriquer des bols ? Je peux en acheter pour trois dollars ! »</div><div class="tr">Kâse yapmak mı? Üç dolara satın alabilirim!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Bien sûr, mais ce n'est pas le but ! On n'y va pas pour économiser sur les bols — on y va pour le plaisir de créer, pour déconnecter, pour l'ambiance de l'atelier. Le bol, c'est juste le bonus. C'est comme la pêche : ce n'est pas pour le prix du poisson !</div>
+<div class="tr">Tabii ama amaç o değil! Kâseden tasarruf için gitmiyoruz — yaratma keyfi, kafa dağıtmak, atölye ortamı için gidiyoruz. Kâse sadece bonus. Balık tutmak gibi: balığın fiyatı için değil!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<div class="foot">Cours &amp; Apprentissage · 8 sujet</div>
+</div>
+
+<script>
+var MODE = 'study';
+function setMode(m) {
+  MODE = m;
+  var trs = document.getElementsByClassName('tr');
+  var i;
+  for (i = 0; i < trs.length; i++) {
+    trs[i].style.display = (m === 'test') ? 'none' : 'block';
+  }
+  document.getElementById('btnStudy').className = 'modebtn' + (m === 'study' ? ' on' : '');
+  document.getElementById('btnTest').className = 'modebtn' + (m === 'test' ? ' on' : '');
+  if (m === 'test') {
+    var reps = document.getElementsByClassName('rep');
+    for (i = 0; i < reps.length; i++) {
+      if (reps[i].className.indexOf('hidden') === -1) { reps[i].className = 'rep hidden'; }
+    }
+    var btns = document.getElementsByClassName('revealbtn');
+    for (i = 0; i < btns.length; i++) { btns[i].innerHTML = 'Cevabı göster'; }
+  }
+}
+function tog(head) {
+  var body = head.nextSibling;
+  while (body && body.nodeType !== 1) { body = body.nextSibling; }
+  if (!body) { return; }
+  body.style.display = (body.style.display === 'block') ? 'none' : 'block';
+}
+function rev(btn) {
+  var rep = btn.nextSibling;
+  while (rep && rep.nodeType !== 1) { rep = rep.nextSibling; }
+  if (!rep) { return; }
+  if (rep.className.indexOf('hidden') !== -1) {
+    rep.className = 'rep';
+    if (MODE === 'test') {
+      var trs = rep.getElementsByClassName('tr');
+      for (var i = 0; i < trs.length; i++) { trs[i].style.display = 'none'; }
+    }
+    btn.innerHTML = 'Cevabı gizle';
+  } else {
+    rep.className = 'rep hidden';
+    btn.innerHTML = 'Cevabı göster';
+  }
+}
+</script>
+</body>
+</html>

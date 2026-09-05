@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section B — Loisirs &amp; Sorties</title>
+<style>
+body { margin:0; padding:0; background:#ffffff; color:#22303c;
+  font-family:-apple-system,'Helvetica Neue',Arial,sans-serif; font-size:16px; }
+.wrap { max-width:720px; margin:0 auto; padding:16px; }
+a.back { text-decoration:none; color:#1565c0; font-size:15px; }
+h1 { font-size:24px; margin:12px 0 4px 0; }
+.sub { color:#6b7a88; font-size:14px; margin-bottom:14px; }
+.modebtn { display:inline-block; border:1px solid #1565c0; color:#1565c0;
+  background:#ffffff; border-radius:8px; padding:8px 14px; font-size:15px;
+  font-weight:600; cursor:pointer; margin-bottom:16px; }
+.modebtn.on { background:#1565c0; color:#ffffff; }
+.sujet { border:1px solid #d8dee4; border-radius:10px; margin-bottom:12px; overflow:hidden; }
+.shead { padding:13px 15px; background:#fbfcfd; cursor:pointer; }
+.shead .t { font-size:17px; font-weight:700; }
+.shead .st { font-size:13px; color:#6b7a88; margin-top:2px; }
+.sbody { padding:0 15px 14px 15px; display:none; border-top:1px solid #e9edf1; }
+.lbl { font-size:12px; font-weight:700; letter-spacing:0.8px; margin:16px 0 6px 0; }
+.lbl.consigne { color:#546e7a; }
+.lbl.annonce { color:#8d6e30; }
+.lbl.sunum { color:#1565c0; }
+.lbl.arg { color:#2e7d32; }
+.lbl.itiraz { color:#c62828; }
+.fr { margin:4px 0 0 0; line-height:1.45; }
+.tr { margin:3px 0 0 0; line-height:1.4; color:#7a6a52; font-size:14px; font-style:italic; }
+.annbox { border:1px dashed #c9b280; background:#fdfaf2; border-radius:8px;
+  padding:10px 12px; font-size:15px; line-height:1.5; }
+.argitem { border-left:4px solid #2e7d32; padding:4px 0 4px 10px; margin-bottom:8px; }
+.obj { border:1px solid #eed7d7; border-left:5px solid #c62828; border-radius:8px;
+  padding:9px 12px; margin-bottom:9px; background:#fdf9f9; }
+.obj .q { font-weight:600; color:#c62828; }
+.rep { border-left:4px solid #6a1b9a; padding:5px 0 2px 10px; margin-top:8px; }
+.rep .fr { color:#4a2a6a; }
+.revealbtn { display:inline-block; margin-top:7px; border:1px solid #6a1b9a; color:#6a1b9a;
+  background:#ffffff; border-radius:7px; padding:5px 11px; font-size:14px; cursor:pointer; }
+.hidden { display:none; }
+.kalipnote { font-size:13px; color:#9aa5af; margin-top:14px; border-top:1px solid #e9edf1; padding-top:8px; }
+.kalipnote a { color:#1565c0; }
+.foot { font-size:13px; color:#9aa5af; margin-top:24px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">‹ Ana menü</a>
+<h1>🎭 Loisirs &amp; Sorties</h1>
+<div class="sub">11 sujet · Açılış/kapanış → <b>Evrensel Kalıp</b></div>
+
+<span class="modebtn on" id="btnStudy" onclick="setMode('study')">Çalışma (FR+TR)</span>
+<span class="modebtn" id="btnTest" onclick="setMode('test')">Test (sadece FR)</span>
+
+<!-- 1 OPERA -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">1 · Spectacle d'opéra</div><div class="st">Arkadaşını operaya götürme</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un spectacle d'opéra. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre d'y assister avec vous.</div>
+<div class="tr">Bir opera gösterisi ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle gösteriye gelmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>OPÉRA POUR TOUS — « Carmen » de Bizet</b><br>
+Une soirée exceptionnelle à l'Opéra de la ville · Tarif découverte : 25 $ pour les moins de 35 ans · Introduction gratuite de 30 minutes avant le spectacle pour les débutants · Samedi 20h · Réservation : www.operapourtous.ca</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une soirée à l'opéra : « Carmen » de Bizet. Regarde : il y a un tarif découverte à 25 dollars, et en plus, une introduction gratuite de trente minutes avant le spectacle, spécialement pour les débutants.</div>
+<div class="tr">Operada bir gece: Bizet'nin "Carmen"i. Bak: 25 dolarlık keşif tarifesi var, üstelik gösteriden önce yeni başlayanlar için 30 dakikalık ücretsiz tanıtım var.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu es curieuse et ouverte d'esprit — l'opéra, c'est une expérience culturelle qu'il faut vivre au moins une fois.</div><div class="tr">Meraklı ve açık fikirlisin — opera, hayatta en az bir kez yaşanması gereken bir kültürel deneyim.</div></div>
+<div class="argitem"><div class="fr">Avec le tarif découverte, ce n'est que 25 dollars — moins cher qu'un concert ou un bon restaurant.</div><div class="tr">Keşif tarifesiyle sadece 25 dolar — bir konserden ya da iyi bir restorandan daha ucuz.</div></div>
+<div class="argitem"><div class="fr">L'introduction gratuite explique l'histoire avant le spectacle — donc même sans rien connaître, tu vas tout comprendre.</div><div class="tr">Ücretsiz tanıtım gösteriden önce hikâyeyi anlatıyor — yani hiçbir şey bilmesen de her şeyi anlayacaksın.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« L'opéra, c'est ennuyeux et je n'y comprends rien. »</div><div class="tr">Opera sıkıcı, hiçbir şey anlamıyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, beaucoup de gens pensent ça avant d'essayer. Mais justement, il y a une introduction gratuite pour les débutants — on t'explique tout avant. Et « Carmen », c'est plein de passion et de musique connue, tu vas reconnaître les airs !</div>
+<div class="tr">Anlıyorum, çoğu insan denemeden önce böyle düşünüyor. Ama işte tam da yeni başlayanlar için ücretsiz tanıtım var — her şey önceden anlatılıyor. Ve "Carmen" tutku ve tanıdık müzik dolu, ezgileri tanıyacaksın!</div></div></div>
+<div class="obj"><div class="q">« Ce n'est pas pour moi, c'est trop chic. »</div><div class="tr">Bana göre değil, fazla şık bir ortam.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Pas du tout, c'est une soirée « opéra pour tous » — il n'y a pas de code vestimentaire. Au contraire, l'idée est justement d'ouvrir l'opéra à tout le monde. Au pire, tu n'as rien à perdre pour 25 dollars.</div>
+<div class="tr">Hiç de değil, bu "herkes için opera" gecesi — kıyafet kuralı yok. Tam tersine amaç operayı herkese açmak. En kötü ihtimalle 25 dolara kaybedecek bir şeyin yok.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 2 SALON BIEN-ETRE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">2 · Salon du bien-être</div><div class="st">Sağlıklı yaşam fuarına birlikte gitme · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette publicité pour le Salon du bien-être. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de vous accompagner sur ce salon.</div>
+<div class="tr">Sağlıklı yaşam fuarı ilanı okudun. Arkadaşına anlatıyorsun. Onu fuara seninle gelmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>Prenez soin de vous ! Le Salon du bien-être</b><br>
+Enrichissez vos connaissances et découvrez de nouvelles disciplines : rencontres avec des spécialistes (techniques de relaxation, nutrition, sommeil) · Ateliers gratuits · Démonstrations · Ce week-end au Palais des congrès</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit du Salon du bien-être, ce week-end au Palais des congrès. Il y a des rencontres avec des spécialistes de la relaxation, de la nutrition et du sommeil, et en plus, les ateliers sont gratuits.</div>
+<div class="tr">Sağlıklı yaşam fuarı, bu hafta sonu kongre merkezinde. Gevşeme, beslenme ve uyku uzmanlarıyla buluşmalar var, üstelik atölyeler ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis toujours que tu es stressée en ce moment — les techniques de relaxation, c'est exactement ce qu'il te faut.</div><div class="tr">Son zamanlarda stresli olduğunu hep söylüyorsun — gevşeme teknikleri tam ihtiyacın olan şey.</div></div>
+<div class="argitem"><div class="fr">Les ateliers sont gratuits — tu peux tout essayer sans rien payer.</div><div class="tr">Atölyeler ücretsiz — hiçbir şey ödemeden her şeyi deneyebilirsin.</div></div>
+<div class="argitem"><div class="fr">On peut poser nos questions directement à des spécialistes — normalement, une consultation comme ça coûte cher.</div><div class="tr">Sorularımızı doğrudan uzmanlara sorabiliriz — normalde böyle bir danışma pahalıdır.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je ne crois pas à toutes ces choses de bien-être. »</div><div class="tr">Bu sağlıklı yaşam şeylerine inanmıyorum.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends ton point de vue. Mais il n'y a pas que des choses alternatives — il y a aussi des spécialistes de la nutrition et du sommeil, c'est très concret. Et comme c'est gratuit, tu peux juste écouter et te faire ta propre opinion.</div>
+<div class="tr">Bakış açını anlıyorum. Ama sadece alternatif şeyler yok — beslenme ve uyku uzmanları da var, gayet somut. Ücretsiz olduğu için de sadece dinleyip kendi fikrini oluşturabilirsin.</div></div></div>
+<div class="obj"><div class="q">« Le week-end, je préfère me reposer à la maison. »</div><div class="tr">Hafta sonu evde dinlenmeyi tercih ederim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Justement, ce salon, c'est fait pour se reposer mieux ! Tu vas apprendre des techniques de relaxation et de sommeil. On y va deux heures seulement, et après tu rentres te reposer — avec de nouvelles idées.</div>
+<div class="tr">İşte tam da bu fuar daha iyi dinlenmek için! Gevşeme ve uyku teknikleri öğreneceksin. Sadece iki saat gideriz, sonra dinlenmeye dönersin — yeni fikirlerle.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 3 SOIREE DANSANTE CHARITE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">3 · Soirée dansante de charité</div><div class="st">Bağış için dans gecesi · arkadaş dans etmeyi seviyor · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour une soirée de charité. Vous en parlez à un(e) ami(e) qui aime danser. Essayez de le (la) convaincre de participer à cette activité.</div>
+<div class="tr">Bir yardım gecesi ilanı okudun. Dans etmeyi seven bir arkadaşına anlatıyorsun. Onu bu etkinliğe katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>Grande soirée dansante de charité</b><br>
+Dansez pour la bonne cause ! Activité ouverte à tous · Tous les dons seront acceptés · Les profits iront à la fondation « Danse du Cœur » · Samedi soir, salle communautaire</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une soirée dansante de charité, samedi soir. C'est ouvert à tous, chacun donne ce qu'il veut, et tous les profits iront à la fondation « Danse du Cœur ».</div>
+<div class="tr">Cumartesi akşamı bir yardım amaçlı dans gecesi. Herkese açık, herkes istediği kadar bağışlıyor ve tüm gelir "Danse du Cœur" vakfına gidiyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu adores danser — là, tu fais ce que tu aimes ET tu aides une bonne cause en même temps.</div><div class="tr">Dansa bayılıyorsun — burada hem sevdiğin şeyi yapıyorsun HEM aynı anda iyi bir amaca destek oluyorsun.</div></div>
+<div class="argitem"><div class="fr">Les dons sont libres — tu donnes ce que tu peux, il n'y a pas de prix d'entrée fixe.</div><div class="tr">Bağış serbest — verebildiğin kadar veriyorsun, sabit giriş ücreti yok.</div></div>
+<div class="argitem"><div class="fr">C'est ouvert à tous — l'ambiance sera très conviviale, et on va rencontrer plein de gens.</div><div class="tr">Herkese açık — ortam çok samimi olacak ve bir sürü insanla tanışacağız.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je ne danse pas assez bien pour danser devant les gens. »</div><div class="tr">İnsanların önünde dans edecek kadar iyi değilim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Pas du tout, tu danses très bien ! Et de toute façon, ce n'est pas un concours — c'est ouvert à tous, personne ne te jugera. L'important, c'est de s'amuser pour la bonne cause.</div>
+<div class="tr">Hiç de değil, çok iyi dans ediyorsun! Zaten yarışma değil — herkese açık, kimse seni yargılamaz. Önemli olan iyi bir amaç için eğlenmek.</div></div></div>
+<div class="obj"><div class="q">« Je préfère donner de l'argent directement, sans y aller. »</div><div class="tr">Gitmeden doğrudan para bağışlamayı tercih ederim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">C'est généreux de ta part, et tu peux faire les deux ! Mais si tu viens, tu soutiens aussi l'ambiance — plus il y a de monde, plus la soirée attire de dons. Et puis, franchement, une soirée à danser ensemble, ça nous fera du bien.</div>
+<div class="tr">Çok cömertsin, ikisini de yapabilirsin! Ama gelirsen ortama da destek olursun — ne kadar kalabalık olursa gece o kadar bağış toplar. Hem açıkçası birlikte dans edeceğimiz bir gece ikimize de iyi gelir.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 4 RESTO VEGAN -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">4 · Restaurant vegan</div><div class="st">Vegan olmayan arkadaşı vegan restorana götürme · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez vu cette annonce pour un restaurant végétalien. Vous en parlez à un(e) ami(e) qui n'est PAS vegan. Essayez de le (la) convaincre d'aller manger dans ce restaurant.</div>
+<div class="tr">Bir vegan restoran ilanı gördün. Vegan OLMAYAN bir arkadaşına anlatıyorsun. Onu bu restoranda yemeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>À TABLE ! — Restaurant, spécialités VEGAN</b><br>
+Burger végétalien · Falafel · Brunch le week-end · Menu le midi : 13 $ · Menu le soir : 17 $<br>
+Ouvert tous les jours de 11h à 23h30 · Réservation par téléphone ou sur place · chezjo-vg.com</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un nouveau restaurant vegan, « À Table ». Ils font des burgers végétaliens, des falafels, et même un brunch le week-end. Et regarde les prix : le menu du midi est à 13 dollars seulement.</div>
+<div class="tr">Yeni bir vegan restoran, "À Table". Vegan burger, falafel, hatta hafta sonu brunch yapıyorlar. Fiyatlara bak: öğle menüsü sadece 13 dolar.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu es curieux et tu adores la bonne cuisine — un burger végétalien bien fait, ça peut vraiment te surprendre.</div><div class="tr">Meraklısın ve iyi mutfağa bayılıyorsun — iyi yapılmış bir vegan burger seni gerçekten şaşırtabilir.</div></div>
+<div class="argitem"><div class="fr">Le menu du midi est à 13 dollars — c'est moins cher que la plupart des restaurants classiques.</div><div class="tr">Öğle menüsü 13 dolar — klasik restoranların çoğundan daha ucuz.</div></div>
+<div class="argitem"><div class="fr">Manger vegan une fois de temps en temps, c'est bon pour la santé et pour la planète — sans rien changer à tes habitudes.</div><div class="tr">Arada bir vegan yemek sağlık ve gezegen için iyi — alışkanlıklarını hiç değiştirmeden.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Sans viande, je vais avoir faim après ! »</div><div class="tr">Etsiz yemekten sonra aç kalırım!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ne t'inquiète pas — les burgers végétaliens et les falafels, c'est très nourrissant. Un ami à moi y est allé, et d'après lui, les portions sont généreuses. Au pire, si tu as encore faim, je t'offre un dessert !</div>
+<div class="tr">Endişelenme — vegan burger ve falafel çok doyurucu. Bir arkadaşım gitti, ona göre porsiyonlar bol. En kötü ihtimalle hâlâ açsan tatlı benden!</div></div></div>
+<div class="obj"><div class="q">« La cuisine vegan, ça n'a pas de goût. »</div><div class="tr">Vegan mutfağın tadı yok.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu n'as pas tort pour certains plats, mais en fait, si on regarde de plus près, la cuisine vegan moderne utilise plein d'épices et de saveurs. Justement, les falafels, c'est plein de goût ! Essaie une fois, et tu me diras honnêtement ce que tu en penses.</div>
+<div class="tr">Bazı yemekler için haksız değilsin, ama aslında yakından bakınca modern vegan mutfağı bir sürü baharat ve lezzet kullanıyor. Falafel mesela lezzet dolu! Bir kez dene, sonra dürüstçe ne düşündüğünü söylersin.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 5 RESTO INSECTES -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">5 · Restaurant d'insectes</div><div class="st">Sadece böcek servis eden yeni restoran</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour un nouveau restaurant qui ne sert que des insectes. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre d'y aller avec vous.</div>
+<div class="tr">Sadece böcek servis eden yeni bir restoran ilanı okudun. Arkadaşına anlatıyorsun. Onu seninle gitmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>INSECTO — Le premier restaurant d'insectes de la ville !</b><br>
+Découvrez la cuisine de demain : criquets grillés, tacos aux vers de farine, desserts surprenants · Riche en protéines, écologique · Menu découverte : 20 $ · Ouverture ce mois-ci — réservation conseillée</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit du premier restaurant d'insectes de la ville ! Ils proposent des criquets grillés, des tacos aux vers de farine… Le menu découverte est à 20 dollars, et il paraît que c'est la cuisine de demain : riche en protéines et écologique.</div>
+<div class="tr">Şehrin ilk böcek restoranı! Izgara çekirge, un kurdu tacosu sunuyorlar… Keşif menüsü 20 dolar, ve deniyor ki bu geleceğin mutfağı: protein zengini ve ekolojik.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu es aventureux — c'est l'expérience la plus originale qu'on puisse tenter en ville en ce moment !</div><div class="tr">Maceracısın — şu an şehirde denenebilecek en sıra dışı deneyim bu!</div></div>
+<div class="argitem"><div class="fr">Les insectes, c'est riche en protéines et très écologique — dans beaucoup de pays, c'est complètement normal d'en manger.</div><div class="tr">Böcekler protein zengini ve çok ekolojik — birçok ülkede böcek yemek tamamen normal.</div></div>
+<div class="argitem"><div class="fr">Le menu découverte est à 20 dollars — pour une expérience unique, ce n'est vraiment pas cher. Et on aura une histoire géniale à raconter !</div><div class="tr">Keşif menüsü 20 dolar — eşsiz bir deneyim için gerçekten pahalı değil. Ve anlatacak harika bir hikâyemiz olacak!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Manger des insectes ? C'est dégoûtant ! »</div><div class="tr">Böcek yemek mi? İğrenç!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends ta réaction, moi aussi j'ai pensé ça au début ! Mais en fait, si on regarde de plus près, c'est cuisiné comme des plats normaux — les criquets grillés, ça ressemble à des chips. Et des millions de personnes en mangent tous les jours dans le monde. C'est juste une question d'habitude.</div>
+<div class="tr">Tepkini anlıyorum, başta ben de öyle düşündüm! Ama aslında yakından bakınca normal yemekler gibi pişiriliyor — ızgara çekirge cips gibi. Ve dünyada milyonlarca insan her gün yiyor. Sadece alışkanlık meselesi.</div></div></div>
+<div class="obj"><div class="q">« Et si je tombe malade ? »</div><div class="tr">Ya hasta olursam?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Rassure-toi, c'est un vrai restaurant avec toutes les autorisations sanitaires — les insectes sont élevés spécialement pour la cuisine, comme n'importe quel aliment. C'est même plus contrôlé que certains autres produits.</div>
+<div class="tr">İçin rahat olsun, tüm sağlık izinleri olan gerçek bir restoran — böcekler tıpkı diğer gıdalar gibi mutfak için özel yetiştiriliyor. Hatta bazı ürünlerden daha kontrollü.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 6 TUK TUK BRUXELLES -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">6 · Bruxelles en tuk-tuk</div><div class="st">Brüksel'i tuk-tuk ile keşfetme</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des visites de Bruxelles en tuk-tuk. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre de vous accompagner.</div>
+<div class="tr">Brüksel'i tuk-tuk ile gezme ilanı okudun. Arkadaşına anlatıyorsun. Onu sana eşlik etmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>BRUXELLES EN TUK-TUK !</b><br>
+Découvrez la ville autrement : la Grand-Place, l'Atomium, les quartiers cachés · Circuits de 1h à 3h · Guide-chauffeur passionné · Tuk-tuks électriques, silencieux et écologiques · À partir de 15 € par personne · www.tuktuk-bruxelles.be</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit de visiter Bruxelles en tuk-tuk ! Les circuits durent de une à trois heures, avec un guide-chauffeur, et les tuk-tuks sont électriques. Et ce n'est qu'à partir de 15 euros par personne.</div>
+<div class="tr">Brüksel'i tuk-tuk ile gezmek! Turlar bir-üç saat sürüyor, şoför-rehber eşliğinde ve tuk-tuklar elektrikli. Kişi başı sadece 15 eurodan başlıyor.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">C'est une façon originale de découvrir la ville — même les quartiers cachés qu'on ne voit jamais à pied.</div><div class="tr">Şehri keşfetmenin özgün bir yolu — yürüyerek asla görmediğimiz gizli mahalleler bile.</div></div>
+<div class="argitem"><div class="fr">Le guide-chauffeur raconte l'histoire de chaque endroit — c'est une visite guidée et un transport en même temps.</div><div class="tr">Şoför-rehber her yerin hikâyesini anlatıyor — aynı anda hem rehberli tur hem ulaşım.</div></div>
+<div class="argitem"><div class="fr">À partir de 15 euros, c'est moins cher qu'un bus touristique — et beaucoup plus amusant !</div><div class="tr">15 eurodan başlayan fiyatla turist otobüsünden ucuz — ve çok daha eğlenceli!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Un tuk-tuk en ville, ce n'est pas dangereux ? »</div><div class="tr">Şehirde tuk-tuk tehlikeli değil mi?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ne t'inquiète pas — les chauffeurs sont des professionnels, et les tuk-tuks électriques roulent doucement. C'est plus lent qu'une voiture, justement pour profiter de la visite en toute sécurité.</div>
+<div class="tr">Endişelenme — şoförler profesyonel ve elektrikli tuk-tuklar yavaş gidiyor. Arabadan yavaş, tam da turun güvenle tadını çıkarmak için.</div></div></div>
+<div class="obj"><div class="q">« On peut visiter à pied gratuitement, pourquoi payer ? »</div><div class="tr">Yürüyerek bedava gezebiliriz, neden para verelim?</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Tu n'as pas tort, mais à pied, on ne voit que le centre. En tuk-tuk, en une heure, on couvre toute la ville — l'Atomium, les quartiers cachés… Et avec le guide, on apprend plein de choses qu'on ne trouverait jamais seuls.</div>
+<div class="tr">Haksız değilsin ama yürüyerek sadece merkezi görüyoruz. Tuk-tukla bir saatte tüm şehri geziyoruz — Atomium, gizli mahalleler… Ve rehberle, tek başımıza asla bulamayacağımız şeyler öğreniyoruz.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 7 PROJECTIONS FILMS -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">7 · Projections de films — avis au jury</div><div class="st">Film gösterimlerine katılıp jüriye görüş bildirme</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des projections de films. Vous en parlez à un(e) ami(e) qui aime le cinéma. Essayez de le (la) convaincre d'y participer et de donner son avis aux membres du jury.</div>
+<div class="tr">Film gösterimleri ilanı okudun. Sinemayı seven bir arkadaşına anlatıyorsun. Onu katılmaya ve jüri üyelerine görüşünü bildirmeye ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>FESTIVAL DU FILM — Devenez spectateur-juré !</b><br>
+Assistez aux projections de films en avant-première · Donnez votre avis directement aux membres du jury · Projections gratuites, places limitées · Chaque jeudi soir pendant un mois · Inscription : www.festivalfilm.ca</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un festival de films où les spectateurs participent : tu regardes des films en avant-première, et après, tu donnes ton avis directement aux membres du jury. Et les projections sont gratuites !</div>
+<div class="tr">Seyircilerin katıldığı bir film festivali: filmleri gösterime girmeden önce izliyorsun ve sonra görüşünü doğrudan jüri üyelerine söylüyorsun. Üstelik gösterimler ücretsiz!</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu adores le cinéma et tu as toujours des opinions intéressantes sur les films — là, ton avis compte vraiment !</div><div class="tr">Sinemaya bayılıyorsun ve filmler hakkında hep ilginç görüşlerin var — burada fikrin gerçekten önemseniyor!</div></div>
+<div class="argitem"><div class="fr">Tu vois les films en avant-première, avant tout le monde — et c'est complètement gratuit.</div><div class="tr">Filmleri herkesten önce, gösterimden önce izliyorsun — ve tamamen ücretsiz.</div></div>
+<div class="argitem"><div class="fr">C'est chaque jeudi pendant un mois — une belle sortie régulière, et on peut y aller ensemble.</div><div class="tr">Bir ay boyunca her perşembe — düzenli güzel bir aktivite, birlikte de gidebiliriz.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Parler devant un jury, ça m'intimide. »</div><div class="tr">Jüri önünde konuşmak beni geriyor.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais tu n'as pas besoin de faire un discours — juste de partager ton impression, comme quand on discute après un film. Et le jury veut justement des avis de vrais spectateurs, pas d'experts.</div>
+<div class="tr">Anlıyorum ama nutuk atman gerekmiyor — sadece izlenimini paylaşacaksın, film sonrası sohbet gibi. Jüri de zaten uzman değil gerçek seyirci görüşü istiyor.</div></div></div>
+<div class="obj"><div class="q">« Un mois, tous les jeudis, c'est trop d'engagement. »</div><div class="tr">Bir ay her perşembe, fazla bağlayıcı.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">En fait, tu n'es pas obligée de venir à toutes les séances — chaque projection est indépendante. Viens au moins à la première, et si ça te plaît, tu continues. Au pire, tu auras vu un bon film gratuitement !</div>
+<div class="tr">Aslında tüm seanslara gelmek zorunda değilsin — her gösterim bağımsız. En azından ilkine gel, hoşuna giderse devam edersin. En kötü ihtimalle bedava güzel bir film izlemiş olursun!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 8 CONCOURS CONTE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">8 · Concours de conte</div><div class="st">Masal yarışması · arkadaş yazmayı seviyor · ÇIKMIŞ (tefcanada.ca)</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce. Vous en parlez à un(e) ami(e) qui aime bien écrire. Essayez de le (la) convaincre de participer à ce concours de conte.</div>
+<div class="tr">Bu ilanı okudun. Yazmayı seven bir arkadaşına anlatıyorsun. Onu bu masal yarışmasına katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>CONCOURS DE CONTE — Le festival du conte ouvre son concours !</b><br>
+Vous êtes créatif ? Venez raconter votre histoire devant le jury · De 10 à 20 minutes · Choix parmi plusieurs thèmes · Plusieurs prix à gagner · Les gagnants feront une tournée de spectacles !</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un concours de conte organisé par le festival. Tu racontes ton histoire devant un jury, entre dix et vingt minutes, sur le thème de ton choix. Il y a plusieurs prix, et les gagnants font même une tournée de spectacles !</div>
+<div class="tr">Festivalin düzenlediği masal yarışması. Hikâyeni jüri önünde anlatıyorsun, 10-20 dakika, istediğin temada. Birçok ödül var ve kazananlar gösteri turnesine bile çıkıyor!</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu écris tellement bien — tes histoires méritent d'être entendues par un vrai public, pas de rester dans un tiroir !</div><div class="tr">O kadar güzel yazıyorsun ki — hikâyelerin çekmecede kalmayı değil, gerçek bir dinleyici kitlesini hak ediyor!</div></div>
+<div class="argitem"><div class="fr">Tu choisis ton thème parmi plusieurs — donc tu peux raconter le genre d'histoire que tu aimes.</div><div class="tr">Temayı birkaç seçenek arasından sen seçiyorsun — yani sevdiğin türde bir hikâye anlatabilirsin.</div></div>
+<div class="argitem"><div class="fr">Il y a des prix à gagner, et les gagnants font une tournée — imagine, ça pourrait être le début de quelque chose !</div><div class="tr">Kazanılacak ödüller var ve kazananlar turneye çıkıyor — düşünsene, bir şeylerin başlangıcı olabilir!</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Écrire, oui — mais raconter devant un jury, non ! »</div><div class="tr">Yazmak tamam — ama jüri önünde anlatmak, hayır!</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais raconter, c'est juste partager ton histoire à voix haute — et personne ne connaît ton texte mieux que toi. On peut répéter ensemble avant, et tu verras, après deux minutes, le stress disparaît.</div>
+<div class="tr">Anlıyorum ama anlatmak, hikâyeni yüksek sesle paylaşmak sadece — ve metnini senden iyi kimse bilmiyor. Önceden birlikte prova yaparız, göreceksin, iki dakika sonra stres kayboluyor.</div></div></div>
+<div class="obj"><div class="q">« Et si je perds ? Ce serait humiliant. »</div><div class="tr">Ya kaybedersem? Küçük düşerim.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Perdre un concours, ce n'est pas humiliant — c'est de l'expérience. Au pire, tu auras présenté ton travail et reçu des retours du jury, c'est déjà précieux. Et franchement, je pense que tu as toutes tes chances.</div>
+<div class="tr">Yarışma kaybetmek küçük düşürücü değil — deneyim. En kötü ihtimalle işini sunmuş ve jüriden geri bildirim almış olursun, bu bile değerli. Ve açıkçası bence şansın çok yüksek.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 9 CONCOURS CUISINE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">9 · Concours de cuisine du quartier</div><div class="st">Mahalle yemek yarışması · arkadaş yemek yapmayı seviyor · ÇIKMIŞ</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce dans votre quartier. Vous en parlez à un(e) ami(e) qui aime cuisiner. Essayez de le (la) convaincre de participer à ce concours de cuisine.</div>
+<div class="tr">Mahallende bu ilanı okudun. Yemek yapmayı seven bir arkadaşına anlatıyorsun. Onu bu yemek yarışmasına katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>Le site MES VOISINS SONT DES CHEFS organise le concours « Le meilleur chef du quartier » !</b><br>
+Préparez votre spécialité et faites-la goûter au jury de voisins · Ouvert à tous les amateurs · Inscription gratuite · Prix à gagner et grande fête de quartier</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'un concours de cuisine dans notre quartier : « Le meilleur chef du quartier ». Tu prépares ta spécialité, un jury de voisins la goûte, et il y a des prix à gagner. L'inscription est gratuite.</div>
+<div class="tr">Mahallemizde yemek yarışması: "Mahallenin en iyi şefi". Spesiyalini hazırlıyorsun, komşulardan oluşan jüri tadıyor ve kazanılacak ödüller var. Kayıt ücretsiz.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu cuisines merveilleusement bien — tout le monde adore tes plats. Là, c'est l'occasion de le montrer !</div><div class="tr">Harika yemek yapıyorsun — herkes yemeklerine bayılıyor. İşte bunu gösterme fırsatı!</div></div>
+<div class="argitem"><div class="fr">C'est ouvert aux amateurs — pas de chefs professionnels, juste des voisins qui aiment cuisiner.</div><div class="tr">Amatörlere açık — profesyonel şef yok, sadece yemek yapmayı seven komşular.</div></div>
+<div class="argitem"><div class="fr">C'est gratuit, et en plus c'est une fête de quartier — on va rencontrer nos voisins dans une super ambiance.</div><div class="tr">Ücretsiz, üstelik bir mahalle şenliği — komşularımızla harika bir ortamda tanışacağız.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Les autres cuisinent sûrement mieux que moi. »</div><div class="tr">Diğerleri kesin benden iyi yemek yapıyordur.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je pense que tu te trompes — tu sous-estimes tes capacités ! Ton plat préféré, tout le monde en redemande à chaque fois. Et de toute façon, c'est un concours amical entre voisins, pas une compétition professionnelle.</div>
+<div class="tr">Bence yanılıyorsun — kendini hafife alıyorsun! Meşhur yemeğinden herkes her seferinde bir daha istiyor. Zaten komşular arası dostane bir yarışma, profesyonel bir müsabaka değil.</div></div></div>
+<div class="obj"><div class="q">« Cuisiner pour un jury, c'est trop de pression. »</div><div class="tr">Jüri için yemek yapmak fazla baskı.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, mais le jury, ce sont juste nos voisins ! L'ambiance est détendue, c'est une fête. Et tu prépares ta spécialité — le plat que tu connais par cœur, donc aucun risque.</div>
+<div class="tr">Anlıyorum ama jüri sadece komşularımız! Ortam rahat, bu bir şenlik. Ve spesiyalini hazırlıyorsun — ezbere bildiğin yemek, yani risk yok.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 10 ATELIERS POESIE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">10 · Ateliers d'écriture poétique</div><div class="st">Şiir yazma atölyesi · arkadaş yazmayı ve şiiri seviyor</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour des ateliers d'écriture poétique. Vous en parlez à un(e) ami(e) qui aime écrire. Essayez de le (la) convaincre de s'y inscrire.</div>
+<div class="tr">Şiir yazma atölyeleri ilanı okudun. Yazmayı seven bir arkadaşına anlatıyorsun. Onu kaydolmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>ATELIERS D'ÉCRITURE POÉTIQUE</b><br>
+Vous aimez écrire, vous aimez la poésie ?<br>
+Lecture de poèmes · Atelier d'écriture · Concours d'écriture · Publication dans la revue de la ville</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'ateliers d'écriture poétique. Au programme : des lectures de poèmes, des ateliers d'écriture, un concours — et les meilleurs textes sont publiés dans la revue de la ville !</div>
+<div class="tr">Şiir yazma atölyeleri. Programda: şiir okumaları, yazma atölyeleri, bir yarışma — ve en iyi metinler şehir dergisinde yayımlanıyor!</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu écris déjà pour toi — un atelier va te donner des techniques et des retours pour progresser encore.</div><div class="tr">Zaten kendin için yazıyorsun — atölye ilerlemen için teknik ve geri bildirim verecek.</div></div>
+<div class="argitem"><div class="fr">Ton texte peut être publié dans la revue de la ville — imagine ton nom imprimé !</div><div class="tr">Metnin şehir dergisinde yayımlanabilir — adının basıldığını düşünsene!</div></div>
+<div class="argitem"><div class="fr">Tu vas rencontrer d'autres personnes qui aiment écrire — c'est motivant d'être entouré de passionnés.</div><div class="tr">Yazmayı seven başka insanlarla tanışacaksın — tutkulu insanlarla çevrili olmak motive edici.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Mes textes sont trop personnels pour les partager. »</div><div class="tr">Metinlerim paylaşmak için fazla kişisel.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Je comprends, c'est intime. Mais dans un atelier, tu partages seulement ce que tu veux — personne ne t'oblige. Et tu peux écrire de nouveaux textes juste pour l'atelier, moins personnels. Petit à petit, tu trouveras ton rythme.</div>
+<div class="tr">Anlıyorum, mahrem bir şey. Ama atölyede sadece istediğini paylaşıyorsun — kimse zorlamıyor. Atölye için daha az kişisel yeni metinler de yazabilirsin. Yavaş yavaş kendi ritmini bulursun.</div></div></div>
+<div class="obj"><div class="q">« La poésie, ça ne sert à rien aujourd'hui. »</div><div class="tr">Şiir bugün bir işe yaramıyor.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Au contraire ! Écrire, ça aide à mieux s'exprimer dans tous les domaines — même au travail. Et surtout, ça fait du bien : c'est ton moment à toi. Tout ne doit pas « servir à quelque chose ».</div>
+<div class="tr">Tam tersine! Yazmak her alanda kendini daha iyi ifade etmeye yardım ediyor — işte bile. Ve en önemlisi iyi geliyor: kendine ait bir an. Her şeyin "bir işe yaraması" gerekmiyor.</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<!-- 11 CUISINE COMMUNAUTAIRE -->
+<div class="sujet">
+<div class="shead" onclick="tog(this)"><div class="t">11 · Cuisine communautaire</div><div class="st">Toplu mutfak etkinliğine katılma</div></div>
+<div class="sbody">
+<div class="lbl consigne">CONSIGNE</div>
+<div class="fr">Vous avez lu cette annonce pour une cuisine communautaire. Vous en parlez à un(e) ami(e). Essayez de le (la) convaincre d'y participer.</div>
+<div class="tr">Toplu mutfak ilanı okudun. Arkadaşına anlatıyorsun. Onu katılmaya ikna etmeye çalış.</div>
+<div class="lbl annonce">ANNONCE</div>
+<div class="annbox"><b>LA CUISINE COMMUNAUTAIRE DU QUARTIER</b><br>
+Cuisinons ensemble, mangeons mieux ! · En groupe, préparez plusieurs plats pour la semaine · Partage des coûts : environ 5 $ par portion · Recettes économiques et équilibrées · Tous les mardis soir au centre communautaire</div>
+<div class="lbl sunum">SUNUM (Adım 2)</div>
+<div class="fr">Il s'agit d'une cuisine communautaire : chaque mardi soir, un groupe prépare ensemble plusieurs plats pour la semaine. On partage les coûts — environ 5 dollars par portion — et les recettes sont équilibrées.</div>
+<div class="tr">Toplu mutfak: her salı akşamı bir grup, haftalık birkaç yemeği birlikte hazırlıyor. Masraflar paylaşılıyor — porsiyon başı yaklaşık 5 dolar — ve tarifler dengeli.</div>
+<div class="lbl arg">3 ARGÜMAN (Adım 3)</div>
+<div class="argitem"><div class="fr">Tu me dis souvent que tu n'as pas le temps de cuisiner la semaine — là, en une soirée, tes repas de la semaine sont prêts !</div><div class="tr">Hafta içi yemek yapmaya vaktin olmadığını sık söylüyorsun — burada bir akşamda haftalık yemeklerin hazır!</div></div>
+<div class="argitem"><div class="fr">À 5 dollars la portion, c'est bien moins cher que les plats préparés ou la livraison.</div><div class="tr">Porsiyonu 5 dolar — hazır yemekten veya sipariş etmekten çok daha ucuz.</div></div>
+<div class="argitem"><div class="fr">Cuisiner en groupe, c'est convivial — tu apprends des recettes des autres et tu rencontres tes voisins.</div><div class="tr">Grupla yemek yapmak keyifli — başkalarından tarif öğreniyorsun ve komşularınla tanışıyorsun.</div></div>
+<div class="lbl itiraz">OLASI İTİRAZLAR (Adım 4)</div>
+<div class="obj"><div class="q">« Je cuisine très mal, je vais ralentir le groupe. »</div><div class="tr">Çok kötü yemek yapıyorum, grubu yavaşlatırım.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">Ne t'en fais pas — justement, c'est fait pour apprendre ensemble. Il y a toujours des tâches simples : couper les légumes, mélanger… Et en quelques semaines, tu sauras cuisiner, c'est un bonus !</div>
+<div class="tr">Dert etme — zaten amaç birlikte öğrenmek. Hep basit işler var: sebze doğramak, karıştırmak… Birkaç haftada yemek yapmayı öğrenirsin, bu da bonus!</div></div></div>
+<div class="obj"><div class="q">« Manger la même chose toute la semaine, non merci. »</div><div class="tr">Bütün hafta aynı şeyi yemek mi, hayır teşekkürler.</div>
+<span class="revealbtn" onclick="rev(this)">Cevabı göster</span>
+<div class="rep hidden"><div class="fr">En fait, on prépare plusieurs plats différents chaque mardi — donc tu as de la variété. Et tu peux congeler des portions pour alterner. C'est plus varié que ce qu'on cuisine seuls, crois-moi !</div>
+<div class="tr">Aslında her salı birkaç farklı yemek hazırlanıyor — yani çeşitlilik var. Porsiyonları dondurup dönüşümlü yiyebilirsin. Tek başına yaptığından daha çeşitli, inan bana!</div></div></div>
+<div class="kalipnote">Adım 1, 5, 6, 7 → <a href="kalip.html">Evrensel Kalıp</a></div>
+</div>
+</div>
+
+<div class="foot">Loisirs &amp; Sorties · 11 sujet</div>
+</div>
+
+<script>
+var MODE = 'study';
+function setMode(m) {
+  MODE = m;
+  var trs = document.getElementsByClassName('tr');
+  var i;
+  for (i = 0; i < trs.length; i++) {
+    trs[i].style.display = (m === 'test') ? 'none' : 'block';
+  }
+  document.getElementById('btnStudy').className = 'modebtn' + (m === 'study' ? ' on' : '');
+  document.getElementById('btnTest').className = 'modebtn' + (m === 'test' ? ' on' : '');
+  if (m === 'test') {
+    var reps = document.getElementsByClassName('rep');
+    for (i = 0; i < reps.length; i++) {
+      if (reps[i].className.indexOf('hidden') === -1) { reps[i].className = 'rep hidden'; }
+    }
+    var btns = document.getElementsByClassName('revealbtn');
+    for (i = 0; i < btns.length; i++) { btns[i].innerHTML = 'Cevabı göster'; }
+  }
+}
+function tog(head) {
+  var body = head.nextSibling;
+  while (body && body.nodeType !== 1) { body = body.nextSibling; }
+  if (!body) { return; }
+  body.style.display = (body.style.display === 'block') ? 'none' : 'block';
+}
+function rev(btn) {
+  var rep = btn.nextSibling;
+  while (rep && rep.nodeType !== 1) { rep = rep.nextSibling; }
+  if (!rep) { return; }
+  if (rep.className.indexOf('hidden') !== -1) {
+    rep.className = 'rep';
+    if (MODE === 'test') {
+      var trs = rep.getElementsByClassName('tr');
+      for (var i = 0; i < trs.length; i++) { trs[i].style.display = 'none'; }
+    }
+    btn.innerHTML = 'Cevabı gizle';
+  } else {
+    rep.className = 'rep hidden';
+    btn.innerHTML = 'Cevabı göster';
+  }
+}
+</script>
+</body>
+</html>
